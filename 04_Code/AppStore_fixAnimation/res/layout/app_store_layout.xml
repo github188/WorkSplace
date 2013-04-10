@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_home" >
+
+    <!-- float view -->
+
+    <ImageView
+        android:id="@+id/animation_imageview"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:background="@drawable/selected_application_background100"
+        android:visibility="invisible" />
+
+    <!-- top 1 -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/top_left"
+            android:layout_width="200dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/appName"
+            android:textColor="@color/black"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/top_search"
+            android:layout_width="130dip"
+            android:layout_height="60dip"
+            android:drawableLeft="@drawable/app_search"
+            android:drawablePadding="15dip"
+            android:text="@string/app_search"
+            android:focusable="true"
+            android:textColor="@color/black"
+            android:textSize="19dip"
+            android:padding="10dip"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="920dip" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="1060dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/top_down_record"
+            android:layout_width="170dip"
+            android:layout_height="60dip"
+            android:focusable="true"
+            android:textSize="19dip"
+            android:drawableLeft="@drawable/button_download"
+            android:drawablePadding="15dip"
+            android:text="@string/downloadmrg_button_txt"
+            android:textColor="@color/black"
+            android:padding="10dip"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:layout_marginRight="30dip"
+            android:nextFocusLeft="@id/top_search"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <!-- top 2 -->
+
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_width="1130dip"
+        android:layout_height="70dip"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="70dip"
+        android:layout_marginRight="80dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="5dip"
+        android:focusable="true"
+        >
+        
+        <ImageView
+            android:id="@+id/top2_more"
+            android:layout_width="200dip"
+            android:layout_height="55dip"
+            android:src="@drawable/new_title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dip"
+             />
+       
+        <TextView
+            android:id="@+id/top2_spree"
+            android:layout_marginLeft="743dip"
+            android:layout_width="380dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:focusable="true"
+            android:layout_height="70dip"
+            android:drawablePadding="20dip"
+            android:textSize="38dip"
+            android:textColor="@color/white"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+        
+    </RelativeLayout>
+
+    <!-- all apps -->
+
+    <ViewFlipper
+        android:id="@+id/app_store_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="480dip"
+        android:layout_below="@id/top2"
+        android:layout_marginLeft="75dip"
+        android:layout_marginRight="60dip"
+        android:layout_marginTop="-20dip" />
+
+    <ImageView
+        android:id="@+id/app_store_left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="300dip"
+        android:background="@drawable/arrowleft"
+        android:contentDescription="@string/str_null" />
+
+    <ImageView
+        android:id="@+id/app_store_right_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="300dip"
+        android:background="@drawable/arrowright"
+        android:contentDescription="@string/str_null" />
+
+    <!-- add page switch -->
+
+    <include layout="@layout/page_switch" />
+
+    <!-- menu -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:visibility="visible" >
+
+        <!--
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        -->
+
+        <LinearLayout
+            android:id="@+id/app_store_menu_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="150dip"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

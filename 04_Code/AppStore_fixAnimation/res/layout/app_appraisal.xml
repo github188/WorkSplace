@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="650dip"
+    android:layout_height="485dip"
+    android:layout_gravity="center"
+    android:background="@drawable/app_appraisal" >
+
+    <LinearLayout
+        android:id="@+id/title_1"
+        android:layout_width="650dip"
+        android:layout_height="100dip"
+        android:layout_gravity="top"
+        android:layout_marginLeft="30dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="100dip"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="18dip"
+            android:drawableLeft="@drawable/app_appraisal_a"
+            android:gravity="right|center_vertical"
+            android:text="@string/app_appraisal"
+            android:textColor="@color/transparent_background"
+            android:textSize="25dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/close"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rating_bar"
+        android:layout_width="650dip"
+        android:layout_height="100dip"
+        android:layout_below="@id/title_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="100dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_marginLeft="210dip"
+            android:id="@+id/bar"
+            android:layout_width="210dip"
+            android:layout_height="80dip"
+            android:background="@anim/fram_score" >
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="18dip"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="0" >
+            </RatingBar>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="25dip"
+            android:text="@string/app_appraisal"
+            android:textColor="@color/black"
+            android:textSize="25dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="650dip"
+        android:layout_height="100dip"
+        android:layout_below="@id/rating_bar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_appraisal_before"
+            android:textColor="@color/black"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:text="@string/app_appraisal_text2"
+            android:textColor="@color/score"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</RelativeLayout>

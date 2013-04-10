@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alpha="10"
+    android:background="@drawable/backgroud_home" >
+
+    <!-- android:background="@drawable/allbg" -->
+
+    <ImageView
+        android:id="@+id/animation_imageview"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:background="@drawable/selected_application_background100"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:background="@drawable/top1"
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="106dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/top_left"
+            android:layout_width="300dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="108dip"
+            android:layout_marginTop="25dip"
+            android:text="@string/appName"
+            android:textColor="@color/white"
+            android:textSize="35dip" />
+
+        <TextView
+            android:id="@+id/top_search"
+            android:layout_width="200dip"
+            android:layout_height="80dip"
+            android:layout_marginTop="7dip"
+            android:focusable="true"
+            android:paddingLeft="15dip"
+            android:layout_marginLeft="1350dip"
+            android:drawableLeft="@drawable/app_search"
+            android:text="@string/app_search"
+            android:textSize="35dip"
+            android:drawablePadding="20dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="42dip"
+            android:layout_marginLeft="1570dip"
+            android:layout_marginTop="33dip"
+            android:background="@color/lantingxihei" />
+
+        <TextView
+            android:id="@+id/top_down_record"
+            android:focusable="true"
+            android:layout_width="260dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="1584dip"
+             android:layout_marginTop="7dip"
+            android:paddingLeft="15dip"
+            android:drawablePadding="20dip"
+            android:gravity="center_vertical"
+            android:text="@string/downloadmrg_button_txt"
+            android:textSize="35dip"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/button_download" />
+    </RelativeLayout>
+
+    <!-- menu -->
+
+    <ScrollView
+        android:id="@+id/class_menu_linearlayout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_below="@id/top"
+        android:background="@drawable/class_menu_bg"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_marginLeft="224dip"
+            android:layout_marginTop="20dip"
+            android:id="@+id/class_menu_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+    </ScrollView>
+    <!-- all apps -->
+
+    <ViewFlipper
+        android:id="@+id/app_class_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/class_menu_linearlayout_scrollview"
+        android:layout_marginLeft="120dip"
+        android:layout_marginRight="60dip"
+        android:layout_marginTop="40dip" >
+    </ViewFlipper>
+
+    <ImageView
+        android:id="@+id/app_class_left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="500dip"
+        android:background="@drawable/arrowleft"
+        android:contentDescription="@string/str_null" />
+
+    <ImageView
+        android:id="@+id/app_class_right_imgae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="500dip"
+        android:background="@drawable/arrowright"
+        android:contentDescription="@string/str_null" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="928dip"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="35dip" />
+
+</RelativeLayout>

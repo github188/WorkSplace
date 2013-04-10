@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    <drawable name="title_background">#00ffee00</drawable>
+    <drawable name="webview_background">#ff0000</drawable>
+    <color name="transparent_background">#50000000</color>
+    <color name="fontback">#90000000</color>
+    <color name="fontlight">#ff0000</color>
+    
+    <color name="downitem_background">#e0000000</color>
+    
+    <color name="yellow">#E5AA50</color>
+	<color name="black">#000000</color>
+	<color name="darkgray">#7F7F7F</color>
+	<color name="green">#00FF00</color>
+	<color name="red">#FF0000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="trans">#00000000</color>
+	<color name="blue">#003399</color>
+    <color name="gray">#959595</color>
+    <color name="detailFont">#383838</color>
+    <color name="score">#993300</color>
+    
+    <!-- 以下为公版字体配色 -->
+    <color name="lantingxihei">#FFFFFF</color>
+    <color name="color1">#30151A29</color>
+    <color name="color2">#26A8FF</color>
+    <color name="color3">#00000000</color>
+    <color name="color4">#000000</color>
+    
+    <!-- CCTV版配色 -->
+    <color name="text_white">#dedede</color>
+      <color name="text_yellow">#ff9138</color>
+     <color name="rating_color">#ff9138</color>
+     <color name="text_color">#444444</color>
+     <color name="top_line">#525252</color>
+     <color name="install_status_text">#d3d3d3</color>
+     
+     <color name="down_load_tab_focus">#FF9138</color>
+     <color name="down_load_tab_click">#FBB530</color>
+     <color name="down_load_tab_no_focus">#00000000</color>
+     <color name="down_load_select">#4A4F5E</color>
+     <color name="down_load_text_white">#d3d3d3</color>
+     <color name="transparent_progress">#70000000</color>
+    
+</resources>

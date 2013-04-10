@@ -1,0 +1,33 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+<LinearLayout 
+		android:id="@+id/message_prompts" 
+		android:layout_x="1488px"
+		android:layout_y="80px" 
+		android:layout_width="322px"
+		android:layout_height="101px"
+		android:gravity="center"
+		android:background="@drawable/message_prompts"
+		android:visibility="invisible">
+    		>  	
+
+		 <TextView
+		 android:id="@+id/message_prompts_text"  
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_marginLeft="50px"
+	        android:layout_marginRight="50px"
+		android:layout_marginTop="10px"
+	        android:textSize="35px"
+		android:singleLine="true"
+		android:focusable="true" 
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:focusableInTouchMode="true"
+		android:scrollHorizontally="true"
+	        /> 
+		</LinearLayout>	
+</AbsoluteLayout>	  		

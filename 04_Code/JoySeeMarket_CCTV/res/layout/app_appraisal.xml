@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="700dp"
+    android:layout_height="269dp"
+    android:layout_gravity="center"
+    android:background="@drawable/public_dialog_bg" >
+
+    <RelativeLayout
+        android:layout_marginTop="11dp"
+        android:id="@+id/title_1"
+        android:layout_width="660dp"
+        android:layout_height="70dip"
+        android:layout_gravity="top"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dip"
+            android:gravity="right|center_vertical"
+            android:text="@string/app_appraisal"
+            android:textColor="@color/text_color"
+            android:textSize="40sp" />
+
+        <ImageButton
+            android:layout_marginRight="11dp"
+            android:id="@+id/close"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/downrecord_close_bt_selected"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginLeft="11dp"
+        android:layout_width="640dp"
+        android:layout_height="1dip"
+        android:layout_marginTop="70dp"
+        android:background="@color/top_line" />
+
+    <LinearLayout
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:layout_below="@id/title_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:orientation="horizontal" >
+
+        <!--
+             <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="300dip"
+            android:layout_height="80dip"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            android:background="@anim/fram_score" 
+
+        </LinearLayout>
+        -->
+
+        <RatingBar
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ratingBar"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:numStars="5"
+            android:rating="0" >
+        </RatingBar>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:text="@string/app_appraisal"
+            android:textColor="@color/text_white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rating_bar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_appraisal_before"
+            android:textColor="@color/text_yellow"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/app_appraisal_text2"
+            android:textColor="@color/text_yellow"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>

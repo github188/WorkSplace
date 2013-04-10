@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id = "@+id/rootnode"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!-- 
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:orientation="horizontal"
+     >
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:gravity="center_horizontal"
+        android:text="@string/download_button_txt"
+        />
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_marginLeft="50dip"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:gravity="center_horizontal"
+        android:text="@string/pause_button_txt"
+        />
+    <Button
+        android:id="@+id/downloadmgr_button"
+        android:layout_marginLeft="50dip"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:gravity="center_horizontal"
+        android:text="@string/downloadmrg_button_txt"
+        />
+    </LinearLayout>
+     -->
+   <WebView android:id="@+id/webView"
+        android:background="#77CC0000"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:focusable="false" />
+
+</LinearLayout>

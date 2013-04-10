@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="novel.supertv.dvb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:persistent="true"
+        android:name=".DvbApplication">
+        
+        <!-- 主播放页面，同时也是入口 -->
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".activity.PlayActivity" 
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/> 
+                <data android:mimeType="video/*" android:scheme="http"/>
+                <data android:mimeType="video/*" android:scheme="file"/>
+                <data android:mimeType="audio/*" android:scheme="http"/>
+                <data android:mimeType="audio/*" android:scheme="file"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 提供频道数据的Provider -->
+        
+        <provider android:name=".provider.ChannelProvider"
+            android:authorities="novel.supertv.dvb.provider.ChannelProvider"
+            android:multiprocess="true" android:process="system" 
+            />
+        <activity android:name=".activity.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+        </activity>
+         <activity
+            android:name=".activity.SearchMenuActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            
+            <intent-filter>
+                <action
+                    android:name="com.joysee.TV_SEARCH" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".activity.SearchMainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/fast_search"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         <activity
+            android:name=".activity.SearchHandActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/fast_search"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.SearchAdvancedSettingActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.FullSearchActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/all_search"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.SearchManualActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/manual_search"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.SearchNetActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="@string/download_search"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.CaSettingActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <service android:name=".service.SearchService"></service>
+        <service android:name=".service.PlayService"
+            android:process=":DVBService"
+            android:enabled="true"
+            >
+            <intent-filter>
+            <action android:name="novel.supertv.dvb.service.PlayService"/>
+            </intent-filter>
+        </service>
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+</manifest>

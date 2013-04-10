@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemEpisodeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/vodbg" >
+   
+    
+    <LinearLayout
+	    android:layout_width="1800px"
+	    android:layout_height="1000px"
+	    android:orientation="vertical"  >
+   
+	  	<LinearLayout
+		    android:layout_width="1800px"
+		    android:layout_height="450px"
+		    android:orientation="horizontal" > 
+			    
+			<LinearLayout
+			    android:layout_width="560px"
+			    android:layout_height="450px"
+			    android:orientation="vertical"
+			    android:layout_marginLeft="75px"
+			    android:layout_marginTop="121px"
+			    android:layout_marginRight="0px"
+			    android:layout_marginBottom="0px" >
+			    
+			    <ImageView
+				    android:id="@+id/itemposter"
+				    android:layout_width="482px"
+				    android:layout_height="270px"
+				    android:scaleType="fitXY"
+				    android:src="@drawable/default_poster" />
+			    
+		    </LinearLayout>
+		    
+			<LinearLayout
+				    android:layout_width="1240px"
+				    android:layout_height="500px"
+				    android:orientation="vertical"
+				    android:layout_marginLeft="0px"
+				    android:layout_marginTop="121px"
+				    android:layout_marginRight="0px"
+				    android:layout_marginBottom="0px" >
+			     <LinearLayout 
+					        android:layout_width="850px"
+					        android:layout_height="70px"
+					        android:orientation="horizontal"
+					        android:background="@drawable/vod_detail_title_bg"
+					        >
+				    <TextView
+				        android:id="@+id/itemtitle"
+				        android:layout_width="400px"
+				        android:layout_height="70px"
+				        android:singleLine="true"
+				        android:layout_marginLeft="25px"
+				        android:textSize="45px"
+				        android:textColor="@color/vod_itemdetail_firsttextcolor"
+				        android:ellipsize="marquee"
+						android:marqueeRepeatLimit="marquee_forever" />
+				    <TextView
+				        android:id="@+id/itemepisodeinfo"
+				        android:layout_width="160px"
+				        android:layout_height="70px"
+				        android:textSize="35px"
+				        android:layout_marginLeft="10dip"
+				        android:textColor="@color/vod_itemdetail_firsttextcolor"
+				        android:layout_marginBottom="15px"
+				        android:ellipsize="end"
+						android:singleLine="true"/>	
+						<TextView
+				        android:id="@+id/itemexpense"
+				        android:layout_width="150px"
+				        android:layout_height="43px"
+				        android:gravity="center"
+				        android:background="@drawable/freecharge"
+				        android:textSize="25px"
+				        android:textColor="@color/vod_itemdetail_firsttextcolor"
+				        android:layout_marginBottom="15px" />	
+				    </LinearLayout>
+				    <RelativeLayout
+				        android:id="@+id/itemepisodeNum"
+				        android:layout_width="510px" 
+				        android:layout_height="42px"
+				        android:visibility="gone"
+				        android:layout_marginTop="20dip" >
+				        
+						<Button
+						    android:id="@+id/itemepisodenum1"
+						    android:layout_width="170px"
+						    android:layout_height="42px"
+						    android:background="@drawable/vodepisodenum_label1"
+						    android:textSize="30px"
+						    android:textColor="@color/vod_itemdetail_secondtextcolor"
+						    android:gravity="center" />
+						    
+						<Button
+						    android:id="@+id/itemepisodenum2"
+						    android:layout_width="170px"
+						    android:layout_height="42px"
+						    android:background="@drawable/vodepisodenum_label2"
+						    android:textSize="30px"
+						    android:textColor="@color/vod_itemdetail_secondtextcolor"
+						    android:gravity="center"
+						    android:layout_toRightOf="@+id/itemepisodenum1"
+						    android:layout_marginLeft="-9px" />
+						    
+						<Button
+						    android:id="@+id/itemepisodenum3"
+						    android:layout_width="170px"
+						    android:layout_height="42px"
+						    android:background="@drawable/vodepisodenum_label3"
+						    android:textSize="30px"
+						    android:textColor="@color/vod_itemdetail_secondtextcolor"
+						    android:gravity="center"
+						    android:layout_toRightOf="@+id/itemepisodenum2"
+						    android:layout_marginLeft="-9px" />						    						    
+				         
+				    </RelativeLayout>
+					<LinearLayout
+					    android:layout_width="350px"
+					    android:layout_height="60px"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical"
+					    android:layout_marginTop="15dip"
+					     >
+						<TextView 
+						    android:id="@+id/ratingText"
+						    android:layout_width="wrap_content"
+						    android:layout_height="40px"
+						    android:layout_gravity="center_vertical"
+						    android:textColor="@color/vod_itemdetail_firsttextcolor"
+						    android:text="@string/vod_itemratingaverage_"
+						    android:textSize="30px"/>
+						<RatingBar
+							android:id="@+id/ratingBar"
+						    android:layout_width="wrap_content"
+						    android:layout_height="40px"
+						    android:layout_marginLeft="20px"
+						    android:layout_marginTop="5px"
+						    style="@style/vodRatingBar"
+						    android:numStars="5"
+						    android:stepSize="0.2"
+							android:gravity="center_vertical"
+							android:isIndicator="true" />
+						
+						<TextView
+					        android:id="@+id/ratingaverage"
+					        android:layout_width="70px"
+					        android:layout_height="40px"
+					        android:textSize="30px"
+					        android:layout_gravity="center_vertical"
+					        android:textColor="@color/vod_itemdetail_firsttextcolor"
+							android:gravity="center_vertical"					        
+					        android:layout_marginLeft="18px" />	
+					</LinearLayout> 
+					<TextView 
+					    android:id="@+id/itemattrs"
+					    android:layout_width="800px"
+					    android:layout_height="300px"
+					    android:textSize="30px"
+					    android:textColor="@color/vod_itemdetail_firsttextcolor"
+					    android:layout_marginTop="10px"
+					    android:layout_marginBottom="15px"
+						android:ellipsize="end"
+					    android:lines="3"
+					    android:lineSpacingExtra="24px" />
+
+			    </LinearLayout>
+			
+		</LinearLayout>
+		
+	  	<LinearLayout
+		    android:layout_width="1800px"
+		    android:layout_height="550px"
+		    android:orientation="vertical"
+		    android:layout_marginLeft="75px"
+		    android:layout_marginTop="120px"
+		    android:layout_marginRight="75px"
+		    android:layout_marginBottom="0px" 
+		>
+		    			
+			<GridView android:id="@+id/itempoisode_gridview"
+				android:layout_width="1630px"
+				android:layout_height="380px"
+				android:numColumns="10"
+				android:stretchMode="columnWidth"
+				android:verticalSpacing="38px"
+				android:horizontalSpacing="13px"
+				android:columnWidth="120px"
+				android:listSelector="@drawable/vod_episodeselect"
+				android:scrollbarTrackVertical="@drawable/vodepisodescrollbg"				
+				android:scrollbarThumbVertical="@drawable/vodepisodescroll" />											  
+		    
+		    
+		    
+		</LinearLayout>     
+		
+	</LinearLayout> 
+	
+	
+</RelativeLayout>

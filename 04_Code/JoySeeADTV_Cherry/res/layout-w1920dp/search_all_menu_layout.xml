@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_menu_bg"
+    android:orientation="vertical"
+    android:paddingTop="80dip" >
+
+    <TextView
+        android:id="@+id/search_fast_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="55dp"
+        android:drawableLeft="@drawable/search_back"
+        android:drawablePadding="28dip"
+        android:gravity="center_vertical"
+        android:text="@string/search_all_search"
+        android:textColor="@color/search_main_text"
+        android:textSize="42sp" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="57dip"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:paddingRight="20dip"
+        android:text="@string/search_all_settings_title"
+        android:textColor="@color/grey_txt"
+        android:textSize="36sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_symbol_rate"
+            android:textColor="@color/search_main_text"
+            android:textSize="42sp" />
+
+        <com.joysee.adtv.ui.SearchEditText
+            android:id="@+id/search_advanced_option_symbolrate"
+            android:layout_width="700dip"
+            android:layout_height="65dip"
+            android:background="@drawable/search_et_selector"
+            android:gravity="center_vertical"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:paddingLeft="40dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="@string/search_kbps"
+            android:textColor="@color/search_main_text"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_advanced_option_save_button"
+        android:layout_width="336dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="400dp"
+        android:text="@string/search_start_search"
+        android:textColor="@color/text"
+        android:textSize="40sp" />
+
+</LinearLayout>

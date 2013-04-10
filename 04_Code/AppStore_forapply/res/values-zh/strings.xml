@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appName">首页-应用商城</string>
+    <string name="app_name">应用商城</string>
+    <string name="app_name_type">首页-应用商城-%1$s</string>
+    <string name="app_search_result">首页-应用商城-搜索-搜索结果</string>
+    <string name="download_button_txt">下载记录</string>
+	<string name="pause_download">暂停</string>
+	<string name="continue_download">继续下载</string>
+	<string name="downloadmrg_button_txt">下载记录</string>
+	<string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="download">下载</string>
+    <string name="downloadSucc">文件下载成功</string>
+    <string name="downloadFail">文件下载失败</string>
+    <string name="download_error">下载失败</string>
+    <string name="downloadCancel">文件下载取消</string>
+    <string name="install">安装</string>
+    <string name="installSucc">安装成功</string>
+    <string name="installFail">安装失败</string>
+    <string name="installCancel">安装取消</string>
+    <string name="downinstallFail">下载安装失败</string>
+    <string name="noSdcard">没有SD卡</string>
+    <string name="chcekSdcard">读取SD卡失败，请检查SD卡状态！</string>
+    <string name="httperro">连接超时，请重试！</string>
+    <string name="download_tab_1">已下载</string>
+    <string name="download_tab_2">下载中</string>
+    <string name="download_tab_3">已安装</string>
+    <string name= "startdownload">正在下载$*$</string>
+    <string name="installed">已安装</string>
+    <string name="noinstalled">未安装</string>
+    <string name="upgrade">可升级</string>
+    <string name="my_app">我的应用</string>
+    <string name="null_str"></string>
+    <string name="update_ven">更新版本</string>
+    <string name="del_icon">删除快捷方式</string>
+    <string name="del_app">卸载/删除应用</string>
+    <string name="sort">调整排序</string>
+    <string name="title_1">首页-应用商城-我的应用</string>
+    <string name="update_not_need">无可升级的应用</string>
+    <string name="dealing">处理中...</string>
+    <string name="type_name">分类</string>
+    <string name="new_app">最新</string>
+    <string name="hot_app">排行</string>
+    <string name="account_set">账户设置</string>
+    <string name="page">    %1$d      /      %2$d    </string>
+    <string name="about">"简介:"</string>
+    <string name="label">"标签:  %1$s"</string>
+    <string name="activity_detail_name">首页-应用商城-详情</string>
+    <string name="down_install">下载并安装</string>
+    <string name="charge_down_install">%1$s 元    下载并安装</string>
+    <string name="run_app">运        行</string>
+    <string name="app_comment">%1$d  人评</string>
+    <string name="app_size">软件大小:  %1$s</string>
+    <string name="app_verson">软件版本:  %1$s</string>
+    <string name="app_update_time">更新时间:  %1$s</string>
+    <string name="app_conprovider_title">内容供应商: </string>
+    <string name="all_app">全部</string>
+    <string name="extend_all_app">展开全部</string>
+    <string name="app_open">打开应用</string>
+    <string name="app_score">评价：</string>
+    <string name="app_score_unit">分</string>
+    <string name="app_free">免费</string>
+    <string name="app_no_free">%1$s 元/月</string> 
+    <string name="str_null"></string>
+    <string name="fast_search">快速搜索</string>
+    <string name="show_all_app">全部应用</string>
+    <string name="app_top">应用排行</string>
+    <string name="update">更        新</string>
+    <string name="down_speed">    K/S</string>
+    
+    <string name="app_appraisal_before">请您评价</string>
+    <string name="app_appraisal_text1">感谢您的评价(已有%1$s人评价)</string>
+    <string name="app_appraisal_text2"> 请使用左右键选择星级</string>
+    <string name="bad_one">很差</string>
+    <string name="bad_two">较差</string>
+    <string name="bad_thr">一般</string>
+    <string name="good">不错</string>
+    <string name="very_good">很好</string>
+	<string name="app_appraisal">    评价</string>
+	
+	<string name="delete">删除</string>
+	
+	<string name="app_search">搜索</string>
+	<string name="network_error">连接超时，请重试！</string>
+	<string name="search_null">未搜索到关联应用</string>
+	<string name="sdcard_full">SD卡已满!</string>
+	<string name="no_pkgname">加载数据异常，请重新加载</string>
+    <string name="no_icon">加载数据异常,请重新加载</string>
+    <string name="no_app">没有检测到此应用</string>
+    
+</resources>

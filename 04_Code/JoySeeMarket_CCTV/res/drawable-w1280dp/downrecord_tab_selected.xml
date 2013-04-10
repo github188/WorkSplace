@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<!-- 获取焦点 -->
+	<item android:state_focused="true" android:drawable="@color/down_load_tab_focus" />
+	<!-- 失去焦点 -->
+	<item android:state_focused="false" android:drawable="@color/trans"/>
+	<!-- 常态 -->
+	<item android:drawable="@color/trans" />
+</selector>

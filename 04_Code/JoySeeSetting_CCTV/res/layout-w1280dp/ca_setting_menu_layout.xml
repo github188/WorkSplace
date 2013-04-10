@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="45dip"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/config_system_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:text="@string/config_system"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/config_work_time_layout"
+        android:layout_width="736dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/config_system_title"
+        android:layout_marginTop="26dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/config_work_time"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:background="@drawable/listview_indicator"
+            android:drawableRight="@drawable/arrow_selector"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:paddingLeft="20dip"
+            android:paddingRight="36dip"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/config_work_time"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_watch_level_layout"
+        android:layout_width="736dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/config_work_time_layout"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/config_watch_level"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:background="@drawable/listview_indicator"
+            android:drawableRight="@drawable/arrow_selector"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:paddingLeft="20dip"
+            android:paddingRight="36dip"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/config_watch_level"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_authorise_message_layout"
+        android:layout_width="736dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/config_watch_level_layout"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/config_authorise_message"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:background="@drawable/listview_indicator"
+            android:drawableRight="@drawable/arrow_selector"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:paddingLeft="20dip"
+            android:paddingRight="36dip"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/config_authorise_message"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_modify_password_layout"
+        android:layout_width="736dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/config_authorise_message_layout"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/config_modify_password"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:background="@drawable/listview_indicator"
+            android:drawableRight="@drawable/arrow_selector"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:paddingLeft="20dip"
+            android:paddingRight="36dip"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/config_modify_password"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/divider_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/config_modify_password_layout"
+        android:layout_marginTop="264dip"
+        android:orientation="horizontal"
+        android:paddingLeft="33dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="@string/config_card_number"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/config_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

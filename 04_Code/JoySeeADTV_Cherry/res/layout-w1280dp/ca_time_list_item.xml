@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ca_time_list_textview"
+    android:layout_width="match_parent"
+    android:layout_height="33dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="26dp"
+    android:textColor="@drawable/search_text_color"
+    android:textSize="20sp" >
+
+</TextView>

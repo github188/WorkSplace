@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+  		720P
+    -->
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textColor="@color/mini_epg_center_text"
+       		android:textSize="30dp"
+            android:id="@+id/channel_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/mini_epg_center_text"
+            android:id="@+id/channel_name"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:textColor="@color/mini_epg_center_text"
+            android:layout_marginLeft="25dp"
+            android:textSize="30dp"
+            android:id="@+id/channel_content_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/mini_epg_center_text"
+            android:id="@+id/channel_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/mini_epg_center_text"
+            android:id="@+id/channel_content_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/channel_progressbar"
+        android:layout_width="891dp"
+        android:layout_height="2dp"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginLeft="235dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textColor="@color/mini_epg_text_white"
+            android:id="@+id/next_channel_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginLeft="235dp" />
+
+        <TextView
+            android:textColor="@color/mini_epg_text_white"
+        	android:textSize="30dp"
+            android:id="@+id/next_channel_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:textColor="@color/mini_epg_text_white"
+            android:id="@+id/next_channel_content_episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

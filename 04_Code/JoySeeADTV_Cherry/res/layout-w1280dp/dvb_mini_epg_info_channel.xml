@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res/com.joysee.adtv"
+    android:id="@+id/channel_info"
+    android:layout_width="862dp"
+    android:layout_height="206dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="11dp" >
+
+    <!--
+  		720P
+    -->
+
+
+    <!-- ********top********* -->
+    <com.joysee.adtv.ui.EpgTop_View
+        android:id="@+id/epg_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        item:count="2"
+        item:height="90" >
+
+        <com.joysee.adtv.ui.MiniEpgInfoView_Item
+            android:id="@+id/item_top"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-45dp"
+             android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+        </com.joysee.adtv.ui.MiniEpgInfoView_Item>
+    </com.joysee.adtv.ui.EpgTop_View>
+
+    
+    <!-- ********center********* -->
+    <com.joysee.adtv.ui.EpgCenter_View
+        android:id="@+id/epg_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/mini_epg_select_bg"
+        item:count="1"
+        item:height="90"
+        item:isepg="true" >
+
+        <com.joysee.adtv.ui.MiniEpgInfoView_Item
+            android:id="@+id/item_center"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-90dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+        </com.joysee.adtv.ui.MiniEpgInfoView_Item>
+    </com.joysee.adtv.ui.EpgCenter_View>
+
+    <!-- *********bottom******** -->
+
+    <com.joysee.adtv.ui.EpgBottom_View
+        android:id="@+id/epg_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="170dp"
+        item:count="1"
+        item:height="45" >
+
+        <com.joysee.adtv.ui.MiniEpgInfoView_Item
+            android:id="@+id/item_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+             android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-45dp"
+            android:orientation="vertical" >
+        </com.joysee.adtv.ui.MiniEpgInfoView_Item>
+    </com.joysee.adtv.ui.EpgBottom_View>
+
+</FrameLayout>

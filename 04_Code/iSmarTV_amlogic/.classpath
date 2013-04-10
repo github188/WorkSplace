@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="lenovo_account/accessProxy.jar"/>
+	<classpathentry exported="true" kind="lib" path="lenovo_account/leos.service.jar"/>
+	<classpathentry exported="true" kind="lib" path="lenovo_account/nebula.service.jar"/>
+	<classpathentry exported="true" kind="lib" path="lenovo_account/PlayCodeUtil.jar"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/home/chenggang/software/android-sdk-linux/platforms/android-14/android.jar" sourcepath="/home/chenggang/android4.0/frameworks/base">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/chenggang/software/android-sdk-linux/docs/reference"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

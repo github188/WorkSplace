@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="716dip"
+    android:layout_height="173dip"
+    android:id="@+id/config_dialog_layout"
+    android:gravity="center"
+    >
+    <TextView 
+        android:layout_width="716dip"
+        android:layout_height="173dip"
+        android:id="@+id/config_dialog_text"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:text="@string/config_work_time_save_and_back"
+        />
+</RelativeLayout>

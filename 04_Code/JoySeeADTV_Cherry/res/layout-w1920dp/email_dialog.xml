@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/email_dialog_bg" >
+
+    <TextView
+        android:id="@+id/email_dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="@string/email_dialog_title_str"
+        android:textColor="#f0f0f0"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/email_dialog_time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_dialog_title_tv"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="@string/email_dialog_time_str"
+        android:textColor="#f0f0f0"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/email_dialog_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_dialog_time_tv"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:lineSpacingExtra="10dip"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/email_dialog_content_str"
+        android:textColor="#f0f0f0"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/email_dialog_back_bt"
+        android:layout_width="260dip"
+        android:layout_height="73dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="282dip"
+        android:text="@string/email_dialog_back_str"
+        android:textColor="#f0f0f0"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/email_dialog_delete_bt"
+        android:layout_width="260dip"
+        android:layout_height="73dip"
+        android:layout_alignBaseline="@id/email_dialog_back_bt"
+        android:layout_marginLeft="57dip"
+        android:layout_toRightOf="@id/email_dialog_back_bt"
+        android:text="@string/email_dialog_delete_str"
+        android:textColor="#f0f0f0"
+        android:textSize="35sp" />
+
+</RelativeLayout>

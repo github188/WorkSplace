@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="600dip"
+        android:layout_height="165dip"
+        android:layout_gravity="center"
+        android:background="@drawable/public_dialog_bg" >
+
+        <TextView
+            android:id="@+id/updateInfo"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/need_update"
+            android:textColor="@color/text_white"
+            android:textSize="24dip"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="400dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:text="@string/enforce_update"
+            android:textColor="@color/text_white"
+            android:textSize="24dip"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dip"
+            android:layout_height="7dip"
+            android:layout_below="@id/progress_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="190dp"
+            android:max="100"
+            android:progressDrawable="@drawable/play_progressbar"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

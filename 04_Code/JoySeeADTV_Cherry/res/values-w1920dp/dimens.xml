@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- 1080p -->
+
+    <dimen name="epg_data_txtSize_focus">42dp</dimen>
+    <dimen name="epg_data_txtSize_normal">36dp</dimen>
+    <dimen name="epg_channel_item_width">585dp</dimen>
+    <dimen name="epg_program_item_height">65dp</dimen>
+    <dimen name="epg_move_left_sub">110dp</dimen>
+    <dimen name="epg_move_top_sub">167dp</dimen>
+    <dimen name="epg_move_left_small">0dp</dimen>
+    <dimen name="epg_move_left_big">1185dp</dimen>
+    <dimen name="epg_move_top_small">170dp</dimen>
+    <dimen name="epg_move_top_big">510dp</dimen>
+
+    <dimen name="menu_popupmenu_width">650dp</dimen>
+    <dimen name="menu_popupmenu_height">1080dp</dimen>
+    <dimen name="menu_clitem_program_info">230dp</dimen>
+
+		
+    <dimen name="dvb_notify_window_width">716dp</dimen>
+    <dimen name="dvb_notify_window_height">175dp</dimen>
+    <dimen name="program_guide_popupwindow_width">1920dp</dimen>
+    <dimen name="program_guide_popupwindow_height">1080dp</dimen>
+    <dimen name="program_alert_popupwindow_width">1920dp</dimen>
+    <dimen name="program_alert_popupwindow_height">200dp</dimen>
+    <dimen name="program_list_popupwindow_width">1131dp</dimen>
+    <dimen name="program_list_popupwindow_height">643dp</dimen>
+    <dimen name="osd_popupwindow_width">1920dp</dimen>
+    <dimen name="osd_popupwindow_height">60dp</dimen>
+    
+    
+    <dimen name="ca_setting_foucus_offset">282dp</dimen>
+    <dimen name="ca_setting_alert_item_height">53dp</dimen>
+    <dimen name="input_psd_dialog_height">324dp</dimen>
+    <dimen name="input_psd_dialog_weight">982dp</dimen>
+    
+    <!-- 655 216  -->
+    <dimen name="vai_notify_window_width">150dp</dimen>
+    <dimen name="vai_notify_window_height">80dp</dimen>
+    <dimen name="email_dialog_ask_width">1094dp</dimen>
+    <dimen name="email_dialog_ask_height">226dp</dimen>
+    <dimen name="email_dialog_read_width">1124dp</dimen>
+    <dimen name="email_dialog_read_height">636dp</dimen>
+    
+
+    <dimen name="menu_margin_top">180dp</dimen>
+    <dimen name="alert_dialog_no_button_width">622dp</dimen>
+    <dimen name="alert_dialog_no_button_height">165dp</dimen>
+    
+    <dimen name="alert_dialog_include_button_width">750dp</dimen>
+    <dimen name="alert_dialog_include_button_height">200dp</dimen>
+    
+    <dimen name="menu_width">650dp</dimen>
+    <dimen name="menu_height">1080dp</dimen>
+    
+    <dimen name="dvb_exit_width">965dp</dimen>
+    <dimen name="dvb_exit_heigth">225dp</dimen>
+    
+    <dimen name="search_down_list_height">203dp</dimen>
+    <dimen name="search_down_textview_padding">40dp</dimen>
+    
+    <dimen name="screen_width">1920dp</dimen>
+    <dimen name="screen_height">1080dp</dimen>
+    
+    <dimen name="menu_favorite_list_first_item_margin">151dp</dimen>
+    <dimen name="menu_favorite_list_title_margin">60dp</dimen>
+    
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listLayout"
+    android:layout_width="600dp"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:layout_width="600dp"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="600dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="116dp"
+            android:gravity="center_vertical"
+            android:textColor="@drawable/setting_list_textview_color"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+</LinearLayout>

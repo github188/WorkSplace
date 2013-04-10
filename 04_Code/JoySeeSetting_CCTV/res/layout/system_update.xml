@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="736dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="74dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/system_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:gravity="center_vertical"
+        android:text="@string/System_update_setting"
+        android:textColor="@color/yellow"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:id="@+id/system_update_text_ll"
+        android:layout_width="495dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/system_update_title"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/spn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/menu_text_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    
+     <!-- style="@style/DropdownArrowLarger" -->
+    
+    <RelativeLayout
+        android:id="@+id/listLayout"
+        android:layout_width="435dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_update_text_ll"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/dropdownlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_down_list_bg"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/dropdown_selector" >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/system_update_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropdownlist"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="238dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_find_update"
+            style="@style/TextStyle"
+            android:layout_width="528dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="left"
+            android:text="@string/Account_confirm_password_presentation" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_updateing"
+            style="@style/TextStyle"
+            android:layout_width="528dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:text="@string/Account_confirm_password_presentation" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_update_status"
+            style="@style/TextStyle"
+            android:layout_width="528dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:text="@string/Account_confirm_password_presentation" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_update_tips"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="132dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/SettingButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="@string/System_update_check" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_restore"
+            style="@style/SettingButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="@string/dlg_restore_title" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

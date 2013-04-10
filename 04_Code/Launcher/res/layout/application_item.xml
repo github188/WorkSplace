@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.launcher.common.ApplicationItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/launcher_allapp_item_wdith"
+    android:layout_height="@dimen/launcher_allapp_item_height"
+	>
+    <ImageView 
+        android:id="@+id/application_item_pic"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        />
+    <TextView 
+        android:id="@+id/application_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="bottom|center_horizontal"
+        android:textSize="35dp"
+        android:textColor="@color/launcher_coverflow_item_textcolor"
+        />
+</com.joysee.launcher.common.ApplicationItem>

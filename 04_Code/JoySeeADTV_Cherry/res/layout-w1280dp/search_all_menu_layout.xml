@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_menu_bg"
+    android:orientation="vertical"
+    android:paddingTop="53dip" >
+
+    <TextView
+        android:id="@+id/search_fast_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="38dip"
+        android:layout_gravity="left"
+        android:layout_marginLeft="69dp"
+        android:drawableLeft="@drawable/menu_back"
+        android:drawablePadding="13dip"
+        android:gravity="center_vertical"
+        android:paddingRight="13dip"
+        android:text="@string/search_all_search"
+        android:textColor="@color/search_main_text"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dip"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center_vertical"
+        android:paddingRight="13dip"
+        android:text="@string/search_all_settings_title"
+        android:textColor="@color/grey_txt"
+        android:textSize="23sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="33dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_symbol_rate"
+            android:textColor="@color/search_main_text"
+            android:textSize="23sp" />
+
+        <com.joysee.adtv.ui.SearchEditText
+            android:id="@+id/search_advanced_option_symbolrate"
+            android:layout_width="466dip"
+            android:layout_height="43dip"
+            android:background="@drawable/search_et_selector"
+            android:gravity="center_vertical"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:paddingLeft="26dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/search_kbps"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_advanced_option_save_button"
+        android:layout_width="200dip"
+        android:layout_height="48dip"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="266dp"
+        android:text="@string/search_start_search"
+        android:textColor="@color/text"
+        android:textSize="23sp" />
+
+</LinearLayout>

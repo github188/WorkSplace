@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/applock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="48dip"
+        android:text="@string/applock_txt"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" >
+    </TextView>
+    
+    <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/applock_title"
+        android:background="@color/divider_color" />
+          
+    <!-- 开关 -->
+    <LinearLayout
+        android:id="@+id/applock_set_onoff"
+        android:layout_width="736dp"
+        android:layout_height="59dip"
+        android:layout_alignLeft="@id/applock_title"
+        android:layout_below="@id/applock_title"
+        android:background="@drawable/listview_indicator"
+        android:layout_marginTop="21dip"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:focusable="true"      
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:paddingLeft="30dip"   
+            android:paddingTop="15dip"              
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="@string/applock_txt_set_on"
+            android:textSize="20sp" /> 
+
+        <TextView
+            android:id="@+id/applock_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450dip" 
+            android:paddingTop="15dip"           
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="@string/applock_txt_status_off"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:textSize="20sp" />
+    </LinearLayout>    
+
+      <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="57dp"
+        android:layout_below="@id/applock_set_onoff"
+        android:background="@color/divider_color" />
+      
+    <!-- 设置密码 --> 
+    <LinearLayout
+        android:id="@+id/applock_psswd"
+        android:layout_width="736dp"
+        android:layout_height="59dip"
+        android:layout_alignLeft="@id/applock_title"
+        android:layout_below="@id/applock_set_onoff"
+        android:background="@drawable/listview_indicator"
+        android:layout_marginTop="1dip"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/search_menu_text_selector"
+            android:paddingLeft="30dip"
+            android:paddingTop="15dip"   
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="@string/applock_txt_psswd"
+            android:textSize="20sp" /> 
+            
+    </LinearLayout> 
+    
+      <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="57dp"
+        android:layout_below="@id/applock_psswd"
+        android:background="@color/divider_color" /> 
+    
+</RelativeLayout>

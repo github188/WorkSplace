@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_search_result_rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_home" >
+
+    <ImageView
+        android:id="@+id/animation_imageview"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:background="@drawable/item_focus"
+        android:visibility="gone" />
+
+    <!-- top 1 -->
+
+    <RelativeLayout
+        android:id="@+id/search_top"
+        android:layout_width="fill_parent"
+        android:layout_height="71dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/search_top_left"
+            android:layout_width="333dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="92dip"
+            android:layout_marginTop="34dip"
+            android:text="@string/app_search_result"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <TextView
+            android:drawablePadding="8dp"
+            android:id="@+id/top_down_record"
+            android:layout_width="168dip"
+            android:layout_height="71dip"
+            android:layout_marginLeft="1043dip"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/download_top"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="21dp"
+            android:paddingLeft="27dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/downloadmrg_button_txt"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_edit_linearlayout"
+        android:layout_width="797dip"
+        android:layout_height="83dip"
+        android:layout_marginLeft="92dip"
+        android:gravity="center"
+        android:layout_marginTop="114dip"
+        android:background="@drawable/search_2"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/search_edittext"
+            android:layout_width="400dip"
+            android:layout_height="65dip"
+            android:background="@drawable/search_edittext2"
+            android:focusable="true"
+            android:maxLength="20"
+            android:paddingLeft="17dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/search_button_search"
+            android:layout_width="200dip"
+            android:layout_height="70dip"
+            android:background="@drawable/public_detail_bt"
+            android:focusable="true"
+            android:padding="20dip"
+            android:text="@string/app_search"
+            android:textColor="@color/down_load_text_white"
+            android:textSize="20sp" >
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_result_listview"
+        android:layout_width="810dip"
+        android:layout_height="410dip"
+        android:layout_below="@id/search_edit_linearlayout"
+        android:layout_marginLeft="80dip"
+        android:layout_marginTop="20dip"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/search_result_selector"
+        android:focusable="true"
+         >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/up_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="186dip"
+        android:layout_marginTop="75dip"
+        android:layout_toRightOf="@id/search_result_listview"
+        android:background="@drawable/arrowup_s"
+        android:visibility="invisible" />
+
+    <ViewFlipper
+        android:id="@+id/app_search_viewflipper"
+        android:layout_width="400dip"
+        android:layout_height="600dip"
+        android:layout_below="@id/up_image"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/search_result_listview" >
+    </ViewFlipper>
+
+     <ImageView
+        android:id="@+id/down_imgae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="188dip"
+        android:layout_marginTop="665dip"
+        android:layout_toRightOf="@id/search_result_listview"
+        android:background="@drawable/arrowdown_s"
+        android:visibility="invisible" />
+</RelativeLayout>

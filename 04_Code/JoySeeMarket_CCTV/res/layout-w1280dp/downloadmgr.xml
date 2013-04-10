@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="840dp"
+    android:layout_height="525dp"
+    android:layout_gravity="center"
+    android:background="@drawable/public_dialog_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/download_button_txt"
+            android:textColor="@color/text_color"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tab_2"
+            android:layout_width="154dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="54dp"
+            android:layout_toRightOf="@id/text1"
+            android:background="@drawable/downrecord_tab_selected"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/download_tab_2"
+            android:textColor="@color/downrecord_tab_text_select"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tab_3"
+            android:layout_width="154dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tab_2"
+            android:background="@drawable/downrecord_tab_selected"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:selectAllOnFocus="true"
+            android:text="@string/download_tab_3"
+            android:textColor="@color/downrecord_tab_text_select"
+            android:textSize="26sp" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/downrecord_close_bt_selected" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="820dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="-1dp"
+        android:background="@color/top_line" />
+
+    <ScrollView
+        android:layout_below="@id/title"
+        android:layout_width="780dp"
+        android:layout_height="372dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="30dp">
+
+        <LinearLayout
+            android:id="@+id/appslist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

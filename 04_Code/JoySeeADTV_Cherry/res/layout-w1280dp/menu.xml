@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="433dp"
+    android:layout_height="720dp"
+    android:background="#E5000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/menu_title_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="45dp" >
+
+        <!-- 节目指南 -->
+
+        <ImageView
+            android:id="@+id/menu_title_pg_nofocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/menu_title_pg_nofocus"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/menu_title_pg_focus"
+            android:layout_width="221dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/menu_title_focus_tag_bg"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_title_pg_focus"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/menu_pg_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:gravity="center"
+                android:text="@string/menu_titile_program_guide"
+                android:textColor="@color/menu_list_focus"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- 频道列表 -->
+
+        <ImageView
+            android:id="@+id/menu_title_cl_nofocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/menu_title_cl_nofocus"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/menu_title_cl_focus"
+            android:layout_width="221dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/menu_title_focus_tag_bg"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_title_cl_focus"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:gravity="center"
+                android:text="@string/menu_titile_channel_list"
+                android:textColor="@color/menu_list_focus"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- 设置 -->
+
+        <ImageView
+            android:id="@+id/menu_title_settings_nofocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/menu_title_settings_nofocus"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/menu_title_settings_focus"
+            android:layout_width="221dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/menu_title_focus_tag_bg"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_title_settings_focus"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:gravity="center"
+                android:text="@string/menu_titile_settings"
+                android:textColor="@color/menu_list_focus"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/main_menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </ViewFlipper>
+
+</LinearLayout>

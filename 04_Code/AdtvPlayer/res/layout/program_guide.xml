@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1521dip"
+    android:layout_height="811dip"
+    android:background="@drawable/program_guide_background"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="564dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:background="@color/Transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/epg_channel_title"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dip"
+            android:layout_marginTop="28dip"
+            android:text="@string/program_guide_all_channel"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="229dip"
+            android:layout_marginTop="30dip"
+            android:src="@drawable/program_guide_up" />
+
+        <ListView
+            android:id="@+id/epg_channel_list"
+            android:layout_width="564dip"
+            android:layout_height="515dip"
+            android:layout_marginTop="42dip"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:listSelector="@drawable/epg_listview_selector" >
+        </ListView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="229dip"
+            android:layout_marginTop="30dip"
+            android:src="@drawable/program_guide_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/program_guide_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="69dip"
+                android:layout_marginTop="33dip"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/program_guide_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dip"
+                android:layout_marginTop="35dip"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/program_guide_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="394dip"
+                android:layout_marginTop="35dip"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="910dip"
+            android:layout_height="656dip"
+            android:layout_marginTop="20dip"
+            android:background="#B20E1218" >
+
+            <ListView
+                android:id="@+id/epg_program_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/Transparent"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:listSelector="@drawable/epg_program_list_selector"
+                android:scrollbarThumbVertical="@drawable/scroll_front"
+                android:scrollbarTrackVertical="@drawable/scroll_bg" >
+            </ListView>
+
+            <ProgressBar
+                android:id="@+id/epg_progressbar"
+                style="@android:style/Widget.DeviceDefault.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressDrawable="@color/blue" />
+
+            <TextView
+                android:id="@+id/epg_progress_title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dip"
+                android:gravity="center_horizontal"
+                android:text="@string/program_guide_progressbar_title"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="335dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/program_guide_red_cycle" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/program_guide_green_cycle" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dip"
+                android:text="@string/program_guide_switch_channel_text"
+                android:textColor="#7FFFFFFF"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/program_guide_yellow_cycle" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/program_guide_blue_cycle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dip"
+                android:text="@string/program_guide_switch_date_text"
+                android:textColor="#7FFFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

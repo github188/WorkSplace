@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ca_settings_layout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_menu_bg"
+     >
+
+   <TextView
+        android:id="@+id/ca_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/menu_back"
+        android:drawablePadding="13dip"
+        android:layout_marginTop="40dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="73dp"
+        android:text="@string/ca_setting_title_text"
+        android:textColor="@color/white_txt"
+        android:textSize="23sp" />
+
+    <TextView
+        android:text="@string/ca_setting_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="106dp"
+        android:textColor="@color/grey_txt"
+        android:textSize="20sp" 
+            />
+
+    <LinearLayout
+        android:id="@+id/ca_setting_work_time_layout"
+        android:layout_width="1060dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="106dp"
+        android:focusable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="193dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="26dp"
+            android:text="@string/config_work_time"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_white_green_selector"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/ca_setting_work_time_range"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+             android:duplicateParentState="true"
+            android:textColor="@drawable/text_grey_green_selector"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1060dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="106dp"
+        android:id="@+id/ca_setting_watch_level_layout"
+        android:layout_below="@id/ca_setting_work_time_layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="26dp"
+            android:text="@string/config_watch_level"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_white_green_selector"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/ca_setting_watch_level_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_grey_green_selector"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+		 android:layout_width="1060dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="106dp"
+        android:id="@+id/ca_setting_authorise_message_layout"
+        android:layout_below="@id/ca_setting_watch_level_layout"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="26dp"
+            android:text="@string/config_authorise_message"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_white_green_selector"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/ca_setting_authorise_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_grey_green_selector"
+            android:text="@string/ca_setting_author_info_help"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1060dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="106dp"
+        android:id="@+id/ca_setting_modify_password_layout"
+        android:layout_below="@id/ca_setting_authorise_message_layout"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:focusable="true" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="26dp"
+            android:text="@string/config_modify_password"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_white_green_selector"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/ca_setting_modify_password_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_grey_green_selector"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ca_setting_cardinfo_layout"
+         android:layout_width="1060dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="106dp"
+        android:layout_below="@id/ca_setting_modify_password_layout"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="26dp"
+            android:text="@string/config_card_info_text"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_white_green_selector"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:duplicateParentState="true"
+            android:textColor="@drawable/text_grey_green_selector"
+            android:id="@+id/ca_setting_card_info_message_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <View 
+         android:layout_width="1060dp"
+         android:layout_height="1dp"
+         android:layout_marginTop="193dp"
+         android:layout_marginLeft="106dp"
+         android:background="@color/item_devider"
+        />
+    <View 
+         android:layout_width="1060dp"
+         android:layout_height="1dp"
+         android:layout_marginTop="246dp"
+         android:layout_marginLeft="106dp"
+         android:background="@color/item_devider"
+        />
+    <View 
+         android:layout_width="1060dp"
+         android:layout_height="1dp"
+         android:layout_marginTop="299dp"
+         android:layout_marginLeft="106dp"
+         android:background="@color/item_devider"
+        />
+    <View 
+         android:layout_width="1060dp"
+         android:layout_height="1dp"
+         android:layout_marginTop="352dp"
+         android:layout_marginLeft="106dp"
+         android:background="@color/item_devider"
+        />
+    <View 
+         android:layout_width="1060dp"
+         android:layout_height="1dp"
+         android:layout_marginTop="405dp"
+         android:layout_marginLeft="106dp"
+         android:background="@color/item_devider"
+        />
+    <View 
+         android:layout_width="1060dp"
+         android:layout_height="1dp"
+         android:layout_marginTop="458dp"
+         android:layout_marginLeft="106dp"
+         android:background="@color/item_devider"
+        />
+    
+    <ImageView 
+        android:layout_width="1060dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="106dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/ca_iv_focus"
+        android:background="@drawable/focus"
+        />
+	<TextView 
+	    android:layout_marginLeft="133dp"
+	    android:layout_marginTop="600dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:textColor="@color/grey_txt"
+	    android:text="@string/config_card_number"
+	    android:id="@+id/ca_setting_card_num"
+	    />
+</RelativeLayout>

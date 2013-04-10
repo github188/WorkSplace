@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name ="vod_player_panel_fg" >#80000000</color>
+	<color name ="vod_player_menu_bg" >#CC000000</color>
+	<color name ="vod_player_menu_fg" >#CC000000</color>
+	<color name ="vod_volume_panel_bg" >#CC323232</color>
+	<color name ="vod_volume_panel_fg" >#CC323232</color>
+	<drawable name="top_title_color">#FAFAFA</drawable>
+	<color name ="vod_itemdetail_firsttextcolor" >#F6FFFFFF</color>
+	<color name ="vod_itemdetail_secondtextcolor" >#999999</color>
+	<color name ="vod_itemdetail_thirdtextcolor" >#000000</color>
+	<color name ="vod_movielist_title">#A3D2D3</color>
+	<color name ="vod_movieitem_sel">#f0f0f0</color>	
+	<color name ="vod_movieitem_nosel">#c0f0f0f0</color>	
+	<color name ="vod_movieitem_comment">#686868</color>
+	<color name ="vod_ratepopup_dlg">#e2e2e2</color>
+	<color name ="vod_loginpopup_dlg_focus">#000000</color>
+	<color name ="vod_loginpopup_dlg_error">#000000</color>	
+	<color name ="yellow">#FFFF00</color>
+	<color name="vod_onselect">#f0f0f0</color>
+	<color name="vod_unselect">#50f0f0f0</color>
+	<drawable name="transparent">#00000000</drawable>
+	<color name="vod_login_title">#7E7F93</color>
+	<color name="vod_login_label">#F0F0F0</color>
+	<color name="transparent_dialog">#00000000</color>
+</resources>

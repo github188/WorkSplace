@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1200dip"
+    android:layout_height="750dip"
+    android:layout_gravity="center"
+    android:background="@drawable/download_background" >
+
+    <!--
+   <LinearLayout 
+    android:layout_width="650dip"
+    android:layout_height="485dip"
+    android:background="@drawable/download_background"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+     >
+    -->
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="1170dip"
+        android:layout_height="150dip"
+        android:background="@color/trans"
+        android:layout_gravity="top"
+        android:layout_marginLeft="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="350dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:text="@string/download_button_txt"
+            android:textColor="@color/white"
+            android:textSize="72dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/close"
+            />
+        <!-- android:background="@color/trans" android:src="@drawable/close_button_selector" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical"
+			android:nextFocusRight="@id/appslist"
+			>
+           <!--  <TextView
+                android:id="@+id/tab_1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="@string/download_tab_1"
+                android:textColor="@color/fontback"
+                android:textSize="20dp" /> -->
+
+            <TextView
+                android:id="@+id/tab_2"
+                android:layout_width="230dip"
+                android:layout_height="70dip"
+                android:layout_marginTop="20dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingLeft="50dip"
+                android:background="@drawable/downrecord_selected"
+                android:text="@string/download_tab_2"
+                android:nextFocusUp="@id/close"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/tab_3"
+                android:layout_width="230dip"
+                android:layout_height="70dip"
+                android:layout_marginTop="20dip"
+                android:paddingLeft="50dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:background="@drawable/downrecord_selected"
+                android:selectAllOnFocus="true"
+                android:text="@string/download_tab_3"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="-18dip"
+            android:layout_marginTop="50dip">
+            <ImageView
+                android:id="@+id/tab_arrowhead"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:src="@drawable/download_selected" 
+                android:layout_marginTop="25dip"/>
+        </LinearLayout>
+<!-- 
+        <LinearLayout
+            android:id="@+id/tab_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dip"
+            android:layout_marginRight="53dip"
+            android:layout_marginTop="40dip"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/appslist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:cacheColorHint="@color/transparent_background"
+                android:divider="@color/downitem_background"
+                android:dividerHeight="1dip"
+                android:focusable="true"
+                android:listSelector="@drawable/mgr_item_selector"
+                android:scrollbars="none" />
+                 -->
+             <ScrollView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="73dip"
+		         android:layout_marginRight="13dip"
+		         android:layout_marginTop="40dip"
+                 android:background="@color/trans">
+                 <LinearLayout 
+                     android:id="@+id/appslist"
+                     android:layout_width="830dip"
+				     android:layout_height="470dip"
+				     android:orientation="vertical"
+				     android:gravity="center_vertical"
+                     ></LinearLayout>
+                 
+                 </ScrollView>
+             
+        </LinearLayout>
+ <!--   </LinearLayout>
+     </LinearLayout> -->
+
+</RelativeLayout>

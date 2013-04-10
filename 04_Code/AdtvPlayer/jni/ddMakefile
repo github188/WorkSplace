@@ -1,0 +1,46 @@
+##########################################################################################################
+#
+#       build script
+#                       zhuxh, 2011-07-29
+#
+##########################################################################################################
+
+
+
+.PHONY: ALL dd dm clean cleanDd cleanDm cleanJava
+
+ALL: dd dm
+
+dd:
+	@echo "==========================================================="
+	@echo "=                       compile dd                        =" 
+	@echo "==========================================================="
+	make -C ../../../../external/dvb/src/dd/ 
+
+dm: dd
+	@echo "==========================================================="
+	@echo "=                       compile dm                        ="
+	@echo "==========================================================="
+	~/android-ndk-r4-crystax/ndk-build -j2 && cp ../libs/armeabi/libngbdvb.so ~/nfs/system/lib/
+
+java: dm
+	@echo "==========================================================="
+	@echo "=                      compile java                       ="
+	@echo "==========================================================="
+
+	sudo rm -rf ../gen && $$(mmm) .. && sudo cp ../bin/DvbPlayer.apk ~/nfs/rootfs/system/app/
+
+clean: cleanDd cleanDm
+
+cleanDd:
+	make -C ../../../../external/dvb/src/dd/ clear
+
+cleanDm:
+	~/AndroidNDK/ndk-build clean
+
+cleanJava:
+	### nothing
+	
+
+
+

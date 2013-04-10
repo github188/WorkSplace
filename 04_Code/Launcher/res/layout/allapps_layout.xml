@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/launcher_full_screen_width"
+    android:layout_height="@dimen/launcher_full_screen_height"
+    android:id="@+id/launcher_allapps_layout"
+    android:background="@drawable/joysee_launcher_bg" >
+    
+    
+    <TextView
+        android:layout_width="@dimen/launcher_full_screen_width"
+        android:layout_height="@dimen/launcher_allapps_title_height"
+        android:background="@drawable/launcher_allapps_page_title"
+        android:paddingLeft="106dp"
+        android:paddingTop="43dp"
+        android:textSize="35dp"
+        android:textColor="@color/launcher_allapps_title_textcolor"
+        android:text="@string/launcher_allapps_page_title"
+        />
+    
+    <GridView 
+        android:layout_width="@dimen/launcher_allapp_gridview_wdith"
+        android:layout_height="@dimen/launcher_allapp_gridview_height"
+        android:id="@+id/launcher_allapp_gridview"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="195dp"
+        android:columnWidth="225dp"
+        android:numColumns="6"
+        android:verticalSpacing="47dp"
+        android:horizontalSpacing="24dp"
+        android:gravity="left"
+        
+        
+        >
+        
+        
+    </GridView>
+    
+
+</FrameLayout>

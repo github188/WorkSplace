@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ItemDetailRelateLayout"
+    android:layout_width="618px"
+    android:layout_height="167px"
+    android:orientation="horizontal" >
+	
+	<ImageView
+        android:id="@+id/icon"
+        android:layout_width="173px"
+        android:layout_height="104px"
+		android:layout_marginLeft="10px"
+	    android:layout_marginTop="25px"
+	    android:layout_marginRight="0px"
+	    android:layout_marginBottom="25px"
+	    android:src="@drawable/default_poster" />		
+		    
+		<LinearLayout
+		    android:layout_width="350px"
+		    android:layout_height="104px"
+		    android:orientation="vertical"
+			android:layout_marginLeft="20px"
+		    android:layout_marginTop="25px"
+		    android:layout_marginRight="0px"
+		    android:layout_marginBottom="25px" >		    
+		    		
+		<TextView
+		    android:id="@+id/ItemTextTitle"
+		    android:layout_width="320px"
+		    android:layout_height="52px"
+		    android:text="@string/vod_itemtextnone"
+		    android:textSize="35px"	    
+		    android:textColor="@drawable/itemdetailrelatelistcolor"
+		    android:singleLine="true"
+		    android:width="300px"
+		    android:ellipsize="marquee"
+		    android:marqueeRepeatLimit="marquee_forever" />
+		    
+		<TextView
+		    android:id="@+id/ItemTextDes"
+		    android:layout_width="320px"
+		    android:layout_height="52px"
+		    android:text="@string/vod_itemtextnone"
+		    android:textSize="30px"	    
+		    android:textColor="@drawable/itemdetailrelatelistcolor"
+		    android:singleLine="true"
+		    android:width="300px"
+		    android:ellipsize="marquee"
+		    android:marqueeRepeatLimit="marquee_forever" />
+	</LinearLayout>		    	    
+	
+</LinearLayout>

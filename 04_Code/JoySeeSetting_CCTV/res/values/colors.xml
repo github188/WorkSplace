@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <color name="black">#000</color>
+    <color name="red">#F00</color>
+    <color name="orange_color">#FF8C00</color>
+    <color name="trans">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#dedede</color>
+    <color name="blue">#87CEEF</color>
+    <color name="yellow">#ffaf50</color>
+    <color name="trans_black">#20000000</color>
+    <color name="dropdownlist_backcolor">#CC9933</color>
+    <color name="dropdownlist_forecolor">#E4FFEA</color>
+    <!--
+    <color name="dropdownlist_backcolor">#f0000000</color>#CC9933
+    <color name="dropdownlist_forecolor">#E4FFEA</color>
+    -->
+    <color name="date_color_normal">#BBBBBB</color>
+    <color name="date_color_focus">#070805</color>
+    <color name="Transparent">#00000000</color>
+    <color name="text">#f0f0f0</color>
+    <color name="spiner">#131723</color>
+    <color name="divider_color">#5c5c5c</color>
+    <color name="grey_bg">#18191b</color>
+    <color name="resolute_settings_divider">#000000</color>
+    <color name="white_text">#dedede</color>
+    <color name="yellow_text">#ffaf50</color>
+    <color name="setting_left_item_text_nofocus">#dedede</color>
+    <color name="setting_left_item_text_focus">#ffffff</color>
+    <color name="app_manager_item_bg">#ff9138</color>
+    <color name="dialog_line">#33ffffff</color>
+    <color name="middle_dialog_bg">#F0161616</color>
+
+</resources>

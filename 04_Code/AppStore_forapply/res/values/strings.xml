@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appName">Home-AppStore</string>
+    <string name="app_name">AppStore</string>
+    <string name="app_name_type">Home-AppStore-%1$s</string>
+    <string name="app_search_result">Home-AppStore-Search-Search Result</string>
+	<string name="download_button_txt">download record</string>
+	<string name="pause_download">download pause</string>
+	<string name="continue_download">download continue</string>
+	<string name="downloadmrg_button_txt">download record</string>
+	<string name="ok">ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="download">download</string>
+    <string name="downloadSucc">download done</string>
+    <string name="downloadFail">download fail</string>
+    <string name="download_error">download fail</string>
+    <string name="downloadCancel">download cancel</string>
+    <string name="downinstallFail">download or install fail</string>
+    <string name="install">install</string>
+    <string name="installSucc">install done</string>
+    <string name="installFail">install fail</string>
+     <string name="app_conprovider_title">suppliers:</string>
+    <string name="installCancel">install cancel</string>
+    <string name="chcekSdcard">Read the SD card fails, check the status of the SD card!</string>
+    <string name="noSdcard">No Sdcard!</string>
+    <string name="httperro">Connect Timeout,Please Connect Again!</string>
+    <string name="download_tab_1">DownLoaded</string>
+    <string name="download_tab_2">DownLoading</string>
+    <string name="download_tab_3">Installed</string>
+    <string name= "startdownload">downloading $*$</string>
+    <string name="installed">Installed</string>
+    <string name="noinstalled">NoInstalled</string>
+    <string name="upgrade">UpdateNeed</string>
+    <string name="my_app">my applications</string>
+    <string name="null_str"></string>
+    <string name="update_ven">Update Version</string>
+    <string name="del_icon">Delete Short Cut</string>
+    <string name="del_app">Uninstall/Delete App</string>
+    <string name="sort">Sort</string>
+    <string name="title_1">Home-AppStore-MyApp</string>
+    <string name="update_not_need">No Need Update</string>
+    <string name="dealing">doing...</string>
+    
+    
+    
+    <string name="type_name">class</string>
+    <string name="new_app">new</string>
+    <string name="hot_app">rank</string>
+    <string name="account_set">account setting</string>
+    <string name="page">    %1$d      ,    %2$d    </string>
+    <string name="about">"about    :"</string>
+    <string name="label">"label    %1$s"</string>
+    <string name="activity_detail_name">home-appstore-type</string>
+    <string name="down_install">down and install</string>
+    <string name="charge_down_install">%1$s $   down and install</string>
+    <string name="run_app">run</string>
+    <string name="app_comment">%1$d  comments</string>
+    <string name="app_size">soft  size:  %1$s</string>
+    <string name="app_verson">soft  version:  %1$s</string>
+    <string name="app_update_time">update time:  %1$s</string>
+    <string name="all_app">all</string>
+    <string name="extend_all_app">extend_all</string>
+    <string name="app_open">open application</string>
+    <string name="app_score">score：</string>
+    <string name="app_score_unit">minutes</string>
+    <string name="app_free">free</string>
+    <string name="app_no_free">%1$s $/mouth</string> 
+    <string name="str_null"></string>
+    <string name="fast_search">fast search</string>
+    <string name="show_all_app">all app</string>
+    <string name="app_top">app top</string>
+    <string name="update">update</string>
+    
+    <string name="app_appraisal_before">Please rate</string>
+    <string name="app_appraisal_text1"> Have been evaluated</string>
+    <string name="app_appraisal_text2"> About key evaluation</string>
+	<string name="app_appraisal">appraisal</string>
+	<string name="bad_one">very bad</string>
+    <string name="bad_two">so bad</string>
+    <string name="bad_thr">so so</string>
+    <string name="good">good</string>
+    <string name="very_good">very good</string>
+    <string name="down_speed">    k/s</string>
+    
+    <string name="delete">delete</string>
+    <string name="app_search">search app</string>
+    <string name="network_error">Connection timed out, please try again!</string>
+	<string name="search_null">Not search for the associated application</string>
+	<string name="sdcard_full">SDCard already full!</string>
+	<string name="no_pkgname">Loaded data errors,please reload</string>
+    <string name="no_icon">Loaded data errors,please reload</string>
+	<string name="no_app">Not detected to this application</string>
+	
+</resources>

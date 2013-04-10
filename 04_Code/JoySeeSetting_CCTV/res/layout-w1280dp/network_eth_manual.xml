@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="45dp" >
+
+    <TextView
+        android:id="@+id/config_system_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:gravity="center_vertical"
+        android:text="@string/ethmanual"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/network_text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/config_system_title"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:text="@string/ethmanual_ip"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <com.lenovo.settings.Util.IpAddress
+        android:id="@+id/ipaddress"
+        android:layout_width="@dimen/ethEditWidth"
+        android:layout_height="@dimen/ethEditHeight"
+        android:layout_below="@id/network_text0"
+        android:layout_marginLeft="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/network_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/ipaddress"
+        android:layout_gravity="center_vertical"
+        android:text="@string/ethmanual_netmask"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <com.lenovo.settings.Util.IpAddress
+        android:id="@+id/ipaddress1"
+        android:layout_width="@dimen/ethEditWidth"
+        android:layout_height="@dimen/ethEditHeight"
+        android:layout_alignLeft="@id/ipaddress"
+        android:layout_below="@id/network_text1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/network_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/ipaddress1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/ethmanual_gateway"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <com.lenovo.settings.Util.IpAddress
+        android:id="@+id/ipaddress2"
+        android:layout_width="@dimen/ethEditWidth"
+        android:layout_height="@dimen/ethEditHeight"
+        android:layout_alignLeft="@id/ipaddress"
+        android:layout_below="@id/network_text2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/network_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/ipaddress2"
+        android:layout_gravity="center_vertical"
+        android:text="@string/ethmanual_dns1"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <com.lenovo.settings.Util.IpAddress
+        android:id="@+id/ipaddress3"
+        android:layout_width="@dimen/ethEditWidth"
+        android:layout_height="@dimen/ethEditHeight"
+        android:layout_alignLeft="@id/ipaddress"
+        android:layout_below="@id/network_text3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" />
+    <!-- style="@style/EditTextStyle" -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipaddress3"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ethmanual_ok"
+            style="@style/SettingButtonStyle"
+            android:layout_width="202dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/save" >
+        </Button>
+
+        <Button
+            android:id="@+id/ethmanual_no"
+            style="@style/SettingButtonStyle"
+            android:layout_width="202dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dip"
+            android:gravity="center"
+            android:text="@string/alert_dialog_cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/toastLayout"
+        android:layout_width="660dp"
+        android:layout_height="165dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/public_dialog_bg"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/toastImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@anim/loading"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/toastImage"
+            android:singleLine="true"
+            android:textColor="#bbbbbb"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

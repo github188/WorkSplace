@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/epg_alert_title" 
+        android:layout_width="477dip"
+        android:layout_height="75dip"
+        android:text="@string/program_reverse_alert_message"
+		android:textColor="@color/white"
+        android:textSize="21sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        />
+    
+    <Button
+        android:id="@+id/epg_alert_confirm_btn"
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="62dip"
+        android:layout_marginBottom="20dip"
+        android:text="@string/ok"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom|left"
+        />
+    
+	<Button
+        android:id="@+id/epg_alert_cancle_btn"
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="20dip"
+        android:text="@string/alert_dialog_cancel"
+        android:textSize="20sp"
+        android:gravity="center"
+		android:textColor="@color/white"
+        android:layout_gravity="bottom|right"
+        />
+</FrameLayout>

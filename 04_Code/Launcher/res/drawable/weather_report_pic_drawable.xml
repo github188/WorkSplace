@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/weather_report_fail" android:maxLevel="0" />
+    <item android:drawable="@drawable/weather_report_yin" android:maxLevel="1" />
+    <item android:drawable="@drawable/weather_report_cloudy" android:maxLevel="2" />
+    <item android:drawable="@drawable/weather_report_light_snow" android:maxLevel="3" />
+    <item android:drawable="@drawable/weather_report_light_rain" android:maxLevel="4" />
+    <item android:drawable="@drawable/weather_report_freezing_rain" android:maxLevel="5" />
+    <item android:drawable="@drawable/weather_report_freezing_snow" android:maxLevel="6" />
+    <item android:drawable="@drawable/weather_report_fog" android:maxLevel="7" />
+    <item android:drawable="@drawable/weather_report_sandstorm" android:maxLevel="8" />
+    <item android:drawable="@drawable/weather_report_fine" android:maxLevel="9" />
+    <item android:drawable="@drawable/weather_report_thunder_shower" android:maxLevel="10" />
+</level-list>

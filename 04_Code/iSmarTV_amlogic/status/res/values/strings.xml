@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iSmartTvStatusBar</string>
+    <!-- Strings for iSmartTvStatusBar -->
+    <string name="phenomenon_sting_mask">转</string>
+    <string name="temperature_cels">℃</string>
+    <string name="network_connected">网络已连接</string>
+    <string name="network_disconnected">网络中断，可能影响部分功能</string>
+    <string name="usb_dev_eject">外接设备已拔出</string>
+    <string name="usb_dev_mounted">外接设备已连接成功</string>
+    <string name="sdcard_dev_eject">外接设备已拔出</string>
+    <string name="sdcard_dev_mounted">外接设备已连接成功</string>
+    <string name="str_date_text">农历</string>
+    <string name="str_year_text">年</string>
+</resources>
+
+		

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="vertical"
+ 	android:id="@+id/LinearLayout1"
+ 	android:layout_marginLeft="84dp"
+ 	android:layout_marginTop="218dp"
+ 	android:layout_width="fill_parent" 
+ 	android:layout_height="fill_parent">
+    
+    <LinearLayout android:id="@+id/soundspiner"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="30dp"
+        	android:orientation="horizontal">
+        <LinearLayout 
+            android:layout_width="323dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/soundsSpinner"
+           	    style="@style/DropdownArrowSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:clickable="true"
+                 />
+        </LinearLayout>
+       </LinearLayout>
+
+ 	   <RelativeLayout
+		    android:id="@+id/listLayout"
+		    android:layout_width="270dp"
+		    android:layout_height="252dp"
+		    android:visibility="gone"
+		    android:layout_marginLeft="3dp"
+			android:background="@color/dropdownlist_backcolor"
+		 	android:layout_below="@+id/soundspiner" >
+		<ListView android:layout_height="240dp" 
+			android:layout_width="640dp"
+			android:listSelector="@drawable/dropdown_selector"
+		 	android:id="@+id/dropdownlist" 
+		 	android:layout_marginTop="12dp"
+			android:scrollbarThumbVertical="@drawable/progress_focus_v"
+			android:scrollbarTrackVertical="@drawable/progress_normal_v"
+		 	android:layout_alignParentLeft="true">
+		 </ListView>
+		</RelativeLayout>
+ 	
+ 
+</RelativeLayout>            

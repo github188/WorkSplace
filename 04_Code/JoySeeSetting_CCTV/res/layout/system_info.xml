@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="1700dp"
+  android:layout_height="fill_parent">
+	  <LinearLayout android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_marginLeft="80dp"	
+		  android:layout_marginTop="139dp"
+		  android:layout_height="wrap_content">
+
+		  <TextView
+		      android:layout_width="250dp"
+		      android:layout_height="wrap_content"
+		      style="@style/SystemInfoTextStyle" 
+		      android:layout_gravity="center_vertical"
+		      android:text="@string/System_info_flash" />
+
+	      <ProgressBar android:layout_width="850dp" 
+        		style="?android:attr/progressBarStyleHorizontal"  
+        		android:id="@+id/progressbar_flash"
+			  	android:layout_marginLeft="5dp"
+			  	android:layout_gravity="center_vertical"
+			  	android:progressDrawable="@drawable/progressbar_horizontal"	
+			  	android:max="100"
+        		android:layout_height="15dp" >
+        	</ProgressBar>
+        	<TextView android:text="@string/System_info_flash_unused" 
+			  	style="@style/SystemInfoMsgTextStyle"    
+        		android:id="@+id/text_flash_unused"  
+			  	android:layout_marginLeft="40dp"	
+		    	android:layout_width="wrap_content" 
+		    	android:layout_gravity="center_vertical"
+		    	android:layout_height="wrap_content">
+		    </TextView>
+	  </LinearLayout>
+	  <LinearLayout android:orientation="horizontal"
+		  android:layout_width="fill_parent"
+		  android:layout_marginLeft="80dp"	
+		  android:layout_marginTop="20dp"
+		  android:layout_height="wrap_content">
+		  <TextView android:layout_width="250dp"
+			  	android:layout_height="wrap_content"
+			  	style="@style/SystemInfoTextStyle"
+			  	android:layout_gravity="center_vertical"
+			  	android:text="@string/System_info_sd"/>
+	      <ProgressBar android:layout_width="850dp" 
+        		style="?android:attr/progressBarStyleHorizontal"  
+        		android:id="@+id/progressbar_sdcard"
+			  	android:layout_marginLeft="5dp"
+			  	android:layout_gravity="center_vertical"
+			  	android:progressDrawable="@drawable/progressbar_horizontal"	
+			  	android:max="100"
+        		android:layout_height="15dp" >
+        	</ProgressBar>
+        	<TextView android:text="@string/System_info_flash_unused" 
+			  	style="@style/SystemInfoMsgTextStyle"  
+        		android:id="@+id/text_sd_unused"  
+			  	android:layout_marginLeft="40dp"	
+		    	android:layout_width="wrap_content" 
+		    	android:layout_gravity="center_vertical"
+		    	android:layout_height="wrap_content">
+		    </TextView>
+	  </LinearLayout>
+  
+	   <LinearLayout android:orientation="horizontal"
+		  android:layout_width="wrap_content"
+		  android:layout_marginLeft="80dp"	
+		  android:layout_marginTop="30dp"
+		  android:layout_height="wrap_content">
+	      <TextView android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		style="@style/SystemInfoTextStyle" 
+		  		android:text="@string/Machine_info"/>
+	       <LinearLayout android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="110dp"	
+				android:orientation="vertical">
+		      <LinearLayout android:orientation="horizontal"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content">
+					<TextView android:text="@string/System_product_model" 
+						style="@style/SystemInfoMsgTextStyle"  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"			
+						android:layout_marginTop="0dp">
+				 	</TextView>
+					<TextView style="@style/SystemInfoMsgTextStyle"  
+						android:id="@+id/text_model"
+					    android:singleLine="true"
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"			
+						android:layout_marginTop="0dp">
+				 	</TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					<TextView android:text="@string/System_hardware_version" 
+						style="@style/SystemInfoMsgTextStyle"  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+					<TextView style="@style/SystemInfoMsgTextStyle"  
+						android:id="@+id/text_hardware"
+					    android:singleLine="true"
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					<TextView android:text="@string/System_software_version" 
+						style="@style/SystemInfoMsgTextStyle"  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+					<TextView style="@style/SystemInfoMsgTextStyle"  
+						android:id="@+id/text_software"
+					    android:singleLine="true"
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					<TextView android:text="@string/System_os_version" 
+						style="@style/SystemInfoMsgTextStyle"  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+					<TextView style="@style/SystemInfoMsgTextStyle"  
+						android:id="@+id/text_os_version"
+					    android:singleLine="true"
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+			 	</LinearLayout>
+			 	<LinearLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					<TextView android:text="@string/System_cpu_use" 
+						style="@style/SystemInfoMsgTextStyle"  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+					<TextView style="@style/SystemInfoMsgTextStyle"  
+						android:id="@+id/text_cpu_use"
+					    android:singleLine="true"
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+			 	</LinearLayout>
+			 	<LinearLayout android:layout_width="match_parent" 
+					android:layout_height="wrap_content" 
+					android:orientation="horizontal">
+					<TextView android:text="@string/System_mac" 
+						style="@style/SystemInfoMsgTextStyle"  
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+					<TextView style="@style/SystemInfoMsgTextStyle"  
+						android:id="@+id/text_mac"
+					    android:singleLine="true"
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"			
+						android:layout_marginTop="@dimen/System_version_marginTop">
+				 	</TextView>
+			 	</LinearLayout>
+			</LinearLayout>
+	  </LinearLayout> 
+	  
+	   
+	   <LinearLayout android:orientation="horizontal"
+		  android:layout_width="wrap_content"
+		  android:layout_marginLeft="80dp"	
+		  android:layout_marginTop="30dp"
+		  android:layout_height="wrap_content">
+	      <TextView android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		style="@style/SystemInfoTextStyle" 
+		  		android:layout_marginTop="10dp"
+		  		android:text="@string/System_low"/>
+	       <LinearLayout android:id="@+id/LayoutTextView" 
+	           android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="140dp"	
+				android:orientation="vertical">
+		    	<TextView android:id="@+id/agreement_textView" 
+		        	android:layout_width="1050dp" 
+		        	android:layout_height="367dp"
+		        	android:singleLine="false"
+		        	android:maxLines="200"
+		        	android:focusable="true"
+		        	android:lineSpacingExtra="15dp"
+		        	android:scrollbars="vertical"
+					android:scrollbarStyle="outsideInset"
+					android:scrollbarThumbVertical="@drawable/progress_focus_v"
+					android:scrollbarTrackVertical="@drawable/progress_normal_v"	
+		        	style="@style/SystemInfoMsgTextStyle"
+					android:paddingRight="74dp">
+	        </TextView>	    
+		</LinearLayout> 
+	</LinearLayout> 
+    
+   
+</LinearLayout>
+
+	<RelativeLayout
+		android:layout_height="172dp" 
+		android:layout_width="1140dp"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="0dp"
+		android:background="@drawable/dlg_bg"
+		android:id="@+id/toastLayout"
+		android:visibility="invisible"
+	>  
+		<TextView    
+			android:id="@+id/toast_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"   
+		    android:textColor="#bbbbbb"
+		    android:textSize="30dp"       
+		    android:singleLine="true"    
+		    android:layout_centerInParent="true"   
+		/>
+		<ImageView
+		    android:layout_toRightOf="@id/toast_text"  
+		    android:id="@+id/toastImage"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@anim/loading"
+		    android:visibility="visible"
+		    android:layout_marginLeft="10dp"
+		    android:layout_centerVertical="true"
+		/>    
+	</RelativeLayout>
+</RelativeLayout>

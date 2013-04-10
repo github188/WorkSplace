@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="250dip"
+        android:paddingTop="100dip" >
+
+        <TextView
+            android:id="@+id/tv_manual_search_main"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:text="@string/manual_search_main"
+            android:textColor="@color/white"
+            android:textSize="35sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="80dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/frequency_text"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <novel.supertv.dvb.view.MyEditText
+                android:id="@+id/frequency_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_search_selector"
+                android:gravity="center"
+                android:maxLength="3"
+                android:numeric="integer"
+                android:paddingLeft="10dip"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/khz" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="@string/symbol_rate_text"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <novel.supertv.dvb.view.MyEditText
+                android:id="@+id/symbol_rate_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_search_selector"
+                android:gravity="center"
+                android:maxLength="4"
+                android:numeric="integer"
+                android:paddingLeft="10dip"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/modulate_text"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <!-- 调整方式 -->
+        <!--  
+        <LinearLayout
+            android:id="@+id/sixteen_qam_manual_tv"
+            android:layout_width="800dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/text_selector"
+            android:focusable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/sixteen_qam_manual_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/selected_cycle"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:text="@string/sixteen_qam"
+                android:textColor="@drawable/text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirthtytwo_qam_manual_tv"
+            android:layout_width="800dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/text_selector"
+            android:focusable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/thirthtytwo_qam_manual_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/selected_cycle"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:text="@string/thirthtytwo_qam"
+                android:textColor="@drawable/text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+        -->
+        <LinearLayout
+            android:id="@+id/sixtyfour_qam_manual_tv"
+            android:layout_width="800dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/text_selector"
+            android:focusable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/sixtyfour_qam_manual_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/selected_cycle"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:text="@string/sixtyfour_qam"
+                android:textColor="@drawable/text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/onetwoeight_qam_manual_tv"
+            android:layout_width="800dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/text_selector"
+            android:focusable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/onetwoeight_qam_manual_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/selected_cycle"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:text="@string/onetwoeight_qam"
+                android:textColor="@drawable/text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/twofivesix_qam_manual_tv"
+            android:layout_width="800dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/text_selector"
+            android:focusable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/twofivesix_qam_manual_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/selected_cycle"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:duplicateParentState="true"
+                android:text="@string/towfivesix_qam"
+                android:textColor="@drawable/text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_search_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_search_selector"
+                android:text="@string/start_search"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_cancle_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/btn_search_selector"
+                android:text="@string/cancle"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

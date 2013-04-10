@@ -1,0 +1,32 @@
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+base := $(LOCAL_PATH)
+
+LOCAL_CFLAGS    := -Wall -D_REENTRANT -DANDROID_DEBUG -fexceptions -fvisibility=hidden
+
+LOCAL_C_INCLUDES := \
+	$(base) \
+	$(base)/../tvsearchinclude \
+	$(base)/../../include/ \
+	$(base)/../../include/psisi_parse \
+	$(base)/../../include/psisi_parse/imp \
+	$(base)/../../../stbruntime \
+	$(base)/../../../include
+
+include external/stlport/libstlport.mk
+
+LOCAL_SRC_FILES := \
+	tvsearchlocal.cpp 
+
+
+LOCAL_SHARED_LIBRARIES := \
+	libz libcutils libutils libdl libstlport libc libstdc++
+LOCAL_STATIC_LIBRARIES := libstbruntime libgnustl_static
+
+
+LOCAL_PRELINK_MODULE := false
+LOCAL_MODULE:= libtvsearchlocal_null
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_EXECUTABLE)

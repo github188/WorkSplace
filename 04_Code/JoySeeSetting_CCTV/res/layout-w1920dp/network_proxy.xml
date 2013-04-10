@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="68dp" >
+
+    <TextView
+        android:id="@+id/config_system_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:gravity="center_vertical"
+        android:text="@string/proxy_setting"
+        android:textColor="@color/yellow"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/proxyHttp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="70dp"
+        android:text="@string/http_proxy"
+        android:textColor="@color/yellow"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/httpSpinner"
+        style="@style/DropdownArrowLarger"
+        android:layout_width="746dp"
+        android:layout_height="124dp"
+        android:layout_below="@id/proxyHttp"
+        android:layout_marginLeft="41dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingLeft="55dp"
+        android:paddingRight="60dp" />
+
+    <TextView
+        android:id="@+id/proxyIPText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/httpSpinner"
+        android:layout_gravity="center_vertical"
+        android:text="@string/http_addr"
+        android:textColor="@color/yellow"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/proxyaddr"
+        style="@style/net_proxy_edit_text"
+        android:layout_width="746dp"
+        android:layout_height="124dp"
+        android:layout_below="@id/proxyIPText"
+        android:layout_marginLeft="41dp"
+        android:gravity="center"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/proxyPortText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/proxyaddr"
+        android:layout_gravity="center_vertical"
+        android:text="@string/http_port"
+        android:textColor="@color/yellow"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/proxyport"
+        style="@style/net_proxy_edit_text"
+        android:layout_width="746dp"
+        android:layout_height="124dp"
+        android:layout_below="@id/proxyPortText"
+        android:layout_marginLeft="41dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="5"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/proxySkipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_system_title"
+        android:layout_below="@id/proxyport"
+        android:layout_gravity="center_vertical"
+        android:text="@string/http_skip"
+        android:textColor="@color/yellow"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/httpSkipSpinner"
+        style="@style/DropdownArrowLarger"
+        android:layout_width="746dp"
+        android:layout_height="124dp"
+        android:layout_below="@id/proxySkipText"
+        android:layout_marginLeft="41dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingLeft="55dp"
+        android:paddingRight="60dp" />
+
+    <RelativeLayout
+        android:id="@+id/listLayout"
+        android:layout_width="686dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/httpSpinner"
+        android:layout_below="@id/httpSkipSpinner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" >
+
+        <!-- android:background="@color/dropdownlist_backcolor" -->
+
+        <ListView
+            android:id="@+id/dropdownlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_down_list_bg"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/dropdown_selector" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

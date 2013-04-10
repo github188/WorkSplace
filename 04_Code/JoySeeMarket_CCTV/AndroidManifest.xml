@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joysee.appstore"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+    <uses-sdk android:minSdkVersion="14" /> 
+    
+    <supports-screens android:smallScreens="false"
+            android:anyDensity="true" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.INSTALL_DRM" />
+	<uses-permission android:name="android.permission.DIAGNOSTIC"/>
+    
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:persistent="true" >
+        <activity
+            android:name="com.joysee.appstore.activity.MainActivity"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name"
+            android:theme="@style/ThemeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DetailedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/ThemeActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ClassActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/ThemeActivity" >
+            <intent-filter> 
+                <action android:name="com.joysee.appstore.activity.ClassActivity"/> 
+                <category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.AppSearchActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustUnspecified|adjustPan"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/ThemeActivity" >
+<!--              <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!---->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        
+        <activity
+            android:name=".activity.UriActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.AppStoreReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.joysee.restart_service"/>
+            </intent-filter>
+             <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+       <!--  <receiver android:name=".receiver.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/> 
+            </intent-filter>
+        </receiver> -->
+
+        <activity
+            android:name=".activity.DownloadMgrActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.DownloadRecordActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".activity.AppAppraisalActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Transparent">
+        </activity>
+        
+        <!-- com.joysee.appstore.service.DownloadService -->
+        <service
+            android:name=".service.DownloadService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.joysee.appstore.service.DownloadService" />
+            </intent-filter>
+        </service>
+        
+         <service
+            android:name=".service.AppStoreSearchService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.joysee.appstore.service.AppStoreSearchService" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name=".provider.AppStoreProvider"
+            android:authorities="com.joysee.appstore.authority" >
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_menu_dropdown_list_item_text"
+    android:layout_width="@dimen/launcher_coverflow_dropdown_list_item_width"
+    android:layout_height="@dimen/launcher_coverflow_dropdown_list_item_height" 
+    android:textSize="40dp"
+    android:textColor="@color/launcher_coverflow_dropdown_listitem_textcolor"
+    android:gravity="center"
+    >
+    
+
+</TextView>

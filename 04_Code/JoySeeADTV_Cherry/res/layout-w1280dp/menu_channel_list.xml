@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.adtv.ui.MenuChannelList xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    >
+	<!-- <FrameLayout
+	    android:id="@+id/channel_list"
+	    android:layout_width="565dp"
+	    android:layout_height="720dp"
+	    android:layout_gravity="center_horizontal"
+	    >
+	    <com.joysee.adtv.ui.MenuLinearLayout
+	        android:layout_marginTop="-120dp"
+	        android:id="@+id/menu_cl_list"
+	        android:layout_width="565dp"
+	        android:layout_height="960dp"
+	        android:orientation="vertical" >
+	            </com.joysee.adtv.ui.MenuLinearLayout>
+	              
+ 	     <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/menu_clitem_focus"
+            android:layout_width="565dp"
+        	android:layout_height="120dp"
+        	android:scaleType="fitXY"
+        	android:background="@drawable/focus"
+            />
+ 	     
+	    <LinearLayout
+	        android:focusable="false"
+            android:focusableInTouchMode="false"
+	        android:layout_marginTop="960dp"
+	        android:id="@+id/menu_cl_anim_container"
+	        android:layout_width="565dp"
+	        android:layout_height="960dp"
+	        android:orientation="vertical" >
+	            </LinearLayout>	
+	    </FrameLayout> -->
+ 	    <ExpandableListView
+		    android:background="#00000000"
+			android:id="@+id/menu_cl_list"
+			android:layout_width="433dp"
+			android:layout_height="582dp"
+			android:dividerHeight="1dip"
+			android:groupIndicator="@null"
+			android:childDivider="@color/item_devider"
+			android:childIndicator="@null"
+			android:cacheColorHint="#00000000"
+			android:divider="@color/item_devider"
+			android:listSelector="@drawable/email_list_selector"
+		/>
+	    <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/menu_clitem_focus"
+            android:layout_width="433dp"
+        	android:layout_height="96dp"
+        	android:scaleType="fitXY"
+        	android:visibility="gone"
+        	android:background="@drawable/focus"
+            /> 
+        <!--  <ImageView
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="650dp"
+            android:layout_marginBottom="175dp"
+        	android:layout_height="70dp"
+        	android:background="#df000000"
+        	android:layout_gravity="bottom"
+            /> --> 
+	        
+</com.joysee.adtv.ui.MenuChannelList>

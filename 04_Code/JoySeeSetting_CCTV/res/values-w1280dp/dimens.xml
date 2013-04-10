@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_down_list_height">135dp</dimen>
+    
+    <dimen name="screen_width">1267dp</dimen>
+    <dimen name="screen_height">713dp</dimen>
+    
+    <!-- <dimen name="search_option_left_offset">53dp</dimen> -->
+    <dimen name="search_option_left_offset">428dp</dimen>
+    <dimen name="search_option_top_offset">28dp</dimen>
+    
+    <dimen name="search_manual_left_offset">428dp</dimen>
+    <dimen name="search_manual_top_offset">28dp</dimen>
+    
+    <dimen name="ethEditHeight">90dp</dimen>
+    <dimen name="ethEditWidth">515dp</dimen>
+    
+    <dimen name="net_proxy_down_list_top_offset1">-400dp</dimen>
+    <dimen name="net_proxy_down_list_top_offset2">-15dp</dimen>    
+    
+    <dimen name="net_wireless_add_safe_spinner_offset">5dp</dimen>
+    <dimen name="net_wireless_add_eap_spinner_offset">80dp</dimen>
+    <dimen name="net_wireless_add_id_spinner_offset">148dp</dimen>
+    <dimen name="net_wireless_add_ca_spinner_offset">220dp</dimen>
+    <dimen name="net_wireless_add_user_spinner_offset">292dp</dimen>
+    
+    <dimen name="basic_text">23dp</dimen>
+    <dimen name="System_version_marginTop">7dp</dimen>
+    <dimen name="basic_text_interval">53dp</dimen>
+    <dimen name="TextSize">20sp</dimen>
+    
+    <dimen name="search_down_xoffset">8dp</dimen>
+    <dimen name="ca_worktime_pwd_dialog_width">660dp</dimen>
+    <dimen name="ca_worktime_pwd_dialog_height">235dp</dimen>
+    
+
+    <dimen name="dlg_spinner_width">275dp</dimen>
+    <dimen name="dlg_spinner_height">78dp</dimen>
+    <dimen name="dlg_edit_width">275dp</dimen>
+    <dimen name="dlg_edit_height">78dp</dimen>
+    <dimen name="wifi_dialog_top_off0">-410dp</dimen>
+    <dimen name="wifi_dialog_top_off1">-320dp</dimen>
+    <dimen name="wifi_dialog_top_off2">-10dp</dimen>
+
+    
+    <dimen name="ethTextWidth">200dp</dimen>
+
+    <dimen name="applock_pwd_dialog_width">660dp</dimen>
+    <dimen name="applock_pwd_dialog_height">235dp</dimen>
+    
+</resources>

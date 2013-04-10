@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+<!-- 
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_ratingbar_full</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+ -->
+ 
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">  
+    <item name="android:windowFrame">@null</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>  
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>  
+    </style>  
+      
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">  
+        <item name="android:windowBackground">@android:color/transparent</item> 
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:backgroundDimEnabled">false</item> 
+    </style>
+    
+     <!-- star -->
+     <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+	 <item name="android:progressDrawable">@drawable/room_rating_bar</item> 
+	 <item name="android:minHeight">48dip</item> 
+	 <item name="android:maxHeight">680dip</item> 
+	 </style>
+	 
+     <style name="ThemeActivity" mc="1" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+         <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+         <item name="android:windowNoTitle">true</item>  
+     </style>
+     
+     <style name="AnimationActivity" parent="@android:style/Animation.Activity" mc="1">
+         <!-- <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+         <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+         <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>
+         <item name="android:activityCloseExitAnimation">@anim/back_exit</item> -->
+         <item name="android:activityOpenEnterAnimation">@anim/zoomin</item>
+         <item name="android:activityOpenExitAnimation">@anim/zoomout</item>
+         <item name="android:activityCloseEnterAnimation">@anim/zoomin</item>
+         <item name="android:activityCloseExitAnimation">@anim/zoomout</item>
+     </style>
+    
+</resources>

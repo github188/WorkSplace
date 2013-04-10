@@ -1,0 +1,43 @@
+#ifndef _LINUX_INTERFACE_H
+#define _LINUX_INTERFACE_H
+
+////////////////////////////////////////////////////////////////////////////////
+// 动态链接库接口
+////////////////////////////////////////////////////////////////////////////////
+HANDLE LoadLibrary( LPCSTR lpLibFileName );
+BOOL FreeLibrary( HANDLE hLibModule );
+LPVOID GetProcAddress( HANDLE HANDLE , LPCSTR lpProcName );
+
+////////////////////////////////////////////////////////////////////////////////
+// 事件接口
+////////////////////////////////////////////////////////////////////////////////
+HANDLE CreateEvent(
+  LPSECURITY_ATTRIBUTES lpEventAttributes, 
+  BOOL bManualReset, 
+  BOOL bInitialState, 
+  LPSTR lpName 
+);
+BOOL SetEvent(HANDLE hEvent);
+// WaitEvent( HANDLE hEvent, DWORD timeoutInMS )
+// void NS_DeleteEvent(HANDLE hEvent )
+
+////////////////////////////////////////////////////////////////////////////////
+// 线程接口
+////////////////////////////////////////////////////////////////////////////////
+typedef unsigned int uintptr_t;
+uintptr_t _beginthreadex(
+   void *security,
+   unsigned stack_size,
+   unsigned ( __stdcall *start_address )( void * ),
+   void *arglist,
+   unsigned initflag,
+   unsigned *thrdaddr
+   );
+////////////////////////////////////////////////////////////////////////////////
+DWORD GetTickCount(void);
+BOOL  SetLocalTime(const SYSTEMTIME *lpSystemTime);
+void  GetLocalTime(LPSYSTEMTIME lpSystemTime);
+DWORD GetCurrentThreadId();
+
+#endif
+

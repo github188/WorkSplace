@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="780dp"
+    android:layout_height="70dip"
+    android:focusable="true"
+    android:paddingBottom="10dp"
+    android:layout_marginLeft="20dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/app_search_item_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="35dip"
+        android:singleLine="true"
+        android:textColor="@drawable/textview_select_color"
+        android:textSize="20dip" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/app_search_item_appclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="650dp"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="20dip"
+        android:singleLine="true"
+        android:textColor="@drawable/textview_select_color"
+        android:textSize="20dip" />
+
+</RelativeLayout>

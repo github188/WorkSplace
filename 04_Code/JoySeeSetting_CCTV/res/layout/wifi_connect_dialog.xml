@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/dlg_bg"
+  android:gravity="center_vertical|center_horizontal"
+  android:layout_width="537dp"
+  android:layout_height="296dp">
+    
+        <TextView android:text="@string/wifi_ssid" 
+        	android:layout_width="133dp" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_ssid_title" 
+        	android:layout_alignParentTop="true" 
+        	android:layout_alignLeft="@+id/btn_dlg_confirm" 
+        	android:layout_marginLeft="40dp" 
+        	android:layout_marginTop="25dp">
+        </TextView>
+        <TextView android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_ssid" 
+	        android:singleLine="true"
+	        android:layout_marginRight="26dp"
+			android:ellipsize="marquee" 
+        	android:layout_alignParentTop="true" 
+        	android:layout_alignBaseline="@+id/text_ssid_title" 
+        	android:layout_toRightOf="@+id/text_ssid_title" >
+        </TextView>
+        <TextView android:text="@string/wifi_strength" 
+        	android:layout_width="133dp" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_strength_title" 
+        	android:layout_below="@+id/text_ssid_title" 
+        	android:layout_alignLeft="@+id/text_ssid_title" 
+        	android:layout_marginTop="6dp">
+        </TextView>
+        <TextView android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_level" 
+        	android:layout_alignParentTop="true" 
+        	android:layout_alignBaseline="@+id/text_wifi_strength_title" 
+        	android:layout_toRightOf="@+id/text_wifi_strength_title" >
+        </TextView>
+        <TextView android:text="@string/wifi_security" 
+        	android:layout_width="133dp" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_security_title" 
+        	android:layout_below="@+id/text_wifi_strength_title" 
+        	android:layout_alignLeft="@+id/text_wifi_strength_title" 
+        	android:layout_marginTop="6dp">
+        </TextView> 
+        <TextView android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_security" 
+        	android:layout_alignParentTop="true" 
+        	android:layout_alignBaseline="@+id/text_wifi_security_title" 
+        	android:layout_toRightOf="@+id/text_wifi_security_title" >
+        </TextView>
+        <TextView android:text="@string/wifi_password" 
+        	android:layout_width="133dp" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_password_title" 
+        	android:layout_below="@+id/text_wifi_security_title" 
+        	android:layout_alignLeft="@+id/text_wifi_security_title" 
+        	android:layout_marginTop="6dp">
+        </TextView> 
+        <EditText android:id="@+id/ed_wifi_password" 
+	        android:layout_width="266dp"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="26dp"
+            android:digits="@string/name_password_digits"
+            android:password="true"
+            android:singleLine="true"         
+            style="@style/DialogEditTextStyle"
+        	android:layout_alignBaseline="@+id/text_wifi_password_title" 
+        	android:layout_toRightOf="@+id/text_wifi_password_title">           
+        </EditText>
+        <CheckBox android:id="@+id/checkBox_password" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="@string/wifi_display_password"
+            style="@style/CheckboxStyle"
+        	android:layout_marginBottom="6dp"
+        	android:layout_above="@+id/btn_dlg_confirm" 
+        	android:layout_toRightOf="@+id/text_wifi_password_title">
+        </CheckBox>
+        
+        <Button android:id="@+id/btn_dlg_cancel"
+        	android:paddingLeft="40dp"
+        	android:gravity="center_vertical"
+        	android:layout_width="wrap_content" 
+        	style="@style/ButtonDlgCancelStyle" 
+        	android:layout_height="wrap_content" 
+        	android:layout_alignBaseline="@+id/btn_dlg_confirm" 
+        	android:layout_alignBottom="@+id/btn_dlg_confirm" 
+        	android:layout_alignParentRight="true">
+        </Button>
+        <Button android:id="@+id/btn_dlg_confirm" 
+        	android:layout_width="wrap_content" 
+        	style="@style/ButtonDlgConfirmStyle" 
+        	android:layout_height="wrap_content" 
+        	android:gravity="center_vertical" 
+        	android:paddingLeft="40dp" 
+        	android:layout_alignParentBottom="true" 
+        	android:layout_toLeftOf="@+id/btn_dlg_cancel" 
+        	android:layout_marginBottom="14dp">
+        </Button>
+</RelativeLayout>

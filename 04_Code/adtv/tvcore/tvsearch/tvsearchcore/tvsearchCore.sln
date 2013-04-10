@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tvsearchCore", "tvsearchCore.vcproj", "{8933AD8F-799D-4095-9BBC-C2C40B5248EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427} = {1563B154-E5C7-4550-9EF1-7B9B86CDB427}
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479} = {F43328B3-4859-47A0-A5B9-7ACCBB417479}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCore", "TestCore.vcproj", "{CA552E3F-F2B7-4063-BD83-BBFE946543D4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427} = {1563B154-E5C7-4550-9EF1-7B9B86CDB427}
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC} = {8933AD8F-799D-4095-9BBC-C2C40B5248EC}
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479} = {F43328B3-4859-47A0-A5B9-7ACCBB417479}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tvsearchLocal", "..\tvsearchLocal\tvsearchLocal.vcproj", "{F43328B3-4859-47A0-A5B9-7ACCBB417479}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stbRuntime", "..\..\..\stbRuntime\stbRuntime.vcproj", "{1563B154-E5C7-4550-9EF1-7B9B86CDB427}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		ReleasePdb|Win32 = ReleasePdb|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC}.Debug|Win32.Build.0 = Debug|Win32
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC}.Release|Win32.ActiveCfg = Release|Win32
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC}.Release|Win32.Build.0 = Release|Win32
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC}.ReleasePdb|Win32.ActiveCfg = Release|Win32
+		{8933AD8F-799D-4095-9BBC-C2C40B5248EC}.ReleasePdb|Win32.Build.0 = Release|Win32
+		{CA552E3F-F2B7-4063-BD83-BBFE946543D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CA552E3F-F2B7-4063-BD83-BBFE946543D4}.Debug|Win32.Build.0 = Debug|Win32
+		{CA552E3F-F2B7-4063-BD83-BBFE946543D4}.Release|Win32.ActiveCfg = Release|Win32
+		{CA552E3F-F2B7-4063-BD83-BBFE946543D4}.Release|Win32.Build.0 = Release|Win32
+		{CA552E3F-F2B7-4063-BD83-BBFE946543D4}.ReleasePdb|Win32.ActiveCfg = Release|Win32
+		{CA552E3F-F2B7-4063-BD83-BBFE946543D4}.ReleasePdb|Win32.Build.0 = Release|Win32
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479}.Debug|Win32.Build.0 = Debug|Win32
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479}.Release|Win32.ActiveCfg = Release|Win32
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479}.Release|Win32.Build.0 = Release|Win32
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479}.ReleasePdb|Win32.ActiveCfg = ReleasePdb|Win32
+		{F43328B3-4859-47A0-A5B9-7ACCBB417479}.ReleasePdb|Win32.Build.0 = ReleasePdb|Win32
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427}.Debug|Win32.Build.0 = Debug|Win32
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427}.Release|Win32.ActiveCfg = Release|Win32
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427}.Release|Win32.Build.0 = Release|Win32
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427}.ReleasePdb|Win32.ActiveCfg = Release|Win32
+		{1563B154-E5C7-4550-9EF1-7B9B86CDB427}.ReleasePdb|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

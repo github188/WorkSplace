@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RootRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vodbg" >
+
+    <LinearLayout
+        android:id="@+id/voditem_left"
+        android:layout_width="426dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/voditem_left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="394dp"
+            android:layout_height="87dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="42dp"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:text="@string/vod_search_lable"
+            android:textColor="#707896"
+            android:textSize="72sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dip"
+            android:focusable="false"
+            android:includeFontPadding="false"
+            android:text="@string/hot_word"
+            android:textColor="#707896"
+            android:textSize="50dip" />
+
+        <ScrollView
+            android:id="@+id/secScrollView"
+            android:layout_width="403dp"
+            android:layout_height="800dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="50dip"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/seclist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- search right -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/voditem_left"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="900dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="150dip"
+                android:background="@drawable/vod_popuplogin_editbg"
+                android:focusable="true"
+                android:maxLength="20"
+                android:padding="10dip"
+                android:singleLine="true"
+                android:textColor="#119988"
+                android:textSize="40dip" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="241dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dip"
+                android:background="@drawable/itemdetail_play_left"
+                android:gravity="center"
+                android:text="@string/vod_search_lable"
+                android:textColor="@color/vod_itemdetail_firsttextcolor"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="900dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="150dip"
+            android:background="@color/yellow"
+            android:visibility="gone" >
+        </ListView>
+
+        <AbsoluteLayout
+            android:id="@+id/result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ScrollView
+                android:id="@+id/itemScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="999dp"
+                android:layout_x="0dp"
+                android:layout_y="0dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/search_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </LinearLayout>
+
+</RelativeLayout>

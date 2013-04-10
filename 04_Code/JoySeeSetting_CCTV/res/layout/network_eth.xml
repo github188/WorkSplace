@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/eth_back"
+        android:textColor="@color/yellow"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="745dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/connect_mode"
+        android:layout_width="745dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/text_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/conn_mode_icon_auto"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/sel_icon"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:text="@string/auto_connect" />
+
+        <TextView
+            android:id="@+id/conn_mode_msg"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="396dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="745dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="@color/divider_color" />
+
+    <RelativeLayout
+        android:id="@+id/btn_ethmanual"
+        android:layout_width="745dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/text_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/conn_mode_icon_manual"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/sel_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_manual"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="@string/manual_connect" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="660dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/arrow_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="745dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/ethsetting_text"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/ethconnect_fail" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/ethsetting_left" />
+
+        <ImageView
+            android:id="@+id/ethsetting_state"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/ethsetting_right" />
+    </LinearLayout>
+
+</LinearLayout>

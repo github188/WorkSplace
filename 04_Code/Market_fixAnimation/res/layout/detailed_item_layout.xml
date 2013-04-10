@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dip"
+    android:layout_height="300dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:padding="20dip"
+        android:scaleType="fitXY"
+        android:focusable="true"
+        android:background="@drawable/frame_animation_list_center"
+        android:layout_width="430dip"
+        android:layout_height="275dip"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="390dip"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="-80dip"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/detail_item_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dip"
+        android:layout_marginTop="-250dip"
+        android:alpha="0.9"
+        android:gravity="center_vertical"
+        android:src="@drawable/pop"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pop_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dip"
+        android:layout_marginTop="-50dip"
+        android:gravity="center_vertical"
+        android:src="@drawable/pop_rise"
+        android:visibility="gone" />
+
+</LinearLayout>

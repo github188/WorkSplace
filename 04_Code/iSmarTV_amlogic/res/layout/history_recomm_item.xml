@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ismartv.ui.widget.MovieItemView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/movie_view" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingRight="14dp">
+	<LinearLayout android:id="@+id/movie_bg"
+		android:layout_width="326dp" android:layout_height="269dp"
+		android:orientation="vertical">
+		<ImageView android:id="@id/movie_poster"
+			android:layout_width="310dp" android:layout_height="204dp"
+			android:layout_marginTop="12dp" android:layout_marginLeft="12dp"
+			android:paddingRight="8dp" android:paddingBottom="8dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/default_poster" 
+			android:background="@drawable/voditem_shade" />
+		<TextView android:id="@id/movie_title"
+			android:layout_width="302dp" android:layout_height="44dp"
+			android:layout_marginTop="12dp" android:layout_marginLeft="12dp"
+			android:gravity="center_horizontal|top" android:textColor="@color/vod_movieitem_nosel"
+			android:textSize="35sp" android:includeFontPadding="false"/>
+	</LinearLayout>
+</com.ismartv.ui.widget.MovieItemView>

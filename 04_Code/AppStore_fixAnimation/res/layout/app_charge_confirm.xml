@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="680dip"
+    android:layout_height="425dip"
+    android:layout_gravity="center"
+    android:background="@drawable/app_appraisal" >
+
+    <LinearLayout
+        android:id="@+id/title_1"
+        android:layout_width="650dip"
+        android:layout_height="120dip"
+        android:layout_gravity="top"
+        android:layout_marginLeft="30dip"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"  >
+        
+        <ImageView 
+            android:id="@+id/icon"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="30dip"
+            android:gravity="left|center_vertical"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left|center_vertical"
+            android:text="@string/order_confirm"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dip" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_close_blue"
+            android:focusable="true" 
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/content_0"
+        android:layout_width="650dip"
+        android:layout_height="100dip"
+        android:layout_marginBottom="60dip"
+        android:layout_below="@id/rating_bar"
+        android:orientation="vertical" 
+        android:layout_alignParentBottom="true" >
+		<Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/blue_bt_ok"
+            android:text="@string/ok"
+            android:textStyle="bold"
+            android:textSize="30dip"
+            android:textColor="@color/black"
+            android:focusable="true"
+            android:nextFocusUp="@id/close" /> 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/rating_bar"
+        android:layout_width="650dip"
+        android:layout_height="180dip"
+        android:layout_below="@id/title_1" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical"  >
+
+            <LinearLayout
+		        android:layout_width="650dip"
+		        android:layout_height="50dip" 
+		        android:layout_marginLeft="120dip" >
+		
+		        <TextView
+		            android:id="@+id/text_1"
+		            android:layout_width="120dip"
+		            android:layout_height="wrap_content" 
+		            android:layout_gravity="right"
+		            android:text="@string/app_order_product"
+		            android:textColor="@color/black"
+		            android:textSize="24dip" />
+		
+		        <TextView
+		            android:id="@+id/text_2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:textColor="@color/black"
+		            android:textSize="24dip" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:layout_width="650dip"
+		        android:layout_height="50dip"
+		        android:layout_marginLeft="120dip" >
+		
+		        <TextView
+		            android:id="@+id/text_3"
+		            android:layout_width="120dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/app_order_price"
+		            android:textColor="@color/black"
+		            android:textSize="24dip" />
+		
+		        <TextView
+		            android:id="@+id/text_4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:textColor="@color/black"
+		            android:textSize="24dip" />
+		    </LinearLayout>
+        <LinearLayout
+	        android:layout_width="650dip"
+	        android:layout_height="50dip"
+	        android:layout_marginLeft="120dip" >
+	
+	        <TextView
+	            android:id="@+id/text_5"
+	            android:layout_width="120dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:text="@string/app_order_expired"
+	            android:textColor="@color/black"
+	            android:textSize="24dip" />
+	
+	        <TextView
+	            android:id="@+id/text_6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:textColor="@color/black"
+	            android:textSize="24dip" />
+	    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

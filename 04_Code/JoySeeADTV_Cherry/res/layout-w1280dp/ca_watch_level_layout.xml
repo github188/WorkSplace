@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280dp"
+    android:layout_height="720dp"
+    android:background="@drawable/search_menu_bg"
+    android:id="@+id/config_watch_level">
+
+   <TextView
+        android:id="@+id/ca_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/menu_back"
+        android:drawablePadding="13dip"
+        android:layout_marginTop="40dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="73dp"
+        android:text="@string/ca_setting_title_text"
+        android:textColor="@color/white_txt"
+        android:textSize="23sp" />
+
+    <TextView
+        android:text="@string/ca_setting_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="106dp"
+        android:textColor="@color/grey_txt"
+        android:textSize="20sp" 
+            />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="33dip"
+        android:layout_marginTop="193dip"
+        android:layout_marginLeft="106dp"
+        android:id="@+id/config_watch_level_content"
+        android:orientation="horizontal"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:focusable="false"
+            android:textColor="@color/white_txt"
+            android:text="@string/config_watch_level_age"/>
+        <TextView
+            android:id="@+id/config_watch_level_edittext"
+            android:layout_width="346dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="26dip"
+            android:paddingLeft="26dp"
+            android:paddingRight="7dp"
+            android:textSize="20sp"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:textColor="@drawable/search_text_color"
+            />
+        
+        <Spinner 
+            android:id="@+id/config_watch_level_spinner"
+            android:layout_width="332dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="20dip"
+            android:visibility="gone"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:textColor="@color/text"
+            android:popupBackground="#131723"
+            android:dropDownVerticalOffset="1dip"
+            android:textSize="30sp"
+            android:spinnerMode="dropdown"
+        />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dip"
+        android:layout_marginLeft="106dp"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:layout_width="156dip"
+            android:layout_height="40dip"
+            android:textSize="22sp"
+            android:text="@string/config_work_time_save_and_back"
+            android:id="@+id/config_watch_level_save"
+            />
+        <Button 
+            android:layout_width="156dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="14dip"
+            android:textSize="22sp"
+            android:id="@+id/config_watch_level_cancel"
+            android:text="@string/config_modify_password_cancel"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item android:drawable="@drawable/item_focus_25" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_30" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_35" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_40" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_45" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_50" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_55" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_60" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_65" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_70" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_75" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_80" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_85" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_90" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_95" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_100" android:duration="55"/>
+    
+    
+    <item android:drawable="@drawable/item_focus_100" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_95" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_90" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_85" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_80" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_75" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_70" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_65" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_60" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_55" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_50" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_45" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_40" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_35" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_30" android:duration="55"/>
+    <item android:drawable="@drawable/item_focus_25" android:duration="55"/>
+
+
+</animation-list>

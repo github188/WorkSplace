@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="650dip"
+    android:layout_height="485dip"
+    android:layout_gravity="center"
+    android:background="@drawable/download_background" >
+
+    <!--
+   <LinearLayout 
+    android:layout_width="650dip"
+    android:layout_height="485dip"
+    android:background="@drawable/download_background"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+     >
+    -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dip"
+            android:nextFocusRight="@id/appslist"           
+            >
+       <!--      <TextView
+                android:id="@+id/tab_1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="@string/download_tab_1"
+                android:textColor="@color/fontback"
+                android:textSize="14dp" 
+                /> -->
+
+            <TextView
+                android:id="@+id/tab_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_marginTop="20dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/download_tab_2"
+                android:textColor="@color/fontback"
+                android:textSize="14dp" 
+                />
+
+            <TextView
+                android:id="@+id/tab_3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_marginTop="20dip"
+                android:focusable="true"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="@string/download_tab_3"
+                android:textColor="@color/fontback"
+                android:textSize="14dp" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="30dip">
+            <ImageView
+                android:id="@+id/tab_arrowhead"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:src="@drawable/download_mgr_arrowhead" 
+                android:layout_marginTop="20dip"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dip"
+            android:layout_marginRight="53dip"
+            android:layout_marginTop="40dip"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/appslist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:cacheColorHint="@color/transparent_background"
+                android:divider="@color/downitem_background"
+                android:dividerHeight="1dip"
+                android:focusable="true"
+                android:scrollbars="none" />
+            <!--  android:listSelector="@drawable/mgr_item_selector" -->
+        </LinearLayout>
+    </LinearLayout>
+    
+       <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="650dip"
+        android:layout_height="85dip"
+        android:background="@color/trans"
+        android:layout_gravity="top"
+        android:layout_marginLeft="30dip"
+        android:orientation="horizontal" 
+        >
+
+        <TextView
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/button_download"
+            android:gravity="right|center_vertical"
+            android:text="@string/download_button_txt"
+            android:textColor="@color/transparent_background"
+            android:textSize="25dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+		<ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/close"
+            android:nextFocusDown="@id/tab_title"
+            />
+        <!-- android:src="@drawable/close" -->
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+</RelativeLayout>

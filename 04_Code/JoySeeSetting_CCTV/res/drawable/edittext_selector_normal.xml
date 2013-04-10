@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/setting_time_focus" android:state_selected="true"/>
+    <item android:drawable="@drawable/setting_time_focus" android:state_focused="true"/>
+    <item android:drawable="@drawable/setting_time_nofocus" android:state_focused="false"/>
+    <item android:drawable="@drawable/setting_time_nofocus" android:state_selected="false"/>
+
+</selector>

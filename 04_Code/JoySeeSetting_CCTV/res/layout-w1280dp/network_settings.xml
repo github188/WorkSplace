@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/network_settings"
+        android:textColor="@color/yellow"
+        android:textSize="23sp" />
+
+    <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/btn_eth"
+        android:layout_width="736dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/listview_indicator"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21dp"
+            android:text="@string/Network_eth" />
+
+        <TextView
+            android:id="@+id/btn_eth_text"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="396dp"
+            android:text="@string/network_disable"
+            android:textColor="@color/setting_left_item_text_focus"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="79dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/arrow_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="#33FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/btn_wireless"
+        android:layout_width="736dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/listview_indicator"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21dp"
+            android:text="@string/Network_wireless" />
+
+        <TextView
+            android:id="@+id/btn_wireless_text"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="396dp"
+            android:textColor="@color/setting_left_item_text_focus"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="79dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/arrow_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/btn_proxy"
+        android:layout_width="736dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/listview_indicator"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21dp"
+            android:text="@string/Network_proxy" />
+
+        <TextView
+            android:id="@+id/btn_proxy_text"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="396dp"
+            android:textColor="@color/setting_left_item_text_focus"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="79dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/arrow_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="736dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="47dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/btn_pppoe"
+        android:layout_width="736dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="47dp"
+        android:background="@drawable/listview_indicator"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21dp"
+            android:text="@string/Network_pppoe" />
+
+        <TextView
+            android:id="@+id/btn_proxy_text"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="396dp"
+            android:text="@string/network_disable"
+            android:textColor="@color/setting_left_item_text_focus"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="79dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/arrow_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="736dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/netsetinfo_bg"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Connectionspeedtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/connection"
+                android:layout_below="@id/connection"
+                android:layout_marginTop="10dp"
+                android:text="@string/Connection_speed"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Connectionspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/Connectionspeedtitle"
+                android:layout_toRightOf="@id/Connectionspeedtitle"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Signalstrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/connection"
+                android:layout_below="@id/Connectionspeedtitle"
+                android:layout_marginTop="10dp"
+                android:text="@string/Signal_strength"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/Signaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/Signalstrength"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/Signalstrength"
+                android:text="@string/Signal_text"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="right|center_vertical"
+            android:paddingLeft="50dp"
+            android:layout_weight="1" >
+           <!-- android:background="@color/black" > -->
+
+            <TextView
+                android:id="@+id/IPAddr"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/IPAddr"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/IPAddrText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/IPAddr"
+                android:layout_marginLeft="130dp"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Netmask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/IPAddr"
+                android:layout_below="@id/IPAddr"
+                android:layout_marginTop="8dp"
+                android:text="@string/Netmask"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/NetmaskText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/Netmask"
+                android:layout_marginLeft="130dp"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Gateway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Netmask"
+                android:layout_below="@id/Netmask"
+                android:layout_marginTop="8dp"
+                android:text="@string/Gateway"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/GatewayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/Gateway"
+                android:layout_marginLeft="130dp"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/DNS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Gateway"
+                android:layout_below="@id/Gateway"
+                android:layout_marginTop="8dp"
+                android:text="@string/DNS"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/DNSText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/DNS"
+                android:layout_marginLeft="130dp"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/GetWayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/DNS"
+                android:layout_marginLeft="280dp"
+                android:textColor="#FFFDFA"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_watch_level"
+    android:layout_width="1115dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="68dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/config_watch_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:gravity="center_vertical"
+        android:text="@string/config_system_level"
+        android:textColor="@color/yellow"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/config_watch_level_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_watch_level_title"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/config_watch_level_age_text"
+        android:textColor="@color/yellow"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:id="@+id/config_watch_level_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_watch_level_tip"
+        android:layout_marginLeft="45dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/config_watch_level_spinner"
+            android:layout_width="412dp"
+            android:layout_height="117dp"
+            android:background="@drawable/search_spiner_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/yellow"
+            android:dropDownVerticalOffset="1dip"
+            android:dropDownWidth="352dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/grey"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_watch_level_age"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_watch_level_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="600dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/config_watch_level_save"
+            style="@style/SettingButtonStyle"
+            android:layout_width="303dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:text="@string/config_work_time_save_and_back" />
+
+        <Button
+            android:id="@+id/config_watch_level_cancel"
+            style="@style/SettingButtonStyle"
+            android:layout_width="303dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:text="@string/config_modify_password_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

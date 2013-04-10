@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="880dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="103dp"
+        android:orientation="vertical" >
+
+        <!-- ********** -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="396dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/App_flash_unused"
+                    android:textColor="@color/yellow_text"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/text_app_flash_unused"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="23sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/App_sd_unused"
+                    android:textColor="@color/yellow_text"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/text_app_sd_unused"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="23sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ********** -->
+
+        <LinearLayout
+            android:layout_width="990dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp" >
+
+            <ProgressBar
+                android:id="@+id/progressbar_flash"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="258dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="7dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_horizontal" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/text_app_flash_total"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:text="@string/App_total_size"
+                android:textSize="16sp" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressbar_sd"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="258dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="7dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_horizontal" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/text_app_sd_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:text="@string/App_total_size"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="739dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="20dp"
+            android:background="#696969"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/App_my_application"
+            android:textColor="@color/yellow_text"
+            android:textSize="23sp" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- ============================================ -->
+
+    <LinearLayout
+        android:layout_width="845dp"
+        android:layout_height="389dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical" >
+
+        <!-- android:listSelector="@drawable/bg_app_focus" -->
+
+        <GridView
+            android:id="@+id/gridViewApp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="130dp"
+            android:gravity="center"
+            android:numColumns="4"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@drawable/progress_focus_v"
+            android:scrollbarTrackVertical="@drawable/progress_normal_v"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

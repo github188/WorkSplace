@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PlayerFinishRelateLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="260px"
+    android:orientation="vertical" >
+	
+	<ImageView
+        android:id="@+id/icon"
+        android:layout_width="250px"
+        android:layout_height="146px"
+        android:layout_marginTop="12px"
+        android:layout_marginLeft="12px"
+        android:scaleType="fitXY"
+	    android:src="@drawable/default_poster" />		
+		    		    
+	<TextView
+	    android:id="@+id/ItemTextTitle"
+	    android:layout_width="250px"
+	    android:layout_height="50px"
+	    android:text="@string/vod_itemtextnone"
+	    android:textSize="40px"	   
+	    android:layout_marginLeft="12px" 
+	    android:textColor="@color/vod_onselect"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    android:marqueeRepeatLimit="marquee_forever" />
+	    
+	<TextView
+	    android:id="@+id/ItemTextDes"
+	    android:layout_width="250px"
+	    android:layout_height="34px"
+	    android:layout_marginTop="6px"
+	    android:text="@string/vod_itemtextnone"
+	    android:textSize="30px"	
+	    android:layout_marginLeft="12px"    
+	    android:textColor="@color/vod_unselect"
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    android:marqueeRepeatLimit="marquee_forever" />    	    
+	
+</LinearLayout>

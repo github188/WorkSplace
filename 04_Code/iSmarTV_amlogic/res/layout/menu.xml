@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RootRelativeLayout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@android:color/transparent"
+	android:foreground="@android:color/transparent"
+	>
+	<LinearLayout
+	    android:id="@+id/MenuPanel"
+	    android:layout_width="587dp"
+		android:layout_height="fill_parent"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/vod_menu_bg"
+		android:orientation="vertical"
+		android:visibility="invisible">
+		<TextView
+		    android:layout_width="394dp" android:layout_height="87dp" 
+		    android:layout_marginLeft="12dp" android:layout_marginTop="62dp"
+			android:gravity="center_horizontal|top" android:textColor="#707896"
+			android:textSize="72sp" android:includeFontPadding="false"
+			android:text="@string/vod_menu_title"/>
+		<ListView
+			android:id="@+id/MenuListView"
+			android:layout_width="fill_parent"
+			android:layout_height="800dp"
+			android:layout_marginTop="41dp"
+			android:layout_marginLeft="12dp"
+			android:listSelector="@drawable/vod_menu_item_bg"		
+			android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"           
+            android:dividerHeight="0dip"
+		>
+		</ListView>
+	</LinearLayout>
+</RelativeLayout>

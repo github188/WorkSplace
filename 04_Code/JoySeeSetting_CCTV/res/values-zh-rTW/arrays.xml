@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    
+    <string-array name="frequency_array">
+        <item>開</item>
+        <item>關</item>
+        
+    </string-array>   
+    <string-array name="message_array">
+        <item>關</item>
+        <item>開</item>
+    </string-array>
+</resources>

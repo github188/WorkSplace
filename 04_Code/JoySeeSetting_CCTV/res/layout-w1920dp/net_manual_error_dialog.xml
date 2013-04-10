@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="990dp"
+    android:layout_height="353dp">
+    
+    <TextView
+        android:id="@+id/textview_dialog" 
+        android:layout_width="990dp"
+        android:layout_height="247dp"
+		android:textColor="@color/white"
+        android:textSize="34sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        />
+    
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF" 
+        android:layout_marginTop="247dp"
+        />
+    
+    <Button
+        android:id="@+id/btn_dlg_confirm"
+        android:layout_width="303dip"
+        android:layout_height="62dip"
+        android:layout_marginLeft="343dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/alert_dialog_ok"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="bottom|left"
+        style="@style/SettingButtonStyle"
+        />
+</FrameLayout>

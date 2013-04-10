@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alpha="10"
+    android:background="@drawable/backgroud_home" >
+
+    <!-- android:background="@drawable/allbg" -->
+
+    <ImageView
+        android:id="@+id/animation_imageview"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:background="@drawable/selected_application_background100"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/top_left"
+            android:layout_width="200dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/appName"
+            android:textColor="@color/black"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/top_search"
+            android:layout_width="130dip"
+            android:layout_height="60dip"
+            android:drawableLeft="@drawable/app_search"
+            android:drawablePadding="15dip"
+            android:text="@string/app_search"
+            android:focusable="true"
+            android:textColor="@color/black"
+            android:textSize="19dip"
+            android:padding="10dip"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="920dip" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="1060dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/top_down_record"
+            android:layout_width="170dip"
+            android:layout_height="60dip"
+            android:focusable="true"
+            android:textSize="19dip"
+            android:drawableLeft="@drawable/button_download"
+            android:drawablePadding="15dip"
+            android:text="@string/downloadmrg_button_txt"
+            android:textColor="@color/black"
+            android:padding="10dip"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:layout_marginRight="30dip"
+            android:nextFocusLeft="@id/top_search"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/top"
+        android:layout_marginTop="20dip" >
+
+        <!-- <com.bestv.ott.appstore.animation.AnimationMoreButton
+            android:id="@+id/top2_more"
+            android:layout_width="1130dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="70dip"
+            android:layout_marginRight="80dip" /> -->
+       
+        <TextView
+            android:id="@+id/top2_left"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:textSize="28dip"
+            android:layout_marginLeft="90dip" />
+         <!--
+        <ImageView
+            android:id="@+id/top2_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dip"
+            android:layout_toRightOf="@id/title"
+            android:background="@drawable/newmore1"
+            android:contentDescription="@string/str_null" />
+
+        -->
+    </RelativeLayout>
+
+    <!-- all apps -->
+
+    <ViewFlipper
+        android:id="@+id/app_class_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="480dip"
+        android:layout_below="@id/top2"
+        android:layout_marginLeft="75dip"
+        android:layout_marginRight="60dip" >
+    </ViewFlipper>
+
+    <ImageView
+        android:id="@+id/app_class_left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="300dip"
+        android:background="@drawable/arrowleft"
+        android:contentDescription="@string/str_null" />
+
+    <ImageView
+        android:id="@+id/app_class_right_imgae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="300dip"
+        android:background="@drawable/arrowright"
+        android:contentDescription="@string/str_null" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_marginTop="555dip"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="18dip" />
+    
+    <!-- menu -->
+
+    <ScrollView
+        android:id="@+id/class_menu_linearlayout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="20dip"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/class_menu_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip" 
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

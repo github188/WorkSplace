@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_down_list_height">203dp</dimen>
+    
+    <dimen name="screen_width">1920dp</dimen>
+    <dimen name="screen_height">1080dp</dimen>
+    
+    <dimen name="search_option_left_offset">629dp</dimen>
+    <dimen name="search_option_top_offset">30dp</dimen>
+    
+    <dimen name="search_manual_left_offset">629dp</dimen>
+    <dimen name="search_manual_top_offset">30dp</dimen>
+    
+    <dimen name="ethEditHeight">124dp</dimen>
+    <dimen name="ethEditWidth">746dp</dimen>
+    
+    <dimen name="net_proxy_down_list_top_offset1">-500dp</dimen>
+    <dimen name="net_proxy_down_list_top_offset2">0dp</dimen>
+    
+    
+    <dimen name="basic_text">35dp</dimen>
+    <dimen name="System_version_marginTop">10dp</dimen>
+    <dimen name="basic_text_interval">81dp</dimen>
+    <dimen name="spinner_width">700dp</dimen>
+    <dimen name="spinner_height">45dp</dimen>
+    <dimen name="SpinnerTextSize">30dp</dimen>
+    <dimen name="TextSize">30dp</dimen>
+    <dimen name="SpinnerItemHeight">80dp</dimen>
+    <dimen name="ethTextWidth">200dp</dimen>
+    <dimen name="wirelessTextWidth">180dp</dimen>
+    <dimen name="wirelessTextHeight">80dp</dimen>
+    <dimen name="MiddleButtonWidth">255dp</dimen>
+    <dimen name="MiddleButtonHeight">60dp</dimen>
+    <dimen name="LargeButtonWidth">320dp</dimen>
+    <dimen name="LargeButtonHeight">60dp</dimen>
+    <dimen name="SmallButtonWidth">141dp</dimen>
+    <dimen name="SmallButtonHeight">60dp</dimen>
+    <dimen name="dlg_spinner_width">421dp</dimen>
+    <dimen name="dlg_spinner_height">100dp</dimen>
+    <dimen name="dlg_edit_width">421dp</dimen>
+    <dimen name="dlg_edit_height">100dp</dimen>
+    <dimen name="wifi_dialog_top_off0">-510dp</dimen>
+    <dimen name="wifi_dialog_top_off1">-405dp</dimen>
+    <dimen name="wifi_dialog_top_off2">-10dp</dimen>
+    
+    
+    <dimen name="net_wireless_add_safe_spinner_offset">0dp</dimen>
+    <dimen name="net_wireless_add_eap_spinner_offset">125dp</dimen>
+    <dimen name="net_wireless_add_id_spinner_offset">255dp</dimen>
+    <dimen name="net_wireless_add_ca_spinner_offset">385dp</dimen>
+    <dimen name="net_wireless_add_user_spinner_offset">525dp</dimen>
+    
+    
+    <dimen name="search_down_xoffset">2dp</dimen>
+    
+    <dimen name="ca_worktime_pwd_dialog_width">990dp</dimen>
+    <dimen name="ca_worktime_pwd_dialog_height">353dp</dimen>
+    
+</resources>

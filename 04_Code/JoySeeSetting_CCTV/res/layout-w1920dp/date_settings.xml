@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="84dp"
+    android:layout_marginTop="68dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_format"
+        android:textColor="@color/yellow"
+        android:textSize="34dp" />
+
+    <LinearLayout
+        android:id="@+id/hourspiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="412dp"
+            android:layout_height="117dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/timeHourSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/menu_text_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:text="@string/timeformat"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hourspiner"
+        android:layout_marginTop="132dp"
+        android:text="@string/time_setting"
+        android:textColor="@color/yellow"
+        android:textSize="34dp" />
+
+    <!-- ==================================== -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutYear"
+            android:layout_width="216dp"
+            android:layout_height="117dp"
+            android:focusable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data_year"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutMonth"
+            android:layout_width="216dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="15dp"
+            android:focusable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data_month"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutData"
+            android:layout_width="216dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="15dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data_data"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutHour"
+            android:layout_width="216dp"
+            android:layout_height="117dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data_hour"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutMinite"
+            android:layout_width="216dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="15dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/minite"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data_minite"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSecond"
+            android:layout_width="216dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="15dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/second"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data_second"
+            android:textColor="@color/grey"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/listLayout"
+        android:layout_width="353dp"
+        android:layout_height="252dp"
+        android:layout_below="@+id/hourspiner"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone" >
+
+        <!-- android:background="@color/dropdownlist_backcolor" -->
+
+        <ListView
+            android:id="@+id/dropdownlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/search_down_list_bg"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/dropdown_selector" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

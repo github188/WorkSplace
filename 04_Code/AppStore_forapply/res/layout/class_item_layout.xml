@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="200dip"
+    android:orientation="vertical" >
+
+    <com.bestv.ott.appstore.animation.AnimationButton
+        android:id="@+id/class_item_img"
+        android:layout_width="280dip"
+        android:layout_height="180dip"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="251dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="-46dip"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="251dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="15dip"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="7dip"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <ProgressBar
+            android:id="@+id/down_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dip"
+            android:layout_height="10dip"
+            android:layout_marginTop="7dip"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar_bg"
+            android:visibility="gone" />
+
+        <RatingBar
+            android:id="@+id/class_rating_bar"
+            android:layout_width="125dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressDrawable="@drawable/food_rating_bar_full"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/class_item_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dip"
+        android:layout_marginTop="-217dip"
+        android:alpha="0.9"
+        android:gravity="center_vertical"
+        android:src="@drawable/pop"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pop_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="198dip"
+        android:layout_marginTop="-35dip"
+        android:gravity="center_vertical"
+        android:src="@drawable/pop_rise"
+        android:visibility="gone" />
+
+</LinearLayout>

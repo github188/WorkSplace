@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 搜索、预约公用的Dialog -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_dialog_include_button_bg" >
+
+    <TextView
+        android:id="@+id/epg_alert_title"
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/dvb_nochannel_notify_message"
+        android:textColor="@color/search_main_text"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="173dip"
+        android:layout_height="40dip"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="18dip"
+        android:layout_marginLeft="66dip"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cancle_btn"
+        android:layout_width="173dip"
+        android:layout_height="40dip"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="18dip"
+        android:layout_marginRight="66dip"
+        android:gravity="center"
+        android:text="@string/alert_dialog_cancel"
+        android:textSize="18sp" />
+
+</FrameLayout>

@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">系统设置</string>
+    <string name="wifi_wps_overlap_error">"检测到另一个 Wi-Fi 保护会话。请过几分钟后重试。"</string>
+    <string name="app_not_found_dlg_title">未发现该应用程序</string>
+    <string name="clear_failed_dlg_text">"无法清除应用程序数据。"</string>
+    <string name="address_point">"."</string>
+    <string name="tvsearch_settings">电视搜索</string>
+    <string name="resolution_setting">分辨率</string>
+    <string name="theme_setting">主题</string>
+    <string name="time_settings">时间</string>
+    <string name="language_settings">语言</string>
+    <string name="network_settings">网络设置</string>
+    <string name="input_method_settings">输入法</string>
+    <string name="account_settings">账户</string>
+    <string name="System_update">系统升级</string>
+    <string name="application_settings">应用管理</string>
+    <string name="audio_output">音视频设置</string>
+    <string name="mouse_setting">鼠标</string>
+    <string name="super_card">智能卡</string>
+    <string name="applock_set">童锁</string>  
+    <string name="basic_settings">基本设置</string>
+    <string name="system_settings">系统设置</string>
+    <string name="menu_language">菜单语言</string>
+    <string name="Simplified_Chinese">简体中文</string>
+    <string name="Traditional_Chinese">繁体中文</string>
+    <string name="English">英文</string>
+    <string name="Multi_frequency_interaction">多屏互动</string>
+    <string name="format_setting">制式设置</string>
+    <string name="System_info">系统信息</string>
+    <string name="System_low">法律信息</string>
+    <string name="System_message">系统消息设置</string>
+    <string name="System_restore">系统还原</string>
+    <string name="System_guide">用户向导</string>
+    <string name="System_low_license">开源许可</string>
+    <string name="System_low_agreement">用户协议</string>
+    <string name="Agree">同意</string>
+    <string name="Disagree">不同意</string>
+    <string name="System_info_storage">存储信息</string>
+    <string name="System_info_flash">Flash存储空间</string>
+    <string name="Machine_info">设备信息</string>
+    <string name="System_info_flash_used">已使用%1$s</string>
+    <string name="System_info_flash_unused">剩余%1$s</string>
+    <string name="System_info_sd">SD卡存储空间</string>
+    <string name="System_info_version">版本信息</string>
+    <string name="System_product_model">产品型号：</string>
+    <string name="System_hardware_version">硬件版本：</string>
+    <string name="System_software_version">软件版本：</string>
+    <string name="System_os_version">操作系统版本：</string>
+    <string name="System_cpu_use">CPU已使用:</string>
+    <string name="System_mac">MAC地址:</string>
+    <string name="System_android_version">Android版本:</string>
+    <string name="System_msg_clear">清空消息记录</string>
+    <string name="System_msg_notification">系统消息通知</string>
+    <string name="System_msg_details">消息内容</string>
+    <string name="System_msg_time">更新时间</string>
+    <string name="System_msg_list_number">%1$s、</string>
+    <string name="System_msg_list_time">yyyy-MM-dd HH:mm</string>
+    <string name="System_update_setting">"默认设置"</string>
+    <string name="System_update_check">立即检查</string>
+    <string name="System_update_find_version">检查到最新版本号%x</string>
+    <string name="System_update_downloading">正在下载升级包%x</string>
+    <string name="System_update_ok">更新成功！</string>
+    <string name="App_flash_unused">机顶盒内部空间：</string>
+    <string name="App_sd_unused">SD卡空间：</string>
+    <string name="App_total_size">共%1$s</string>
+    <string name="App_my_application">我的应用</string>
+    <string name="App_details">点击图标进行卸载和相关操作</string>
+    <string name="App_name">娱乐转飞盘</string>
+    <string name="App_size">"0.00B"</string>
+    <string name="App_time">yyyy.MM.dd</string>
+    <string name="App_data_size">"0.00B"</string>
+    <string name="App_flash_data">flash数据</string>
+    <string name="App_uninstall">卸载</string>
+    <string name="App_sd_data">SD卡数据</string>
+    <string name="App_cache_data">缓存数据</string>
+    <string name="App_clear_cache">清除缓存</string>
+    <string name="clear_user_data_text">清除数据</string>
+    <string name="App_move_sd">应用程序移至SD卡</string>
+    <string name="insufficient_storage">磁盘空间不足</string>
+    <string name="does_not_exist">程序不存在</string>
+    <string name="app_forward_locked">程序已锁，禁止移动</string>
+    <string name="invalid_location">无效安装地址</string>
+    <string name="system_package">系统程序，禁止移到SD卡</string>
+    <string name="move_app_failed">移动应用程序失败</string>
+    <string name="app_move_nosdcard">无SD卡</string>
+    <string name="app_mounted_sdcard">SD卡可用</string>
+    <!-- Manage applications, text for Move button -->
+    <string name="move_app">移动</string>
+    <!-- Manage applications, text for Move button to move app to internal storage -->
+    <string name="move_app_to_internal" product="tablet">移至平板电脑</string>
+    <!-- Manage applications, text for Move button to move app to internal storage -->
+    <string name="move_app_to_internal" product="default">移至内存</string>
+    <!-- Manage applications, text for Move button  to move app to sdcard [CHAR LIMIT=25] -->
+    <string name="move_app_to_sdcard" product="nosdcard">应用程序移至USB</string>
+    <!-- Manage applications, text for Move button  to move app to sdcard -->
+    <string name="move_app_to_sdcard" product="default">应用程序移至SD卡</string>
+    <!-- Manage applications, title for dialog when killing persistent apps -->
+    <!-- Manage applications, text for Move button when move is in progress -->
+    <string name="app_factory_reset">卸载更新</string>
+    <string name="uninstall_text">卸载</string>
+    <!-- [CHAR LIMIT=25] Manage applications, individual application info screen, button label under Storage heading. Button to disable an existing application. -->
+    <string name="disable_text">关</string>
+    <!-- [CHAR LIMIT=25] Manage applications, individual application info screen, button label under Storage heading. Button to re-enable an existing application. -->
+    <string name="enable_text">开</string>
+    <string name="moving">移动中</string>
+    <string name="recompute_size">"正在重新计算大小..."</string>
+    <!-- Manage applications, individual application screen, confirmation dialog title. Displays when user selects to "Clear data". -->
+    <string name="clear_data_dlg_title">"要删除应用程序数据吗？"</string>
+    <!-- Manage applications, individual application screen, confirmation dialog message. Displays when user selects to "Clear data". It warns the user of the consequences of clearing the data for an app. -->
+    <string name="clear_data_dlg_text">"系统会永久删除此应用程序的所有数据。删除的内容包括所有文件、设置、帐户、数据库等。"</string>
+    <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". Goes through with the clearing of the data. -->
+    <string name="dlg_ok">确认</string>
+    <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". -->
+    <string name="dlg_cancel">取消</string>
+    <!-- Manage applications, individual application dialog box title. Shown when the user somehow got into a state where it wants to manage some app that isn't found. -->
+    <string name="app_not_found_dlg_text">"在已安装应用程序的列表中找不到该应用程序。"</string>
+    <!-- Manage applications, individual application dialog box message. Shown when there was an error trying to clear the data. -->
+    <string name="clear_data_failed">"无法清除应用程序数据。"</string>
+    <!-- Manage applications, factory reset dialog title for system applications. -->
+    <string name="app_factory_reset_dlg_title">"要卸载更新吗？"</string>
+    <!-- Manage applications, factory reset option dialog text for system applications. -->
+    <string name="app_factory_reset_dlg_text">"系统将会卸载此 Android 系统应用程序的所有相关更新。"</string>
+    <!-- Manage applications, title for dialog if clear data fails -->
+    <string name="clear_failed_dlg_title">"清除数据"</string>
+    <!-- Manage applications, individual application info screen, text that appears under the "Permissions" heading. This describes the permissions that the application has. -->
+    <string name="security_settings_desc" product="tablet">"此应用程序有权访问您平板电脑上的以下内容："</string>
+    <!-- Manage applications, individual application info screen, text that appears under the "Permissions" heading. This describes the permissions that the application has. -->
+    <string name="security_settings_desc" product="default">"此应用程序有权访问您手机上的以下内容："</string>
+
+    <!-- Manage applications, text for dialog when moving an app -->
+    <string name="move_app_failed_dlg_title"></string>
+    <!-- Manage applications, text for dialog moving an app -->
+    <string name="move_app_failed_dlg_text">不能移动应用程序</string>
+    <!-- Manage applications, application installation location title -->
+    <string name="app_install_location_title">"首选安装位置"</string>
+    <!-- Manage applications. application installation location summary -->
+    <string name="app_install_location_summary">"更改安装新应用程序时使用的首选安装位置"</string>
+    <!-- [CHAR LIMIT=30] Manage applications, title for dialog when disabling apps -->
+    <string name="app_disable_dlg_title">"要停用内置应用程序吗？"</string>
+    <!-- [CHAR LIMIT=200] Manage applications, text for dialog when disabling apps -->
+    <string name="app_disable_dlg_text">"如果停用内置应用程序，其他应用程序可能会出现异常。"</string>
+    <string name="computing_size">"正在计算..."</string>
+    <string name="spinner_1_color_prompt">Choose a color</string>
+    <string name="tv_output_mode_dialog_title">"注意"</string>
+    <string name="tv_output_mode_set_confirm_dialog">"显示模式已设置。你确认保存？如果你不操作,这将在15秒内恢复。"</string>
+
+    <!-- network setting -->
+    <string name="Network_eth">有线网络</string>
+    <string name="Network_wireless">无线网络</string>
+    <string name="Network_proxy">有线代理</string>
+    <string name="Network_pppoe">PPPOE</string>
+    <string name="Local_connection">本地连接1</string>
+    <string name="Signal_strength">信号强度: </string>
+    <string name="Signal_text">非常好</string>
+    <string name="Connection_speed">连接速度: </string>
+    <string name="Connection_text">100Mbps</string>
+    <string name="IPAddr">IP地址: </string>
+    <string name="IPAddr_text">0.0.0.0</string>
+    <string name="Netmask">子网掩码: </string>
+    <string name="Netmask_text">0.0.0.0</string>
+    <string name="Gateway">默认网关: </string>
+    <string name="Gateway_text">0.0.0.0</string>
+    <string name="DNS">DNS: </string>
+    <string name="DNS_text">0.0.0.0</string>
+    <string name="GetwayDhcp">通过DHCP指派</string>
+    <string name="GetwayManul">手工指定</string>
+    <string name="yes">"确定"</string>
+    <string name="display_position_dialog_no">"No"</string>
+    <string name="ipaddr_format_error">"请输入0-255的数字"</string>
+    <string name="auto_connect">"自动连接"</string>
+    <string name="eth_back">网络设置/有线网络</string>
+    <string name="manual_connect">"手动连接"</string>
+    <string name="start_on">"已连接"</string>
+    <string name="start_close">"已断开"</string>
+    <string name="ethconnect_fail">"有线网络已断开！"</string>
+    <string name="ethconnect_wait">"正在连接网络请等待..."</string>
+    <string name="ethconnect_disable">"有线网络连接失败，请检查网络！"</string>
+    <string name="ethconnect_ok">"已经连接到网络"</string>
+    <string name="ethmanual">"网络设置/有线网络/手动连接"</string>
+    <string name="ethmanual_ip">"IP地址"</string>
+    <string name="ethmanual_netmask">"子网掩码"</string>
+    <string name="ethmanual_gateway">"网关"</string>
+    <string name="ethmanual_dns1">"DNS"</string>
+    <string name="ethmanual_dns2">"DNS2"</string>
+    <string name="eth_get_ip">正在获取IP地址...</string>
+    <string name="eth_connection">有线：本地连接%1$s</string>
+    <string name="network_disconnection">未连接网络</string>
+    <string name="wifi_connection">WI-FI：%1$s</string>
+    <string name="wirelessConnect">网络设置/无线网络</string>
+    <string name="WIFI">"WIFI"</string>
+    <string name="wirelessRefresh">"正在刷新网络列表......"</string>
+    <string name="wirelessList">"网络列表"</string>
+    <string name="wireless_failed">"没有打开无线网络"</string>
+    <string name="ssid">"网络SSID"</string>
+    <string name="wireless_safe">"安全性"</string>
+    <string name="wireless_password">"密码"</string>
+    <string name="wireless_dialog_password">"输入密码:"</string>
+    <string name="save">"保存"</string>
+    <string name="show_password">"显示密码"</string>
+    <string name="wifi_add">"添加网络"</string>
+    <string name="wifi_add_add">"无线网络/添加网络"</string>
+    <string name="wifi_add_back">"无线网络/添加网络"</string>
+    <string name="wifi_fail_to_scan">"扫描不到网络"</string>
+    <string name="wifi_secure_none">未设置安全机制的无线网络</string>
+    <string name="wifi_secure">通过%1%s进行保护</string>
+    <string name="wifi_secure_wep">通过WEP进行保护</string>
+    <string name="wifi_secure_wpa">通过WPA2进行保护</string>
+    <string name="wifi_secure_eap">通过802.1x进行保护</string>
+    <string name="wifi_ssid">网络名称：</string>
+    <string name="wifi_strength">信号强度：</string>
+    <string name="wifi_security">安全性：</string>
+    <string name="wifi_password">密码：</string>
+    <string name="wifi_display_password">显示密码</string>
+    <string name="wifi_connecting_prompt">正在连接...</string>
+    <string name="wifi_connected_prompt">连接到  %1$s</string>
+    <string name="wifi_connect">连接</string>
+    <string name="wifi_forget">忘记网络</string>
+    <string name="wifi_disconnect">断开</string>
+    <string name="wifi_connect_speed">连接速度：</string>
+    <string name="wifi_connect_ipaddr">IP 地址：</string>
+    <string name="wifi_disabled">打开WI-FI</string>
+    <string name="wifi_disabling">正在关闭...</string>
+    <string name="wifi_enabling">正在打开...</string>
+    <string name="wifi_get_ip">正在从%1$s获取IP地址...</string>
+    <string name="wifi_connected">已连接，</string>
+    <string name="wifi_obtaining_ipaddr">正在获取IP</string>
+    <string name="wifi_add_psk_password_hint">"输入8位以上密码"</string>
+    <string name="wifi_add_password_hint">"请输入密码"</string>
+    <string name="wifi_add_name_hint">"请输入网络SSID"</string>
+    <string name="network_connected">已连接</string>
+    <string name="network_disable">未启用</string>
+    <string name="network_noconnected">未连接</string>
+    <string name="propty_start">已启用</string>
+    <string name="propty_disable">未启用</string>
+    <string name="wificonnect_wait">"正在连接"</string>
+    <string name="wificonnect_fail">"连接失败"</string>
+    <string name="proxy_setting">网络设置/代理设置</string>
+    <string name="http_proxy">"HTTP代理"</string>
+    <string name="http_addr">"地址"</string>
+    <string name="http_port">"端口"</string>
+    <string name="http_skip">"跳过本地地址的代理服务器"</string>
+    <string name="network_point">"."</string>
+    <string name="network_tips_usewifi">请关闭无线网络后再设置</string>
+
+    <!-- input method -->
+    <string name="default_input">"默认输入法"</string>
+    <string name="input_setting">"设置"</string>
+    <string name="default_theme">默认</string>
+    <string name="set_theme_msg">是否将此设为主题？</string>
+    <string name="loading_theme">正在加载主题</string>
+    <string name="load_theme_error">加载主题失败</string>
+
+    <!-- date settings -->
+    <string name="time_sync">"时间网络同步"</string>
+    <string name="time_setting">"设置当前时间:"</string>
+    <string name="time_format">"时间格式:"</string>
+    <string name="date_hour">"小时制"</string>
+    <string name="date_setting">"日期设置"</string>
+    <string name="date_format">"日期格式"</string>
+    <string name="city_setting">"城市设定"</string>
+    <string name="dlg_restore_title">系统还原</string>
+    <string name="dlg_restore_msg">恢复出厂设置吗？恢复出厂设置会删除应用程序数据和安装的应用程序.</string>
+    <string name="dlg_update_msg">是否立即重起更新系统？</string>
+    <string name="dlg_auto_update_msg">已下载了最新的升级包，是否立即升级?(升级过程中，请勿断电！)</string>
+    <string name="dlg_enforce_update_msg">已下载了最新的升级包，是否立即升级?(升级过程中，请勿断电，请勿插拔SD卡！)</string>
+    <string name="dlg_update_power_on_msg">下次开机时更新系统!</string>
+    <string name="dlg_confirm">确认</string>
+    <string name="dlg_OutPutSetting_info">切换输出模式，按“确认”键后系统会黑屏完成切换，大概10秒后返回!(切换过程中请勿进行其他操作)</string>
+    <string name="dlg_clear_message">是否清空消息记录？</string>
+    <string name="dlg_i_know">我知道了</string>
+    <string name="dlg_ip_format_error">IP格式错误，请检查输入内容！</string>
+    <string name="dlg_gateway_format_error">网关格式错误，请检查输入内容！</string>
+    <string name="dlg_dns_format_error">DNS格式错误，请检查输入内容！</string>
+    <string name="dlg_netmask_format_error">子网掩码格式错误，请检查输入内容！</string>
+    <string name="dlg_connecting">正在连接网络...</string>
+    <string name="dlg_connect_failed">网络连接失败，稍候请重试!</string>
+    <string name="dlg_connect_hw_disconnected">网线已断开，请插入网线！</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WEP security -->
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">开放</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_eap_method">EAP方法</string>
+    <string name="wifi_security_eap_authentication">阶段2身份验证</string>
+    <string name="wifi_security_eap_ca_certificate">CA证书</string>
+    <string name="wifi_security_eap_user_certificate">用户证书</string>
+    <string name="wifi_security_eap_identity">身份</string>
+    <string name="wifi_security_eap_anonymous">匿名身份</string>
+    <string name="wifi_unspecified">"（未指定）"</string>
+    <string name="wifi_no_range">"不在范围内"</string>
+    <string name="wifi_has_save">"已保存，"</string>
+    <string name="wifi_ip_setting">"IP 设置："</string>
+    <string name="dlg_wifi_security_eap_method">EAP方法：</string>
+    <string name="dlg_wifi_security_eap_authentication">阶段2身份验证：</string>
+    <string name="dlg_wifi_security_eap_ca_certificate">CA证书：</string>
+    <string name="dlg_wifi_security_eap_user_certificate">用户证书：</string>
+    <string name="dlg_wifi_security_eap_identity">身份：</string>
+    <string name="dlg_wifi_security_eap_anonymous">匿名身份：</string>
+    <string name="wifi_gateway">网关: </string>
+    <string name="wifi_network_prefix_length">网络前缀长度: </string>
+    <string name="wifi_dns1">域名1: </string>
+    <string name="wifi_dns2">域名2: </string>
+    <string name="wifi_status">状态: </string>
+    <string name="wifi_status_connected">"已连接"</string>
+    <string name="wifi_status_checking">"正在验证身份..."</string>
+    <string name="wifi_status_connecting">"正在获取IP地址..."</string>
+    <string name="wifi_ip_settings_invalid_ip_address">"请键入有效的 IP 地址。"</string>
+    <string name="wifi_ip_settings_invalid_gateway">"请键入有效的网关地址。"</string>
+    <string name="wifi_ip_settings_invalid_dns">"请键入有效的 DNS 地址。"</string>
+    <string name="wifi_ip_settings_invalid_network_prefix_length">"键入长度在 0 到 32 之间的网络前缀。"</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns1_hint">8.8.8.8</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns2_hint">4.4.4.4</string>
+    <!-- Hint text for the gateway -->
+    <string name="wifi_gateway_hint">192.168.1.1</string>
+    <string name="wifi_network_prefix_length_hint">0~32</string>
+    <!-- Hint text for the IP address -->
+    <string name="wifi_ip_address_hint">192.168.1.128</string>
+    <string name="wifi_ip_address_dhcp">"动态获取"</string>
+    <string name="wifi_ip_address_static">"静态指定"</string>
+    <string name="settings_license_activity_title">"开放源代码许可"</string>
+    <string name="settings_license_activity_unavailable">"载入许可时出现问题。"</string>
+    <string name="settings_license_activity_loading">"正在载入法律声明"</string>
+    <string name="Account_name">用户名：</string>
+    <string name="Account_password">密码：</string>
+    <string name="Account_login">登录</string>
+    <string name="Account_find_password">找回密码</string>
+    <string name="Account_register">注册新账户</string>
+    <string name="Account_name_presentation">不能为空</string>
+    <string name="Account_password_presentation">请输入4-20位字符</string>
+    <string name="Account_register_new">注册新用户</string>
+    <string name="Account_regist_name">用户名:</string>
+    <string name="Account_regist_password">密码:</string>
+    <string name="Account_confirm_password">密码确认:</string>
+    <string name="Account_verification_code">验证码:</string>
+    <string name="Account_checkbox_confirm">我接受</string>
+    <string name="Account_regist_name_normal">该用户名不存在</string>
+    <string name="Account_regist_name_error">该用户名已存在</string>
+    <string name="Account_confirm_password_presentation">不能为空</string>
+    <string name="Account_verification_presentation">请输入验证码</string>
+    <string name="Account_declaration">用户权益相关声明</string>
+    <string name="Account_declaration_presentation">请根据提示信息操作</string>
+    <string name="Account_register_login">注册并登录</string>
+    <string name="Account_refurbish">刷新</string>
+    <string name="Account_logout">注销用户</string>
+    <string name="Account_modify_password">修改密码</string>
+    <string name="Account_modifying_password">正在保存修改</string>
+    <string name="account_login_ok">登录成功</string>
+    <string name="account_logined">已登录</string>
+    <string name="account_name_format_error">用户名格式错误,请输入邮箱或手机号</string>
+    <string name="account_password_error">密码错误</string>
+    <string name="account_name_not_exist">用户名不存在</string>
+    <string name="account_name_not_active">用户名未激活</string>
+    <string name="account_name_dimanual_searchsable">用户名已禁用</string>
+    <string name="account_name_locked">用户名已锁定</string>
+    <string name="account_connect_error">网络连接错误</string>
+    <string name="account_proxy_authorization">代理需要授权</string>
+    <string name="account_proxy_refused">代理拒绝请求</string>
+    <string name="account_password_format_error">密码格式错误，请输入4-20位字符。(英文、数字、下划线、减号)</string>
+    <string name="account_confirm_password_error">与输入的密码不相符</string>
+    <string name="account_verify_code_error">校验码错误</string>
+    <string name="account_name_has_existed">用户名已存在,请输入其他用户名</string>
+    <string name="account_network_disconnected">网络未连接</string>
+    <string name="account_network_connect_error">网络连接错误</string>
+    <string name="Account_name_hint">个人邮箱/手机号</string>
+    <string name="Account_password_hint">4-20位字符</string>
+    <string name="Account_register_loading">注册并登录中...</string>
+    <string name="Account_agreement_loading">加载用户协议中...</string>
+    <string name="Account_license_loading">正在加载开源许可</string>
+    <string name="account_login_loading">正在登录</string>
+    <string name="account_dlg_logout">确认注销账户吗？</string>
+    <string name="account_dlg_logout_ok">您已成功注销</string>
+    <string name="account_dlg_logouting">正在注销</string>
+    <string name="account_old_password">请输入原始密码:</string>
+    <string name="account_new_password">请输入新密码:</string>
+    <string name="account_confirm_new_password">请再次输入新密码:</string>
+    <string name="account_save_password">保存修改</string>
+    <string name="account_save_password_ok">密码修改成功</string>
+    <string name="account_send_password">发送密码</string>
+    <string name="account_return">返回登录</string>
+    <string name="account_forget_password_ok">成功找回密码</string>
+    <string name="dlg_confirm_delete">确定卸载此应用？</string>
+    <string name="uninstall_title">卸载应用</string>
+    <string name="uninstalled">卸载已完成</string>
+    <string name="uninstalling_text">正在卸载</string>
+    <string name="uninstall_summary">这个应用程序将被卸载</string>
+    <string name="system_default_city_name">北京</string>
+    <string name="system_default_city_id">101010100</string>
+    <string name="system_search_city_null">未发现此城市</string>
+    <string name="data_am">上午</string>
+    <string name="data_pm">下午</string>
+    <string name="time_point">:</string>
+    <string name="date_line">/</string>
+    <string name="message_pointer">、</string>
+    <string name="connect_service">正在连接服务器...</string>
+    <string name="connect_service_fail">连接服务器失败</string>
+    <!-- <string name="connect_service_fail">读写数据失败,网络连接异常或者SD卡不存在。</string> -->
+    <!-- <string name="connect_service_fail">读写数据失败,网络连接异常。</string> -->
+    <string name="update_io_fail">读写数据失败,SD卡不存在。</string>
+    <string name="found_new_version">检测到新版本</string>
+    <string name="not_new_version">未发现新版本</string>
+    <string name="not_new_xml">未发现配置文件</string>
+    <string name="memory_no_space">升级错误，SD卡空间不足，请整理磁盘并预留300M的磁盘空间。</string>
+    <string name="cache_no_space">升级错误，/cache/目录空间不足，请整理磁盘并预留300M的磁盘空间。</string>
+    <string name="sdcard_no_space">SD卡空间不足</string>
+    <string name="update_downloading_data">正在下载升级包,已完成%1$s</string>
+    <string name="update_downloading_sdcard">正在下载升级包,已完成%1$s,请勿拨出SD卡！</string>
+    <string name="update_download_ok">升级包下载成功</string>
+    <string name="update_checking">正在校验升级包...</string>
+    <string name="update_check_ok">校验成功</string>
+    <string name="update_check_fail">校验失败，请重新下载</string>
+    <string name="update_serial_number_null">未发现序列号</string>
+    <string name="update_serial_number_error">序列号错误</string>
+    <string name="update_no_sdcard">未发现SD卡，请插入SD卡后重试</string>
+    <string name="update_yes">是</string>
+    <string name="update_no">否</string>
+    <string name="update_error">升级包下载失败,请重试!</string>
+    <string name="update_tips">,请勿拔信号线!</string>
+    <string name="proxy_error_invalid_host">"您键入的主机名无效。"</string>
+    <string name="proxy_error_empty_port">"您必须填写端口字段。"</string>
+    <string name="proxy_error_empty_host_set_port">"如果主机字段为空，则端口字段必须为空。"</string>
+    <string name="proxy_error_invalid_port">"您键入的端口无效。"</string>
+    <string name="volume">音量</string>
+    <string name="mute">扬声器已关闭</string>
+    <string name="shutdown_progress">"正在关机"</string>
+    <string name="power_off">"关机"</string>
+    <string name="name_password_digits">".-_@0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ\/"</string>
+    <string name="ipaddr_digits">".0123456789"</string>
+    <string name="proxy_exit_msg">"代理设置失败，是否继续设置代理？"</string>
+    <string name="str_continue">"继续"</string>
+    <string name="str_exit">"退出"</string>
+    <string name="move_to_sd_prompt">"正在将%1$s移至SD卡中，请不要将SD卡取出"</string>
+    <string name="move_to_nand_prompt">"正在将%1$s移至内存中，请不要将SD卡取出"</string>
+    <string name="move_app_title">"移动应用程序"</string>
+    <string name="data_year">年</string>
+    <string name="data_month">月</string>
+    <string name="data_data">日</string>
+    <string name="data_hour">时</string>
+    <string name="data_minite">分</string>
+    <string name="data_second">秒</string>
+    <string name="timeformat_12">12</string>
+    <string name="timeformat_24">24</string>
+    <string name="timeformat">小时制</string>
+    <string name="hardware_info">硬件基本信息</string>
+    <string name="hardware_version">硬件版本:</string>
+    <string name="cpu_info">CPU:</string>
+    <string name="memory_name">内存:</string>
+    <string name="storage_info">存储使用情况</string>
+    <string name="sofeware_version">系统软件版本</string>
+    <string name="joysee_version">平台软件版本</string>
+    <string name="memory_flash">内置flash:</string>
+    <string name="memory_flash_total">%1$s</string>
+    <string name="memory_flash_unuse">(剩余%1$s可用)</string>
+    <string name="memory_sdcard">外置SD卡:</string>
+    <string name="memory_sdcard_total">%1$s</string>
+    <string name="memory_sdcard_unuse">(剩余%1$s可用)</string>
+    <string name="android_version">Android版本:</string>
+    <string name="heart_version">内核版本:</string>
+    <string name="joysee_sofware_version">软件版本:</string>
+    <string name="input_succ">输入法设置成功</string>
+    <string name="output_succ">音频设置成功</string>
+    <string name="resolution_succ">分辨率设置成功</string>
+    <string name="language_succ">语言设置成功</string>
+    <string name="no_net_connect">无网络连接</string>
+    <string name="wifi_connect_success">连接成功</string>
+    <string name="wifi_connect_password_error">"  密码错误，请重新输入!"</string>
+    <string name="mouse_quick">快</string>
+    <string name="mouse_slow">慢</string>
+    <string name="mouse_title">调节鼠标速度</string>
+    <string name="setting_name">设置</string>
+    <!-- ============= -->
+    <!-- 搜索页面（新） -->
+    <!-- ============= -->
+    <string name="search_tv">电视搜索</string>
+    <string name="search_tv_title">电视搜索</string>
+    <string name="fast_search">快速搜索</string>
+    <string name="all_search">全频搜索</string>
+    <string name="manual_search">手动搜索</string>
+    <string name="download_search">网络下载</string>
+    <string name="fast_search_main">电视搜索/快速搜索</string>
+    <string name="start_search">开始搜索</string>
+    <string name="stop_search">停止搜索</string>
+    <string name="advanced_option">高级选项</string>
+    <string name="channel_count_text">个频道</string>
+    <string name="channel_number_text">频道号</string>
+    <string name="channel_name_text">频道名称</string>
+    <string name="channel_type_text">频道类型</string>
+    <string name="channel_frequency_text">所在频率</string>
+    <string name="start_download">开始下载</string>
+    <string name="manual_search_main">电视搜索/手动搜索</string>
+    <string name="download_search_main">频道搜索/网络下载</string>
+    <string name="frequency_text">频率</string>
+    <string name="khz">Khz</string>
+    <string name="qam">QAM</string>
+    <string name="kbps">Kbps</string>
+    <string name="symbol_rate_text">符号率</string>
+    <string name="modulate_text">调制方式</string>
+    <string name="sixteen_qam">16</string>
+    <string name="sixtyfour_qam">64</string>
+    <string name="onetwoeight_qam">128</string>
+    <string name="twofivesix_qam">256</string>
+    <string name="cancle">取消</string>
+    <string name="back">返回搜索</string>
+    <string name="fast_search_advanced_title">电视搜索/快速搜索/高级设置</string>
+    <string name="full_search_advanced_title">电视搜索/全频搜索/高级设置</string>
+    <string name="full_search_title">电视搜索/全频搜索</string>
+    <string name="download_search_anvanced_title">频道搜索/网络下载频道列表/高级设置</string>
+    <string name="address_code_text">地区码：</string>
+    <string name="download_progress_text">下载进度：</string>
+    <string name="thirthtytwo_qam">32 QAM</string>
+    <string name="save_success">保存成功</string>
+    <string name="search_channel_list_tv">电视</string>
+    <string name="search_channel_list_bc">广播</string>
+    <string name="search_dialog_exit_message">您确定退出搜索页面？</string>
+    <string name="search_dialog_confirm">确定</string>
+    <string name="search_dialog_cancel">取消</string>
+    <string name="search_dialog_title">提示</string>
+    <string name="symbol_rate_out_range">符号率只能为：6875</string>
+    <string name="channel_count_title">共搜索到</string>
+    <string name="isSave">是否保存搜索结果,并立即收看电视 ?</string>
+    <string name="stop_search_title">停止搜索</string>
+    <string name="tv_channel_count_text">个电视频道</string>
+    <string name="bc_channel_count_text">个广播频道</string>
+    <string name="search_no_channels">没有搜索到频道</string>
+
+    <!-- ============= -->
+    <!-- 频道搜索整理 -->
+    <!-- ============= -->
+
+    <string name="channel_list_category">全部频道</string>
+    <string name="symbol_check_symbol_querty">信号质量：</string>
+    <string name="symbol_check_symbol_value">信号强度：</string>
+    <string name="channel_search_startsearchtext">开始搜索</string>
+    <string name="channel_search_stopsearchtext">停止搜索</string>
+    <string name="channel_search_researchtext">重新搜索</string>
+    <string name="search_resset">恢复默认设置</string>
+    <string name="search_resset_success">恢复默认值成功</string>
+    <string name="channel_search_startsearchtip">开始搜索...</string>
+    <string name="channel_search_initsearchtip">初始化搜索...</string>
+    <string name="channel_search_completesearchtip">搜索完毕...</string>
+    <string name="channel_search_stopsearchtip">停止搜索...</string>
+    <string name="channel_search_searchingtip">搜索中...</string>
+    <string name="channel_search_searching">频道正在搜索中...</string>
+    <string name="search_progress_text">搜索进度:</string>
+    <string name="search_progress_zero">0%</string>
+    <string name="search_completed">搜索完成，是否立即观看电视？</string>
+    <string name="search_stop_save_ask">是否保存搜索频道，并立即收看电视 ?</string>
+    <string name="search_no_channel">未搜索到频道</string>
+    <string name="search_no_channel_manual">该频点没有频道，是否直接收看电视？</string>
+    <string name="type_frequency_text">输入频率</string>
+    <string name="symbol_rate">符号率</string>
+    <string name="modulation">调制</string>
+    <string name="frequency_out_of_range">频率的范围为47-862，请重新输入</string>
+    <string name="frequency_null">频率不能为空，请重新输入</string>
+    <string name="symbol_rate_out_of_range">符号率的范围为1500-7200，请重新输入</string>
+    <string name="symbol_rate_null">符号率不能为空，请重新输入</string>
+    <string name="current_frequency_text">当前频率:</string>
+    <string name="available_channels_text">搜索到 ： 电视</string>
+    <string name="available_bc_text">广播</string>
+    <string name="available_nvod_text">NVOD</string>
+    <string name="m_hz">M HZ</string>
+    <string name="k_baud">K baud </string>
+    <string name="max_hz">6875</string>
+    <string name="qam_64">64</string>
+    <string name="qam_128">128</string>
+    <string name="qam_256">256</string>
+    <string name="s642">642</string>
+    <string name="s6875">6875</string>
+    <string name="s64">64</string>
+    <string name="s128">128</string>
+    <string name="s256">256</string>
+    <string name="s151"> 151 </string>
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_watch">观看</string>
+    <string name="alert_dialog_cancel">返回</string>
+    <string name="channel_num">频道号</string>
+    <string name="channel_name">频道名称</string>
+    <string name="channel_type">频道类型</string>
+    <string name="channel_fre">所在频率</string>
+    <string name="search_complete_text">完成</string>
+    <string name="search_result_text">搜索结果： 共</string>
+    <string name="search_count_channel_text">个频道</string>
+    <string name="zero">0</string>
+    <string name="config_work_time_save_and_back">保存并返回</string>
+    <string name="ok">确定</string>
+    <string name="no">取消</string>
+    <string name="alert">"提示"</string>
+    <string name="search_stoping">"正在停止"</string>
+    
+    <!-- 密码管理 -->
+    <string name="alter_pwd">修改密码</string>
+    <string name="alter_pwd_title">系统设置/修改密码</string>
+    <string name="config_old_password_input_wrong">旧密码输入错误</string>
+    <string name="config_password_is_null">新、旧密码均不能为空</string>
+    <string name="config_password_pattern_wrong">密码只能由数字组成</string>
+    <string name="config_password_new_password_length_wrong">密码长度只能为5-10位</string>
+    <string name="config_password_modified_success">密码修改成功</string>
+    <string name="config_password_modified_faild">密码修改失败</string>
+    <!-- ============= -->
+    <!-- 智能卡项 -->
+    <!-- ============= -->
+    <string name="config_system">智能卡</string>
+    <string name="config_card_number">本机卡号:</string>
+    <string name="config_work_time">工作时段</string>
+    <string name="config_authorise_message">授权信息</string>
+    <string name="config_modify_password">修改密码</string>
+    <string name="config_card_info_text">智能卡信息</string>
+    <string name="config_work_time_start">开始工作时间</string>
+    <string name="config_work_time_save_success">工作时段设置成功</string>
+    <string name="config_work_time_end">结束工作时间</string>
+    <string name="config_work_time_input_passward">请输入密码</string>
+    <string name="config_work_time_input_passward_hint">输入6位数字密码</string>
+    <string name="config_work_time_input_passward_wrong">密码输入错误</string>
+    <string name="config_work_time_hint">0</string>
+    <string name="config_work_time_hour">时</string>
+    <string name="config_work_time_minute">分</string>
+    <string name="config_work_time_second">秒</string>
+    <string name="config_watch_level">观看级别</string>
+    <string name="config_watch_level_age_text">年龄</string>
+    <string name="config_watch_level_age">岁以上</string>
+    <string name="config_watch_level_set_success">观看级别设置成功</string>
+    <string name="config_authorise_program_number">授权节目编号</string>
+    <string name="config_authorise_end_time">截止时间</string>
+    <string name="config_authorise_can_record">是否可以录制</string>
+    <string name="config_authorise_operate_id">选择运营商ID</string>
+    <string name="config_authorise_operate_feature">运营商用户特征：%1$s</string>
+    <string name="config_modify_password_old">请输入原始密码</string>
+    <string name="config_modify_password_new">请输入新密码</string>
+    <string name="config_modify_password_new_confirm">请再次输入新密码</string>
+    <string name="config_midify_password_input_wrong">密码输入应为6位</string>
+    <string name="config_midify_password_success">密码修改成功</string>
+    <string name="config_midify_old_wrong">原始密码输入错误</string>
+    <string name="config_midify_card_not_finded">智能卡不存在或是无效卡</string>
+    <string name="config_midify_unknow_wrong">未知错误</string>
+    <string name="config_midify_password_input_compare">两个新密码不相同</string>
+    <string name="config_modify_password_save">保存</string>
+    <string name="config_modify_password_cancel">取消</string>
+    <string name="config_input_wrong">输入错误,请检查是否小时数不超过23，分钟数不超过59</string>
+    <string name="config_getting_card_number">正在获取本机卡号，请稍后......</string>
+    <string name="config_auth_yes_record">是</string>
+    <string name="config_auth_no_record">否</string>
+    <string name="launcher_logo_textview_text">福州电视台</string>
+    <string name="timeview_dayofweek_1">星期天</string>
+    <string name="timeview_dayofweek_2">星期一</string>
+    <string name="timeview_dayofweek_3">星期二</string>
+    <string name="timeview_dayofweek_4">星期三</string>
+    <string name="timeview_dayofweek_5">星期四</string>
+    <string name="timeview_dayofweek_6">星期五</string>
+    <string name="timeview_dayofweek_7">星期六</string>
+    <string name="launcher_allapps_page_title">我的应用</string>
+    <string name="launcher_weather_fail_hint">获取天气信息失败</string>
+    <string name="ca_input_password_error">输入密码错误,请重新输入</string>
+    <string name="ca_modify_password_error">修改密码失败</string>
+    <string name="ca_modify_worktime_error">工作时段设置失败</string>
+    <string name="ca_modify_worktime_error0">开始时间必须小于结束时间</string>
+    <string name="config_system_worktime">智能卡/工作时段</string>
+    <string name="config_system_level">智能卡/观看级别</string>
+    <string name="config_system_authorise">智能卡/授权信息</string>
+    <string name="config_system_modifypassword">智能卡/修改密码</string>
+    <string name="config_system_cardinfo">系统设置/智能卡/智能卡信息</string>
+    <string name="ca_charge_interval_year">"年"</string>
+    <string name="ca_charge_interval_month">"月"</string>
+    <string name="ca_charge_interval_day">"日"</string>
+    <string name="ca_getAuthorise_error">获取授权信息失败</string>
+    <!-- CA 升级 -->
+    <string name="ca_update_success">升级成功</string>
+    <string name="ca_update_false">升级失败</string>
+    <string name="ca_noupdate">未进行升级</string>
+    <string name="ca_update_rate">进度:%1$d/100</string>
+    <string name="ca_update_msg">智能卡升级中,请不要拔卡或关机!</string>
+    <string name="ca_update_type1">升级数据接收中</string>
+    <string name="ca_update_type2">智能卡升级中</string>
+    <string name="config_card_stbid">STBID:</string>
+    <string name="config_card_loader">LOADER 版本:U-Boot 2010.06</string>
+    <string name="config_card_update_time">升级时间:%1$s</string>
+    <string name="config_card_update_state">升级状态:%1$s</string>
+    <string name="config_card_ca_version_text">CA版本号:%1$s</string>
+	<!--童锁-->
+	<string name="applock_txt">童锁</string>
+	<string name="applock_txt_set_on">开启</string>
+	<string name="applock_txt_seto_ff">关闭</string>
+	<string name="applock_txt_status_on">已开启</string>
+	<string name="applock_txt_status_off">已关闭</string>
+	<string name="applock_on_ok">童锁开启成功</string>
+	<string name="applock_off_ok">童锁已关闭</string>
+	<string name="applock_txt_psswd">设置密码</string>
+	<string name="applock_system_modifypassword">童锁/修改密码</string>	
+	<string name="applock_modify_password_old">请输入旧密码 (初始密码为000000)</string>
+	<string name="applock_locked">锁定</string>
+	<string name="applock_unlocked">解锁</string>
+	
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1112dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="1104dip"
+        android:layout_height="174dip"
+        android:gravity="center"
+        android:background="@drawable/index_search_bg"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/search_edittext"
+            android:layout_width="487dip"
+            android:layout_height="73dip"
+            android:background="@drawable/search_edittext2"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:id="@+id/search_button_search"
+            android:layout_width="200dip"
+            android:layout_height="70dip"
+            android:background="@drawable/public_detail_bt"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/app_search"
+            android:textColor="@color/down_load_text_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_search_layout_bottom"
+        android:layout_width="1700dip"
+        android:layout_height="230dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/search_all_app"
+            android:layout_width="562dip"
+            android:layout_height="170dip"
+            android:background="@drawable/big_item"
+            android:focusable="true"
+            android:nextFocusUp="@+id/search_edittext"
+            android:padding="20dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_all" />
+
+        <ImageView
+            android:id="@+id/search_all_queen"
+            android:nextFocusUp="@+id/search_button_search"
+             android:layout_width="562dip"
+            android:layout_height="170dip"
+            android:background="@drawable/big_item"
+            android:focusable="true"
+            android:padding="20dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_ranking" />
+    </LinearLayout>
+
+</LinearLayout>

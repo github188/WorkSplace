@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bg"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dip"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/tv_search_tv"
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip"
+            android:text="@string/search_tv"
+            android:textColor="@color/white"
+            android:textSize="45sp" >
+        </TextView>
+        <!-- 快速搜索 -->
+
+        <LinearLayout
+            android:id="@+id/ll_fast_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_tv"
+            android:layout_below="@id/tv_search_tv"
+            android:layout_marginTop="40dip"
+             >
+
+            <TextView
+                android:id="@+id/auto_search_textview"
+                android:layout_width="1200dip"
+                android:layout_height="100dip"
+                android:background="@drawable/text_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:onClick="onclick"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:drawableRight="@drawable/search_right_arrows"
+                android:text="@string/fast_search"
+                android:textColor="@drawable/text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+        <!-- 全频搜索 -->
+
+        <LinearLayout
+            android:id="@+id/ll_all_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_tv"
+            android:layout_below="@id/ll_fast_search"
+            android:layout_marginTop="20dip"
+             >
+
+            <TextView
+                android:id="@+id/full_search_textview"
+                android:layout_width="1200dip"
+                android:layout_height="100dip"
+                android:background="@drawable/text_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:drawableRight="@drawable/search_right_arrows"
+                android:text="@string/all_search"
+                android:textColor="@drawable/text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+        <!-- 手动搜索 -->
+
+        <LinearLayout
+            android:id="@+id/ll_manual_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_tv"
+            android:layout_below="@id/ll_all_search"
+            android:layout_marginTop="20dip"
+             >
+
+            <TextView
+                android:id="@+id/manual_search_textview"
+                android:layout_width="1200dip"
+                android:layout_height="100dip"
+                android:background="@drawable/text_selector"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:drawableRight="@drawable/search_right_arrows"
+                android:text="@string/manual_search"
+                android:textColor="@drawable/text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+        <!-- 网络下载 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_net_download"
+            android:layout_alignLeft="@id/tv_search_tv"
+            android:layout_below="@id/ll_manual_search"
+            android:layout_marginTop="20dip"
+             >
+
+            <TextView
+                android:id="@+id/download_search_textview"
+                android:layout_width="1200dip"
+                android:layout_height="100dip"
+                android:background="@drawable/text_selector"
+                android:focusable="true"
+                android:drawableRight="@drawable/search_right_arrows"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:text="@string/download_search"
+                android:textColor="@drawable/text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+        
+        <!-- 恢复默认设置 -->
+        
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_search_tv"
+            android:layout_below="@id/search_net_download"
+            android:layout_marginTop="20dip"
+             >
+            <TextView
+                android:id="@+id/search_resset"
+                android:layout_width="1200dip"
+                android:layout_height="100dip"
+                android:background="@drawable/text_selector"
+                android:focusable="true"
+                android:drawableRight="@drawable/search_right_arrows"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:text="@string/search_resset"
+                android:textColor="@drawable/text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</FrameLayout>

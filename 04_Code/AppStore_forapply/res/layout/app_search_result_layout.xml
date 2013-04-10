@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_home"
+    android:id="@+id/app_search_result_rootview"
+     >
+    
+      <ImageView
+        android:visibility="gone" 
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:id="@+id/animation_imageview"
+        android:background="@drawable/btn_float_back"/>
+
+      	<!--  top 1 -->
+	<RelativeLayout
+        android:id="@+id/search_top"
+        android:layout_height="60dip"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true" >
+	        <TextView
+	            android:id="@+id/search_top_left"
+	            android:layout_width="400dip"
+	            android:layout_height="60dip"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="25dip"
+	            android:layout_marginTop="15dip"
+	            android:text="@string/app_search_result"
+	            android:textColor="@color/black"
+	            android:textSize="20dip" />
+	        <com.bestv.ott.appstore.animation.DownloadTextView
+	            android:id="@+id/top_down_record"
+	            android:layout_width="200dip" 
+		        android:layout_height="70dip"
+	            android:layout_alignParentRight="true"
+	            />
+	</RelativeLayout>
+    
+        <com.bestv.ott.appstore.animation.SearchResultLayout 
+            android:layout_width="640dip"
+            android:id="@+id/search_edit_linearlayout"
+            android:layout_below="@id/search_top"
+            android:layout_height="100dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginLeft="160dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/app_search_background"
+        >
+            <com.bestv.ott.appstore.animation.EditTextButton
+                android:layout_width="400dip"
+                android:layout_height="60dip"
+                android:layout_marginLeft="50dip"
+                android:id="@+id/search_edittext"/>
+    
+            <com.bestv.ott.appstore.animation.AnimationImageButton
+                android:id="@+id/search_button_search"
+                android:layout_width="80dip"
+                android:layout_height="70dip"
+                android:layout_marginLeft="10dip"
+                />
+    
+            <com.bestv.ott.appstore.animation.AnimationImageButton
+                android:id="@+id/search_button_voice"
+                android:layout_marginLeft="20dip"
+                android:layout_width="80dip"
+                android:visibility="gone"
+                android:layout_height="70dip"
+                 />
+    
+        </com.bestv.ott.appstore.animation.SearchResultLayout>
+
+        <ListView
+            android:id="@+id/search_result_listview"
+            android:layout_width="700dip"
+            android:layout_height="400dip"
+            android:layout_marginLeft="130dip"
+            android:listSelector="#00000000"
+            android:divider="#00000000"
+            android:layout_marginTop="30dip"
+            android:layout_below="@id/search_edit_linearlayout"
+            >
+        </ListView>
+        
+        <ImageView
+            android:id="@+id/up_image"
+            android:layout_width="65dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="80dip"
+            android:layout_marginLeft="250dip"
+            android:layout_toRightOf="@id/search_result_listview"
+            android:background="@drawable/arrowup"/>
+        <ImageView
+            android:id="@+id/down_imgae"
+            android:layout_width="65dip"
+            android:layout_height="30dip"
+            android:layout_toRightOf="@id/search_result_listview"
+            android:layout_marginLeft="250dip"
+            android:layout_marginTop="640dip"
+            android:background="@drawable/arrowdown"/>
+        <ViewFlipper
+            android:id="@+id/app_search_viewflipper"
+            android:layout_toRightOf="@id/search_result_listview"
+            android:layout_marginLeft="130dip"
+            android:layout_marginTop="110dip"
+            android:layout_width="280dip"
+            android:layout_height="580dip">
+        </ViewFlipper>
+
+</RelativeLayout>
+

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	>	
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:id="@+id/PopupLoginLayout" 
+	android:layout_width="1046px"
+	android:layout_height="726px"
+	android:layout_centerInParent="true"
+	android:foreground="@android:color/transparent"
+	android:background="@drawable/vod_popuplogin_bg"
+	android:paddingTop="0px"
+	android:paddingBottom="0px"
+	android:paddingLeft="0px"
+	android:paddingRight="0px"
+	>
+	
+	<LinearLayout
+		android:id="@+id/title"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="84px"
+		android:layout_marginTop="55px"
+		android:layout_marginLeft="81px"	
+	>	
+		<TextView
+			android:id="@+id/PopupLoginText1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:textSize="35px"
+			android:text="@string/vod_login_prefix"
+			android:textColor="@color/vod_login_title"
+			android:paddingTop="40px"
+		/>
+		
+		<TextView
+			android:id="@+id/PopupLoginText2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:textSize="75px"
+			android:textColor="@color/vod_login_title"
+			android:text="@string/vod_login"
+		/>	
+		
+		<TextView
+			android:id="@+id/PopupLoginText3" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:textSize="35px"
+			android:text="@string/vod_login_postfix"
+			android:textColor="@color/vod_login_title"
+			android:paddingTop="40px"
+		/>			
+		
+	</LinearLayout>
+	
+	<TextView
+		android:id="@+id/PopupLoginText4" 
+		android:layout_width="wrap_content"
+		android:layout_height="44px"
+		android:gravity="center"
+		android:textSize="35px"
+		android:layout_marginTop="15px"
+		android:text="@string/vod_login_prompt"
+		android:textColor="@color/vod_login_title"
+		android:layout_marginLeft="81px"
+		android:layout_below="@id/title"
+	/>
+	
+	<TextView
+		android:id="@+id/PopupLoginTextUserName" 
+		android:layout_width="wrap_content" 
+		android:layout_height="44px"
+		android:gravity="center"
+		android:textSize="35px"
+		android:text="@string/vod_login_userprompt"
+		android:textColor="@color/vod_login_label"
+		android:layout_marginTop="60px"
+		android:layout_marginLeft="81px"
+		android:layout_below="@id/PopupLoginText4"
+	/>
+	
+    <EditText
+   		android:id="@+id/PopupLoginEditUserName" 
+   		android:layout_width="884px" 
+   		android:layout_height="64px"
+   		android:layout_marginLeft="81px"
+		android:paddingLeft="7px"
+   		android:textSize="35px"
+   		android:textColor="@color/vod_loginpopup_dlg_focus" 
+   		android:background="@drawable/vod_popuplogin_edit"	
+		android:layout_below="@id/PopupLoginTextUserName"
+    />	
+	
+	<TextView
+		android:id="@+id/PopupLoginTextUserNameError" 
+		android:layout_width="884px" 
+		android:layout_height="40px"
+		android:gravity="right"
+		android:textSize="30px"
+		android:text="@string/vod_login_usererror"
+		android:layout_marginLeft="81px" 
+		android:textColor="@color/vod_loginpopup_dlg_error" 
+		android:layout_below="@id/PopupLoginEditUserName"
+		android:singleLine="true"		
+		android:ellipsize="end"
+	/>		
+	
+	<TextView
+		android:id="@+id/PopupLoginTextPassword" 
+		android:layout_width="wrap_content" 
+		android:layout_height="44px"
+		android:gravity="center"
+		android:textSize="35px"
+		android:text="@string/vod_login_passwordprompt"
+		android:textColor="@color/vod_login_label"
+		android:layout_marginTop="30px"
+		android:layout_marginLeft="81px"   	
+		android:layout_below="@id/PopupLoginTextUserNameError"
+	/>
+	
+    <EditText
+   		android:id="@+id/PopupLoginEditUserpassword" 
+   		android:layout_width="884px" 
+   		android:layout_height="64px"
+   		android:layout_marginLeft="81px"
+		android:paddingLeft="7px"
+   		android:textSize="35px"   
+   		android:textColor="@color/vod_loginpopup_dlg_focus"	
+   		android:background="@drawable/vod_popuplogin_edit"
+		android:layout_below="@id/PopupLoginTextPassword"
+    />	
+	
+	<TextView
+		android:id="@+id/PopupLoginBtnPasswordError" 
+		android:layout_width="120px" 
+		android:layout_height="35px"
+		android:gravity="center"
+		android:textSize="30px"
+		android:text="@string/vod_login_passworderror"
+		android:layout_marginTop="25px"
+		android:layout_marginLeft="144px"  
+		android:textColor="@color/vod_login_title" 		
+		android:layout_below="@id/PopupLoginEditUserpassword"	
+		android:focusable="true"
+	/>
+	
+	<TextView
+		android:id="@+id/PopupLoginTextPasswordError" 
+		android:layout_width="120px" 
+		android:layout_height="7px"
+		android:layout_marginTop="2px"
+		android:layout_marginLeft="144px"  	
+		android:visibility="invisible"	
+		android:background="@color/vod_login_label"		
+		android:layout_below="@id/PopupLoginBtnPasswordError"		
+	/>				
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="1000px"
+		android:layout_height="100px"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:foreground="@android:color/transparent"
+		android:background="@android:color/transparent"
+		android:layout_marginTop="10px"
+		android:layout_marginLeft="22px"
+		android:layout_below="@id/PopupLoginTextPasswordError"		
+	>
+		<Button android:id="@+id/LeftButton"
+			android:layout_width="352px"
+			android:layout_height="73px"
+			android:layout_marginLeft="93px"
+			android:textSize="40px"
+			android:background="@drawable/vod_popuplogin_left"
+			android:text="@string/vod_login"
+			android:gravity="center"
+			android:textColor="@drawable/textcolor"
+			/>
+
+		<Button android:id="@+id/RightButton"
+			android:layout_width="352px"
+			android:layout_height="73px"
+			android:textSize="40px"
+			android:layout_marginLeft="104px"
+			android:background="@drawable/vod_popuplogin_left" 
+			android:text="@string/vod_register"
+			android:gravity="center"
+			android:textColor="@drawable/textcolor"
+			/>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/BufferLayout"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:foreground="@android:color/transparent" android:background="@android:color/transparent">
+		<ImageView android:id="@+id/BufferBGImage"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/toast_bg" android:layout_centerInParent="true" />
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/BufferLinearLayout" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:gravity="center" android:foreground="@android:color/transparent"
+			android:background="@android:color/transparent">
+			<ImageView android:id="@+id/BufferImage"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@anim/loading" android:layout_centerInParent="true" />
+			<TextView android:id="@+id/text" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/vod_Logining"
+				android:gravity="center" android:textSize="30px" />
+		</LinearLayout>
+	</RelativeLayout>	
+</RelativeLayout>
+</LinearLayout>

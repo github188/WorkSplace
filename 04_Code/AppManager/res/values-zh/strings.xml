@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">应用管理器</string>
+    <string name="app_title">我的应用</string>
+    <array name="choice">
+    	<item name="start">启动程序</item>
+    	<item name="detail">详细信息</item>
+    	<item name="uninstall">卸载程序</item>
+    </array> 
+    <string name="start_error">启动此应用出错,请卸载后重装</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1131dip"
+    android:layout_height="642dip"
+    android:background="@drawable/program_reserve_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/program_reserve_title"
+        android:textColor="#474864"
+        android:textSize="72sp" />
+
+    <FrameLayout
+        android:layout_width="1050dip"
+        android:layout_height="380dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="25dip" >
+
+        <TextView
+            android:id="@+id/progaram_reserve_no_channel_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:text="@string/program_reserve_no_program_text"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <ListView
+            android:id="@+id/program_reserves_listview"
+            android:layout_width="1050dip"
+            android:layout_height="380dip"
+            android:background="@color/Transparent"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:listSelector="@drawable/program_reserves_list_selector"
+            android:scrollbarThumbVertical="@drawable/scroll_front"
+            android:scrollbarTrackVertical="@drawable/scroll_bg" >
+        </ListView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="943dip"
+        android:layout_marginTop="50dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/program_reserves_ok" />
+
+        <TextView
+            android:id="@+id/program_reserves_delete_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:text="删除"
+            android:textColor="#474864"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

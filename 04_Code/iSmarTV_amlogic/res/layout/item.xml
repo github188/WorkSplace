@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/ItemBack" 
+    android:layout_height="wrap_content"  
+    android:layout_width="wrap_content"  
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >  
+    <ImageView  
+        android:id="@+id/ItemImage"  
+        android:layout_width="302dp" 
+        android:layout_height="201dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY" 
+        android:src="@drawable/default_poster"
+        />
+    <TextView  
+        android:id="@+id/ItemText"  
+        android:layout_width="302dp"  
+		android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#f0f0f0"
+        android:textSize="30dp"
+        android:gravity="top|center_horizontal"
+        android:singleLine="true"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+        />  
+</LinearLayout>  

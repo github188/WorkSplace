@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="horizontal"
+ 	android:layout_width="1350dp" 
+ 	android:layout_height="950dp">
+ 	
+ 	  <GridView android:id="@+id/gridViewTheme" 
+	        	android:layout_height="wrap_content" 
+	        	android:layout_width="wrap_content" 
+	    		android:stretchMode="columnWidth"
+	    		android:listSelector="@drawable/bg_app_focus"
+	    		android:layout_marginLeft="80dp"
+ 				android:layout_marginTop="189dp"
+	    		android:columnWidth="187dp"
+	    		android:verticalSpacing="112dp" 
+				android:horizontalSpacing="33dp" 
+				android:scrollbars="none"
+				android:paddingRight="0dp"
+				android:gravity="center"		
+	        	android:numColumns="4">
+	        </GridView>
+<!-- 				android:scrollbarStyle="outsideInset"
+				android:scrollbarThumbVertical="@drawable/progress_focus_v"
+				android:scrollbarTrackVertical="@drawable/progress_normal_v" -->
+	   
+ 	  <RelativeLayout
+		android:layout_height="172dp" 
+		android:layout_width="1140dp"
+		android:layout_centerVertical="true"
+		android:background="@drawable/dlg_bg"
+		android:id="@+id/toastLayout"
+		android:visibility="visible">  
+		<TextView    
+			android:id="@+id/toast_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"   
+		    android:textColor="#bbbbbb"
+		    android:textSize="30dp"       
+		    android:singleLine="true"    
+		    android:text="@string/loading_theme"
+		    android:layout_centerInParent="true"/>
+		<ImageView
+		    android:layout_toRightOf="@id/toast_text"  
+		    android:id="@+id/toastImage"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@anim/loading"
+		    android:visibility="visible"
+		    android:layout_marginLeft="10dp"
+		    android:layout_centerVertical="true"/>    
+	</RelativeLayout>
+ 	
+</RelativeLayout>            

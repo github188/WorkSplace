@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="204dp"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wirelessConnect" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ethsetting_divide" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WIFI" />              
+
+
+        <Spinner
+            android:id="@+id/wifiSpinner"
+            android:layout_width="245dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="300dp"
+            style="@style/SpinnerArrow"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wifi_refresh"
+        android:layout_width="1040dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        style="@style/EditTextStyle" />
+
+    <LinearLayout
+        android:layout_width="1080dp"
+        android:layout_height="330dp" 
+        android:layout_marginTop="20dp" >       
+    
+      
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_wirelessadd"
+            style="@style/ButtonMiddleStyle"
+            android:layout_width="241dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/wifi_add" />
+
+
+</LinearLayout>

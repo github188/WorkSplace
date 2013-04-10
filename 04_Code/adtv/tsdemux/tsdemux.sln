@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsdemux", "tsdemux.vcproj", "{AAAB696C-EAE6-4FE7-828A-FF10AAF176F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tsdemux_t", "tsdemux_t.vcproj", "{00A0EF01-2194-40BC-8267-ABA5EC1E1AE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAAB696C-EAE6-4FE7-828A-FF10AAF176F9} = {AAAB696C-EAE6-4FE7-828A-FF10AAF176F9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAAB696C-EAE6-4FE7-828A-FF10AAF176F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AAAB696C-EAE6-4FE7-828A-FF10AAF176F9}.Debug|Win32.Build.0 = Debug|Win32
+		{AAAB696C-EAE6-4FE7-828A-FF10AAF176F9}.Release|Win32.ActiveCfg = Release|Win32
+		{AAAB696C-EAE6-4FE7-828A-FF10AAF176F9}.Release|Win32.Build.0 = Release|Win32
+		{00A0EF01-2194-40BC-8267-ABA5EC1E1AE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00A0EF01-2194-40BC-8267-ABA5EC1E1AE5}.Debug|Win32.Build.0 = Debug|Win32
+		{00A0EF01-2194-40BC-8267-ABA5EC1E1AE5}.Release|Win32.ActiveCfg = Release|Win32
+		{00A0EF01-2194-40BC-8267-ABA5EC1E1AE5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/email_main_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/search_menu_bg" >
+
+    <!-- 邮件标题 文字字号72 透明度70% 颜色 F0F0F0 -->
+
+    <TextView
+        android:id="@+id/email_main_title"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dip"
+        android:layout_marginTop="20dip"
+        android:text="@string/email_title_str"
+        android:textColor="#B2F0F0F0"
+        android:textSize="72sp" />
+
+    <!-- 两个翻页按钮 -->
+
+    <Button
+        android:id="@+id/email_page_up_button"
+        android:layout_width="133dip"
+        android:layout_height="51dip"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/email_main_title"
+        android:layout_marginLeft="316dip"
+        android:text="@string/email_page_up_str"
+        android:textColor="#f0f0f0"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/email_page_down_button"
+        android:layout_width="133dip"
+        android:layout_height="51dip"
+        android:layout_alignBaseline="@id/email_page_up_button"
+        android:layout_marginLeft="25dip"
+        android:layout_toRightOf="@id/email_page_up_button"
+        android:focusable="false"
+        android:text="@string/email_page_down_str"
+        android:textColor="#f0f0f0"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/email_space_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="31dip"
+        android:layout_below="@id/email_main_title"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="316dip"
+        android:layout_marginTop="45dip"
+        android:focusable="false"
+        android:text="@string/email_space_info_str"
+        android:textColor="#f0f0f0"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/email_nospace_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="31dip"
+        android:layout_below="@id/email_main_title"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="45dip"
+        android:layout_toRightOf="@id/email_space_info_tv"
+        android:focusable="false"
+        android:text="@string/email_nospace_tips"
+        android:textColor="#ff0000"
+        android:visibility="invisible"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/email_deleteall_button"
+        android:layout_width="133dip"
+        android:layout_height="51dip"
+        android:layout_alignBaseline="@id/email_space_info_tv"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="840dip"
+        android:layout_toRightOf="@id/email_space_info_tv"
+        android:focusable="false"
+        android:text="@string/email_deleteall_str"
+        android:textColor="#f0f0f0"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/email_title_ll"
+        android:layout_width="1344dip"
+        android:layout_height="80dip"
+        android:layout_below="@id/email_space_info_tv"
+        android:layout_marginLeft="316dip"
+        android:layout_marginTop="10dip"
+        android:background="#575757"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/email_item_title"
+            android:textColor="#999999"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/email_item_title_time"
+            android:textColor="#999999"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/email_item_title_type"
+            android:textColor="#999999"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/email_listview"
+        android:layout_width="1344dip"
+        android:layout_height="684dip"
+        android:layout_below="@id/email_title_ll"
+        android:layout_marginLeft="316dip"
+       	android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#999999"
+        android:dividerHeight="1dip"
+        android:listSelector="@drawable/email_list_selector" />
+
+    <ProgressBar
+        android:id="@+id/email_progressbar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:progressDrawable="@color/blue" />
+
+    <!-- 操作提示信息 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/email_listview"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_bottom_tips"
+            android:textColor="#f0f0f0"
+            android:textSize="25sp" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

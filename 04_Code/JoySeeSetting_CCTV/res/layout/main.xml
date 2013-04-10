@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setting_bg" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_left"
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/setting_bg_left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/setting_name"
+                android:textColor="@color/yellow"
+                android:textSize="40sp" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="400dp"
+                android:layout_height="560dp"
+                android:layout_marginTop="30dp"
+                android:cacheColorHint="#00000000"
+                android:listSelector="@drawable/list_item_bg"
+                android:fadingEdge="none"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <!-- 
+                        android:listSelector="@drawable/tab_indicator"
+        
+         -->
+        
+        <LinearLayout
+            android:id="@+id/layout_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:id="@+id/setting_content_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical" >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

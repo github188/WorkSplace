@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_advanced_option_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_menu_bg"
+    android:orientation="vertical"
+    android:paddingTop="53dip" >
+
+    <TextView
+        android:id="@+id/search_advanced_option_title"
+        android:layout_width="wrap_content"
+        android:layout_height="38dip"
+        android:layout_marginLeft="69dp"
+        android:drawableLeft="@drawable/menu_back"
+        android:drawablePadding="13dip"
+        android:gravity="center_vertical"
+        android:paddingRight="13dip"
+        android:text="@string/search_fast_search_advanced_title"
+        android:textColor="@color/search_main_text"
+        android:textSize="23sp" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dip"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center_vertical"
+        android:paddingRight="13dip"
+        android:text="@string/search_settings_title"
+        android:textColor="@color/grey_txt"
+        android:textSize="23sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="13dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="33dip"
+            android:text="@string/search_frequency"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+
+        <com.joysee.adtv.ui.SearchEditText
+            android:id="@+id/search_advanced_option_frequency"
+            android:layout_width="466dip"
+            android:layout_height="43dip"
+            android:background="@drawable/search_et_selector"
+            android:gravity="center_vertical"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:paddingLeft="26dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/search_khz"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="33dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_symbol_rate"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+
+        <com.joysee.adtv.ui.SearchEditText
+            android:id="@+id/search_advanced_option_symbolrate"
+            android:layout_width="466dip"
+            android:layout_height="43dip"
+            android:background="@drawable/search_et_selector"
+            android:gravity="center_vertical"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:paddingLeft="26dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/search_kbps"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="44dip"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="33dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_modulate"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/search_settings_qam_linear"
+            android:layout_width="466dip"
+            android:layout_height="43dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/search_et_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/search_settings_qam_textview"
+                android:layout_width="400dp"
+                android:layout_height="43dip"
+                android:gravity="center_vertical"
+                android:duplicateParentState="true"
+                android:paddingLeft="26dp"
+                android:text="@string/search_64"
+                android:textColor="@drawable/search_text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/search_settings_qam_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/search_settings_arrows_unfocus" />
+        </LinearLayout>
+        <!--
+             <Spinner
+            android:id="@+id/search_adjust_method"
+            android:layout_width="700dip"
+            android:layout_height="66dip"
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/search_spiner_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/transprent"
+            android:dropDownVerticalOffset="1dip"
+            android:popupBackground="#131723"
+            android:prompt="@string/search_cancle"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/search_main_text"
+            android:textSize="30sp" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="@string/search_qam"
+            android:textColor="@color/search_main_text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:layout_marginLeft="150dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+    -->
+
+    <Button
+        android:id="@+id/search_advanced_option_save_button"
+        android:layout_width="200dip"
+        android:layout_height="48dip"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="140dip"
+        android:text="@string/search_save"
+        android:textSize="23sp" />
+
+    <!--
+    <Button
+            android:id="@+id/search_advanced_option_cancel_button"
+            android:layout_width="256dip"
+            android:layout_height="72dip"
+            android:layout_marginLeft="56dip"
+            android:text="@string/search_cancle"
+            android:textColor="@color/text"
+            android:textSize="35sp" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

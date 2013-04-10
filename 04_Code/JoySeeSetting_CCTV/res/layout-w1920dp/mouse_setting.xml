@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1100dp"
+    android:layout_height="400dp"
+    android:layout_marginLeft="71dp"
+    android:layout_marginTop="100dp" >
+
+    <TextView
+        android:id="@+id/mouse_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/mouse_title"
+        android:textColor="@color/yellow"
+        android:textSize="35sp" />
+
+    <SeekBar
+        android:id="@+id/progressbar_mouse"
+        style="@style/seekBarMyStyle"
+        android:layout_width="1100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mouse_setting_title"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/mouse_setting_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/progressbar_mouse"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/progressbar_mouse"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/mouse_slow"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/mouse_setting_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/progressbar_mouse"
+        android:layout_below="@id/progressbar_mouse"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/mouse_quick"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

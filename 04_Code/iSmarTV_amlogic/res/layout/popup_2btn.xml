@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:id="@+id/PopupLayout" 
+	android:layout_width="806px"
+	android:layout_height="444px"
+	android:layout_centerInParent="true"
+	android:gravity="center"
+	android:foreground="@android:color/transparent"
+	android:background="@drawable/popup_bg"
+	android:paddingTop="20px"
+	android:paddingBottom="20px"
+	android:paddingLeft="23px"
+	android:paddingRight="23px"
+	>
+	<TextView
+		android:id="@+id/PopupText" 
+		android:layout_width="fill_parent" 
+		android:layout_height="304px"
+		android:gravity="center"
+		android:textSize="35px"
+	/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="760px"
+		android:layout_height="100px"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:foreground="@android:color/transparent"
+		android:background="@android:color/transparent"
+	>
+		<Button android:id="@+id/LeftButton"
+			android:layout_width="440px"
+			android:layout_height="fill_parent"
+			android:textSize="40px"
+			android:textColor="@drawable/textcolor"
+			android:background="@drawable/popup_left_btn"/>
+		<Button android:id="@+id/RightButton"
+			android:layout_width="320px"
+			android:layout_height="fill_parent"
+			android:textSize="40px"
+			android:textColor="@drawable/textcolor"
+			android:background="@drawable/popup_right_btn"/>
+	</LinearLayout>
+</LinearLayout>

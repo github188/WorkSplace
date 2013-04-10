@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dlg_big_bg"
+	android:layout_width="806dp"
+	android:layout_height="922dp">
+	
+    <TextView android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+        style="@style/DialogTitileTextViewStyle" 
+        android:id="@+id/text_ssid" 
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="46dp"
+	    android:singleLine="true"
+	    android:layout_marginRight="80dp"
+		android:ellipsize="marquee" 
+        android:layout_alignParentTop="true"  >
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="718dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/text_ssid"
+        android:background="@drawable/uninstall_image" />
+    
+        <TextView android:text="@string/wifi_security" 
+        	android:layout_width="300dp" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_security_title" 
+        	android:layout_below="@+id/divider" 
+        	android:layout_alignLeft="@+id/text_ssid" 
+        	android:layout_marginTop="20dp">
+        </TextView> 
+        <TextView android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_security" 
+        	android:paddingLeft="10dp"
+        	android:layout_marginRight="80dp"
+        	android:layout_marginLeft="425dp"
+        	android:layout_marginTop="20dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/divider"  >
+        </TextView>
+        
+        <TextView android:text="@string/wifi_strength" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_strength_title" 
+        	android:layout_below="@+id/text_wifi_security_title" 
+        	android:layout_alignLeft="@+id/text_ssid" 
+        	android:layout_marginTop="40dp">
+        </TextView>
+        <TextView android:layout_width="match_parent" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_level" 
+        	android:paddingLeft="10dp"
+        	android:layout_marginTop="40dp"
+        	android:layout_alignRight="@+id/text_wifi_security"
+        	android:layout_alignLeft="@+id/text_wifi_security"
+        	android:layout_below="@+id/text_wifi_security_title"  >
+        </TextView>
+        
+		<TextView
+			android:id="@+id/textEapMethod"
+            style="@style/DialogTextViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+        	android:layout_marginTop="40dp"
+        	android:layout_below="@+id/text_wifi_strength_title" 
+        	android:layout_alignLeft="@+id/text_ssid"
+			android:text="@string/dlg_wifi_security_eap_method" />
+		<TextView
+	        android:id="@+id/eapmethodSpinner"
+	        style="@style/DialogDropdownArrow"
+	        android:layout_width="@dimen/dlg_spinner_width"
+	        android:layout_height="@dimen/dlg_spinner_height"
+	        android:focusable="true"
+	        android:gravity="center" 
+        	android:layout_marginTop="40dp"
+        	android:layout_alignLeft="@+id/text_wifi_security"
+        	android:layout_below="@+id/text_wifi_level"  
+		/>
+
+		<TextView
+			android:id="@+id/textauthentication"
+            style="@style/DialogTextViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+        	android:layout_marginTop="40dp"
+        	android:layout_below="@+id/textEapMethod" 
+        	android:layout_alignLeft="@+id/text_ssid"
+			android:text="@string/dlg_wifi_security_eap_authentication" />
+		<TextView
+	        android:id="@+id/eapAuthenticationSpinner"
+	        style="@style/DialogDropdownArrow"
+	        android:layout_width="@dimen/dlg_spinner_width"
+	        android:layout_height="@dimen/dlg_spinner_height"
+        	android:layout_marginTop="40dp"
+        	android:layout_alignLeft="@+id/text_wifi_security"
+        	android:layout_below="@+id/eapmethodSpinner" 
+	        android:focusable="true"
+	        android:gravity="center" 
+	    />
+		
+        <TextView
+			android:id="@+id/textIdentity"
+            style="@style/DialogTextViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+        	android:layout_marginTop="40dp"
+        	android:layout_below="@+id/textauthentication" 
+        	android:layout_alignLeft="@+id/text_ssid"
+			android:text="@string/dlg_wifi_security_eap_identity" />
+
+        <EditText
+            android:id="@+id/eap_identity"
+            style="@style/DialogEditTextStyle"
+	        android:layout_width="@dimen/dlg_edit_width"
+	        android:layout_height="@dimen/dlg_edit_height"
+        	android:layout_marginTop="40dp"
+        	android:gravity="center_vertical"
+        	android:layout_alignLeft="@+id/text_wifi_security"
+        	android:layout_below="@+id/eapAuthenticationSpinner" 
+            android:singleLine="true" />
+
+		<TextView
+			android:id="@+id/textEapAnonymous"
+            style="@style/DialogTextViewStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+        	android:layout_marginTop="40dp"
+        	android:layout_below="@+id/textIdentity" 
+        	android:layout_alignLeft="@+id/text_ssid"
+			android:text="@string/dlg_wifi_security_eap_anonymous" />
+
+        <EditText
+            android:id="@+id/eap_anonymous"
+            style="@style/DialogEditTextStyle"
+	        android:layout_width="@dimen/dlg_edit_width"
+	        android:layout_height="@dimen/dlg_edit_height"
+        	android:layout_marginTop="40dp"
+        	android:gravity="center_vertical"
+        	android:layout_alignLeft="@+id/text_wifi_security"
+        	android:layout_below="@+id/eap_identity" 
+            android:singleLine="true" />        
+        
+        <TextView android:text="@string/wifi_password" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	style="@style/DialogTextViewStyle" 
+        	android:id="@+id/text_wifi_password_title" 
+        	android:layout_marginTop="40dp"
+        	android:layout_below="@+id/textEapAnonymous" 
+        	android:layout_alignLeft="@+id/text_ssid">
+        </TextView> 
+        <EditText android:id="@+id/ed_wifi_password" 
+            style="@style/DialogEditTextStyle"
+	        android:layout_width="@dimen/dlg_edit_width"
+	        android:layout_height="@dimen/dlg_edit_height"
+        	android:layout_marginTop="40dp"
+        	android:layout_alignLeft="@+id/text_wifi_security"
+        	android:layout_below="@+id/eap_anonymous" 
+        	android:gravity="center_vertical"
+            android:password="true"  
+            android:digits="@string/name_password_digits"
+            android:singleLine="true">           
+        </EditText>
+        <CheckBox android:id="@+id/checkBox_password" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="@string/wifi_display_password"
+            style="@style/CheckboxStyle"
+        	android:layout_marginTop="10dp"        
+            android:layout_below="@+id/ed_wifi_password"            
+        	android:layout_alignLeft="@+id/text_wifi_security">
+        </CheckBox>
+        
+        <Button android:id="@+id/btn_dlg_cancel"
+        	android:paddingLeft="60dp"
+        	android:gravity="center_vertical"
+        	android:layout_width="wrap_content" 
+        	style="@style/ButtonDlgCancelStyle" 
+        	android:layout_height="wrap_content" 
+        	android:layout_marginRight="22dp"
+        	android:layout_alignBaseline="@+id/btn_dlg_confirm" 
+        	android:layout_alignBottom="@+id/btn_dlg_confirm" 
+        	android:layout_alignParentRight="true">
+        </Button>
+        <Button android:id="@+id/btn_dlg_confirm" 
+        	android:layout_width="wrap_content" 
+        	style="@style/ButtonDlgConfirmStyle" 
+        	android:layout_height="wrap_content" 
+        	android:gravity="center_vertical" 
+        	android:paddingLeft="60dp" 
+        	android:layout_alignParentBottom="true" 
+        	android:layout_toLeftOf="@+id/btn_dlg_cancel" 
+        	android:layout_marginBottom="21dp">
+        </Button>
+	    
+		<RelativeLayout
+		    android:id="@+id/listLayout"
+		    android:layout_width="300dp"
+		    android:layout_height="132dp"
+		    android:visibility="gone"
+			android:background="@drawable/dlg_spinner_list_bg"
+			android:layout_alignLeft="@+id/eapmethodSpinner"
+		 	android:layout_below="@+id/eapmethodSpinner" >
+		<ListView android:layout_height="match_parent" 
+			android:layout_width="match_parent"
+			android:listSelector="@drawable/dlg_spinner_list_selector"
+		 	android:id="@+id/dropdownlist" 
+		 	android:layout_marginTop="12dp"
+			android:scrollbarThumbVertical="@drawable/progress_focus_v"
+			android:scrollbarTrackVertical="@drawable/progress_normal_v"
+		 	android:layout_alignParentLeft="true">
+		 </ListView>
+		</RelativeLayout>
+</RelativeLayout>

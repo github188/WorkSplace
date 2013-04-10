@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bg"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dip" >
+
+        <TextView
+            android:id="@+id/download_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="57dip"
+            android:textColor="@color/text"
+            android:drawableLeft="@drawable/search_left_arrows"
+            android:drawablePadding="20dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="20dip"
+            android:background="#202031"
+            android:gravity="center_vertical"
+            android:alpha="75"
+            android:text="@string/download_search_main"
+            android:textSize="35sp" >
+        </TextView>
+        
+        <LinearLayout
+            android:id="@+id/ll_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/download_search_title"
+            android:layout_below="@id/download_search_title"
+            android:layout_marginTop="55dip"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt_start_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_btn_selector"
+                android:focusable="true"
+                android:text="@string/start_download"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/bt_advanced_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dip"
+                android:background="@drawable/search_btn_selector"
+                android:focusable="true"
+                android:text="@string/advanced_option"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dowanload_progress_text"
+            android:layout_width="500dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/download_search_title"
+            android:layout_below="@id/ll_download_btn"
+            android:layout_marginTop="35dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download_progress_text"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_download"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="1342dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/download_search_title"
+            android:layout_below="@id/ll_dowanload_progress_text"
+            android:layout_marginTop="35dip"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar_bg" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

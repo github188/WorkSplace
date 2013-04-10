@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="736dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="45dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/config_system_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:gravity="center_vertical"
+        android:text="@string/config_system_worktime"
+        android:textColor="@color/yellow"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/config_work_time_start"
+        android:textColor="@color/yellow"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:id="@+id/config_work_time_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/config_set_worktime_hour"
+            android:layout_width="272dp"
+            android:layout_height="77dp"
+            android:background="@drawable/search_spiner_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/yellow"
+            android:dropDownVerticalOffset="1dip"
+            android:dropDownWidth="232dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_work_time_hour"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+id/config_set_worktime_minute"
+            android:layout_width="272dp"
+            android:layout_height="77dp"
+            android:background="@drawable/search_spiner_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/yellow"
+            android:dropDownVerticalOffset="1dip"
+            android:dropDownWidth="232dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_work_time_minute"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:text="@string/config_work_time_end"
+        android:textColor="@color/yellow"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:id="@+id/config_work_time_end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/config_set_worktime_hour_end"
+            android:layout_width="272dp"
+            android:layout_height="77dp"
+            android:background="@drawable/search_spiner_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/yellow"
+            android:dropDownVerticalOffset="1dip"
+            android:dropDownWidth="232dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_work_time_hour"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+id/config_set_worktime_minute_end"
+            android:layout_width="272dp"
+            android:layout_height="77dp"
+            android:background="@drawable/search_spiner_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/yellow"
+            android:dropDownVerticalOffset="1dip"
+            android:dropDownWidth="232dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_work_time_minute"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="66dip"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="297dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/config_work_time_btn_save"
+            style="@style/SettingButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="@string/config_work_time_save_and_back" >
+        </Button>
+
+        <Button
+            android:id="@+id/config_work_time_btn_cancel"
+            style="@style/SettingButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="@string/config_modify_password_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

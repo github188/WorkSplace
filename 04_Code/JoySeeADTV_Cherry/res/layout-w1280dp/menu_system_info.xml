@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.adtv.ui.MenuSystemInfo xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/menu_fav_back_textview"
+        android:layout_width="266dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/menu_back"
+        android:drawablePadding="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/menu_system_info_back"
+        android:textColor="#787878"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/hard_ware_title"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="13dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:text="@string/menu_sys_hardware_title"
+        android:textColor="@color/green_txt"
+        android:textSize="23sp" />
+    <!-- cpu -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_cpu_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_cpu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 内存 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_mem_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_mem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- wifi ip -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_wifi_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_wifi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#33FFFFFF"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="45dp"
+        android:gravity="center_vertical"
+        android:text="@string/menu_sys_storage_title"
+        android:textColor="@color/green_txt"
+        android:textSize="23sp" />
+    <!-- 内部存储 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_inner_storage_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_inner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- 外部存储 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_sdcard_storage_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_sdcard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF"
+        android:layout_marginTop="13dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:text="@string/menu_sys_software_title"
+        android:textColor="@color/green_txt"
+        android:textSize="23sp" />
+    <!-- Android -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_android_versition_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- kernel -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_sys_info_point"
+            android:drawablePadding="14dp"
+            android:text="@string/menu_sys_kernel_versition_title"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_sys_kernel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_unfocus"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</com.joysee.adtv.ui.MenuSystemInfo>

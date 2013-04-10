@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_search_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_menu_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="80dp" >
+
+    <TextView
+        android:id="@+id/search_fast_search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="55dp"
+        android:drawableLeft="@drawable/search_back"
+        android:drawablePadding="28dip"
+        android:gravity="center_vertical"
+        android:text="@string/search_manual_title"
+        android:textColor="@color/search_main_text"
+        android:textSize="42sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/hand_search_edit_layout"
+        android:layout_width="1674dip"
+        android:layout_height="66dip"
+        android:layout_marginTop="40dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="410dip"
+            android:layout_height="60dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="110dip"
+                android:layout_height="60dip"
+                android:text="@string/search_frequency"
+                android:textColor="@color/search_main_text"
+                android:textSize="30sp" />
+
+            <com.joysee.adtv.ui.SearchEditText
+                android:id="@+id/frequency_edit"
+                android:layout_width="230dip"
+                android:layout_height="60dip"
+                android:background="@drawable/search_et_selector"
+                android:gravity="center"
+                android:maxLength="3"
+                android:numeric="integer"
+                android:paddingLeft="10dip"
+                android:textColor="@drawable/search_text_color"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="60dip"
+                android:paddingLeft="10dip"
+                android:text="@string/search_khz"
+                android:textColor="@color/search_main_text"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="430dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="110dip"
+                android:layout_height="60dip"
+                android:text="@string/search_symbol_rate"
+                android:textColor="@color/search_main_text"
+                android:textSize="30sp" />
+
+            <com.joysee.adtv.ui.SearchEditText
+                android:id="@+id/symbol_rate_edit"
+                android:layout_width="230dip"
+                android:layout_height="60dip"
+                android:background="@drawable/search_et_selector"
+                android:gravity="center"
+                android:maxLength="4"
+                android:numeric="integer"
+                android:paddingLeft="10dip"
+                android:textColor="@drawable/search_text_color"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/search_kbps"
+                android:textColor="@color/search_main_text"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="410dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="@string/search_modulate"
+                android:textColor="@color/search_main_text"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/search_settings_qam_linear"
+                android:layout_width="230dip"
+                android:layout_height="60dip"
+                android:background="@drawable/search_et_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/search_settings_qam_textview"
+                    android:layout_width="150dp"
+                    android:layout_height="60dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="40dp"
+                    android:text="@string/search_64"
+                    android:textColor="@drawable/search_text_color"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/search_settings_qam_imageview"
+                    android:layout_width="wrap_content"
+                    android:duplicateParentState="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/search_settings_arrows_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="60dip"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="@string/search_qam"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_start_search"
+        android:layout_width="336dip"
+        android:layout_height="73dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="40dp"
+        android:focusable="true"
+        android:text="@string/search_start_search"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="1674dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <!-- 当前信号频率 -->
+
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/search_current_frequency"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/current_frequency"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="25dip"
+            android:singleLine="true"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+        <!-- 当前信号强度 -->
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/search_signal_strength"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/current_strong_text"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="25dip"
+            android:singleLine="true"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+        <!-- 当前信号质量 -->
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/search_signal_quality"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/current_quality_text"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="25dip"
+            android:singleLine="true"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+        <!-- 搜索进度 -->
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/search_progress_text"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/search_progress"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dip"
+            android:singleLine="true"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_linear_layout"
+        android:layout_width="1674dip"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_progressbar_layout_bg"
+        android:gravity="center_vertical" >
+
+        <!--
+             <ProgressBar
+            android:id="@+id/search_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_left" />
+        -->
+        <!-- android:background="@drawable/progress_left" -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/progress_bg" >
+
+            <ImageView
+                android:id="@+id/progress_imageview"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:background="@drawable/progress_image"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:id="@+id/ll_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/search_channel_count_title"
+            android:textColor="@color/search_main_text"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/channel_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/search_zero"
+            android:textColor="@color/search_main_text"
+            android:textSize="45sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/search_channel_count"
+            android:textColor="@color/search_main_text"
+            android:textSize="28sp" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/ll_channel_title"
+        android:layout_width="1674dp"
+        android:layout_height="66dip"
+        android:layout_marginTop="10dip"
+        android:background="#575757"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="315dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dip"
+            android:text="@string/search_channel_number"
+            android:textColor="@color/search_main_text"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="355dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_channel_name"
+            android:textColor="@color/search_main_text"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="330dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_channel_type"
+            android:textColor="@color/search_main_text"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="346dip"
+            android:layout_height="wrap_content"
+            android:text="@string/search_channel_frequency"
+            android:textColor="@color/search_main_text"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/channel_list"
+        android:layout_width="1674dip"
+        android:layout_height="fill_parent"
+        android:divider="@color/transparent"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:paddingBottom="90dip"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+</LinearLayout>

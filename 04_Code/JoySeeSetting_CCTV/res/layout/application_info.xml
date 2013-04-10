@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="871dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 行一 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="132dp"
+        android:layout_marginTop="106dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageViewApp"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ic_launcher" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="@string/App_name"
+                android:textColor="@color/yellow_text"
+                android:textSize="23sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_app_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="@string/App_size"
+                android:textColor="@color/white_text"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_app_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/App_time"
+                android:textColor="@color/white_text"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_app_uninstall"
+            style="@style/SettingButtonStyle"
+            android:layout_width="218dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="211dp"
+            android:layout_marginTop="66dp"
+            android:text="@string/App_uninstall" >
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="779dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:background="#696969" />
+
+    <!-- 行二 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_app_flash_data"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp" 
+            android:textColor="@color/yellow_text"
+            android:text="@string/App_flash_data"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_app_flash_data_size"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/App_data_size"
+            android:textColor="@color/white_text"
+            android:textSize="23sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_app_clear_data"
+            android:layout_marginLeft="241dp"
+            style="@style/SettingButtonStyle"
+            android:layout_width="218dp"
+            android:layout_height="46dp"
+            android:text="@string/App_cache_data" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/text_app_sd_data"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:text="@string/App_sd_data"
+            android:textColor="@color/yellow_text"
+            android:textSize="23sp" >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text_app_sd_data_size"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="@string/App_data_size" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_app_move_sd"
+            style="@style/SettingButtonStyle"
+            android:layout_marginLeft="241dp"
+            android:layout_width="218dp"
+            android:layout_height="46dp"
+            android:text="@string/App_move_sd" >
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1779dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:background="#696969" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:layout_width="132dp"
+            android:textSize="23sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_text"
+            android:id="@+id/text_app_cache_data"
+            android:text="@string/App_cache_data" >
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text_app_cache_size"
+            android:layout_width="165dp"
+            android:textSize="23sp"
+            android:textColor="@color/white_text"
+            android:layout_height="wrap_content"
+            android:text="@string/App_data_size" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_app_clear_cache"
+            android:text="@string/App_clear_cache" 
+            style="@style/SettingButtonStyle"
+            android:layout_marginLeft="231dp"
+            android:layout_width="218dp"
+            android:layout_height="46dp">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

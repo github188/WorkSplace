@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color 
+        name="white">#FFFFFF</color>
+    <color 
+        name="black">#000000</color>
+    <color 
+        name="Transparent">#00000000</color>
+    <color name="blue">#87CEEF</color>
+    <color name="text">#f0f0f0</color>
+    <color name="spiner">#131723</color>
+        <color name="launcher_logo_textview_textcolor">#fff0f0f0</color>
+    <color name="launcher_allapps_title_textcolor">#fff0f0f0</color>
+    <color name="launcher_time_textview_textcolor">#ffffffff</color>
+    <color name="launcher_weather_report_textview_textcolor">#ffffffff</color>
+    <color name="launcher_coverflow_item_textcolor">#fff0f0f0</color>
+	<color name="launcher_coverflow_dropdown_listitem_textcolor">#fff0f0f0</color>
+</resources>

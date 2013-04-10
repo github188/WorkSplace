@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_dialog_layout"
+    android:background="#FAFFFFFF"
+    android:layout_gravity="center"
+    android:layout_width="318dip"
+    android:layout_height="88dip" >
+
+    <TextView
+        android:id="@+id/config_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/email_ask_delete_all"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/config_dialog_btn_confirm"
+        android:layout_width="133dip"
+        android:layout_height="26dip"
+        android:layout_below="@id/config_dialog_text"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="8dp"
+        android:text="@string/ok"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/config_dialog_btn_cancel"
+        android:layout_width="133dip"
+        android:layout_height="26dip"
+        android:layout_below="@id/config_dialog_text"
+        android:layout_marginLeft="22dip"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/config_dialog_btn_confirm"
+        android:text="@string/config_modify_password_cancel"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+</RelativeLayout>

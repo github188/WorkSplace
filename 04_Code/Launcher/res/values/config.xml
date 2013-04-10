@@ -1,0 +1,9 @@
+<resources>
+    <bool name="config_hardwareAccelerated">true</bool>
+    <bool name="config_largeHeap">true</bool>
+
+        <!-- Batch loading for loading in LauncherModel -->
+    <integer name="config_allAppsBatchLoadDelay">0</integer>
+    <integer name="config_allAppsBatchSize">0</integer>
+
+</resources>

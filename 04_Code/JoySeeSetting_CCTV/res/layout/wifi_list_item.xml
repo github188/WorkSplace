@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifiLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:layout_marginLeft="66dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/wireless_sel" />
+
+    <TextView
+        android:id="@+id/titleItem"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="20dp"
+        android:singleLine="true"    
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/secureItem"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/signalItem"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

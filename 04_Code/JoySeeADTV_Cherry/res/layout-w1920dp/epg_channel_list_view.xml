@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/epg_info_list"
+    android:layout_width="1293dp"
+    android:layout_height="308dp"
+    android:orientation="vertical" >
+
+    <!-- ********top********* -->
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/epg_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="37dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/channel_number_top_a"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_name_top_a"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_time_top_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/mini_epg_text"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_top_a"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_episode_top_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/mini_epg_text"
+            android:visibility="gone"
+            android:textSize="36dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="37dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/channel_number_top_b"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_name_top_b"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_time_top_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_top_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_episode_top_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+    </LinearLayout>
+
+    <!-- ********center********* -->
+
+    <LinearLayout
+        android:id="@+id/epg_center_view"
+        android:layout_width="1250dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mini_epg_select_bg"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/channel_number_cen"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mini_epg_center_text"
+                android:textSize="46dp" />
+
+            <TextView
+                android:id="@+id/channel_name_cen"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@color/mini_epg_center_text"
+                android:textSize="46dp" />
+
+            <TextView
+                android:id="@+id/channel_content_time_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/mini_epg_center_text"
+                android:textSize="46dp" />
+
+            <TextView
+                android:id="@+id/channel_content_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:singleLine="true"
+                android:textColor="@color/mini_epg_center_text"
+                android:textSize="46dp" />
+
+            <TextView
+                android:id="@+id/channel_content_episode_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/mini_epg_center_text"
+                android:textSize="46dp" />
+        </LinearLayout>
+
+        <!--
+         <ProgressBar
+        android:id="@+id/channel_progressbar"
+        android:layout_width="891dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="6dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="235dp"
+        android:progressDrawable="@drawable/play_progressbar"
+        />
+        -->
+
+        <ProgressBar
+            android:id="@+id/channel_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="700dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="450dp"
+            android:progressDrawable="@drawable/play_progressbar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/next_channel_time_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="450dp"
+                android:textColor="@color/mini_epg_text_white"
+                android:textSize="46dp" />
+
+            <TextView
+                android:id="@+id/next_channel_content_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/mini_epg_text_white"
+                android:textSize="46dp" />
+
+            <TextView
+                android:id="@+id/next_channel_content_episode_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/mini_epg_text_white"
+                android:textSize="46dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- *********bottom******** -->
+
+    <LinearLayout
+        android:id="@+id/epg_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="37dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/channel_number_bottom"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_name_bottom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_time_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+
+        <TextView
+            android:id="@+id/channel_content_episode_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/mini_epg_text"
+            android:textSize="36dp" />
+    </LinearLayout>
+
+</LinearLayout>

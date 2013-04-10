@@ -1,0 +1,372 @@
+<resources>
+
+    <!-- 权限 -->
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">install shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Allows an app to add
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_uninstall_shortcut">uninstall shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_uninstall_shortcut">Allows an app to remove
+        shortcuts without user intervention.</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows an app to read the settings and
+        shortcuts in Home.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows an app to change the settings and
+        shortcuts in Home.</string>
+        
+    
+    <!-- 通用 -->
+    <string name="launcher_check_permission_window_title">请输入密码</string>
+    <string name="launcher_check_permission_window_ok_btn">确定</string>
+    <string name="launcher_check_permission_window_cancle_btn">取消</string>
+    <string name="timeview_am">AM</string>
+    <string name="timeview_pm">PM</string>
+    <string name="activity_not_found">抱歉,启动此应用出错!</string>
+    <string name="alert_dialog_cancel">返回</string>
+    <string name="ok">确定</string>
+    <string name="no">取消</string>
+    <string name="app_name">JoySeeADTV</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_dvb_main">ADTV2.0</string>
+    
+    <!-- 电视 -->
+    <string name="dvb_init_failed">初始化失败，需要重新启动服务</string>
+    <string name="dvb_audio_index_0">伴音0</string>
+    <string name="dvb_audio_index_1">伴音1</string>
+    <string name="dvb_audio_index_2">伴音2</string>
+    <string name="dvb_nochannel_notify_message">无频道，是否现在搜索?</string>
+    <string name="dvb_nochannel_notify_cancle_btn">取消</string>
+    <string name="dvb_nochannel_notify_search_btn">搜索</string>
+    <string name="dvb_update_program">前端下发数据发生改变，5秒后将重新搜索频道,请勿关闭电源！</string>
+    <string name="dvb_menu">菜单选项</string>
+    <string name="dvb_menu_channel_list">频道列表</string>
+    <string name="dvb_menu_broadcast_list">广播列表</string>
+    <string name="dvb_menu_management">频道管理</string>
+    <string name="dvb_favorite_list">喜爱列表</string>
+    <string name="dvb_set_favorite">收藏该频道</string>
+    <string name="dvb_delete_favorite">取消收藏</string>
+    <string name="dvb_sound_track_all">立体声</string>
+    <string name="dvb_sound_track_left">左声道</string>
+    <string name="dvb_sound_track_right">右声道</string>
+    <string name="dvb_without_this_channel">无此频道</string>
+    <string name="dvb_no_signal">有线电视无信号，请拨打客服电话968896</string>
+    <string name="dvb_no_channel">无频道，收看电视请先进行搜索。</string>
+    <string name="dvb_tv_confirm_exit">确定退出电视播放？</string>
+    <string name="dvb_bc_confirm_exit">确定退出广播播放？</string>
+    
+    
+    <!-- 频道搜索 -->
+    <string name="search_signal_strength">信号强度：</string>
+    <string name="search_signal_quality">信号质量：</string>
+    <string name="search_start_search">开始搜索</string>
+    <string name="search_stop_search">停止搜索</string>
+    <string name="search_stoping">正在停止...</string>
+    <string name="search_research">重新搜索</string>
+    <string name="search_resset">恢复默认设置</string>
+    <string name="search_resset_success">恢复默认值成功</string>
+    <string name="search_progress_text">搜索进度:</string>
+    <string name="search_completed">搜索完成，是否立即观看电视 ?</string>
+    <string name="search_stop_save_ask">是否保存搜索频道，并立即收看电视 ?</string>
+    <string name="search_no_channel">未搜索到频道</string>
+    <string name="search_frequency_out">频率的范围为47-862，请重新输入</string>
+    <string name="search_frequency_null">频率不能为空，请重新输入</string>
+    <string name="search_symbolrate_out">符号率的范围为1500-7200，请重新输入</string>
+    <string name="search_symbolrate_null">符号率不能为空，请重新输入</string>
+    <string name="search_current_frequency">当前频率:</string>
+    <string name="search_complete_text">完成</string>
+    <string name="search_result_text">搜索结果： 共</string>
+    <string name="search_count_channel_text">个频道</string>
+    <string name="search_zero">0</string>
+    <string name="search_tv">搜台</string>
+    <string name="search_select_searh_mode">请选择搜台方式:</string>
+    <string name="search_fast_search">快速搜索</string>
+    <string name="search_fast_search_comment">点击开始搜台</string>
+    <string name="search_all_search">全频搜索</string>
+    <string name="search_all_search_comment">设置搜索频率，可以搜索到更多频道</string>
+    <string name="search_manual_search">手动搜索</string>
+    <string name="search_manual_search_commnet">该项可以帮助您实现精准搜索</string>
+    
+    <string name="search_fast_search_title">快速搜索</string>
+    <string name="search_advanced_option">高级设置</string>
+    <string name="search_channel_count">个频道</string>
+    <string name="search_channel_number">频道号</string>
+    <string name="search_channel_name">频道名称</string>
+    <string name="search_channel_type">频道类型</string>
+    <string name="search_channel_frequency">所在频率</string>
+    <string name="search_manual_title">手动搜索</string>
+    <string name="search_frequency">频率:</string>
+    <string name="search_khz">Khz</string>
+    <string name="search_qam">QAM</string>
+    <string name="search_kbps">Kbps</string>
+    <string name="search_symbol_rate">符号率:</string>
+    <string name="search_modulate">调制：</string>
+    <string name="search_sixteen_qam">16 QAM</string>
+    <string name="search_sixtyfour_qam">64 QAM</string>
+    <string name="search_onetwoeight_qam">128 QAM</string>
+    <string name="search_towfivesix_qam">256 QAM</string>
+    <string name="search_cancle">取消</string>
+    <string name="search_fast_search_advanced_title">设置搜台</string>
+    <string name="search_settings_title">请设置搜台属性：</string>
+    <string name="search_all_settings_title">请设置搜台符号率：</string>
+    <string name="search_full_search_advanced_title">频道搜索/全频搜索/高级设置</string>
+    <string name="search_full_search_title">全频搜索</string>
+    <string name="search_save">保存</string>
+    <string name="search_save_success">保存成功</string>
+    <string name="search_channel_list_tv">电视</string>
+    <string name="search_channel_list_bc">广播</string>
+    <string name="search_dialog_exit_message">您确定退出搜索页面？</string>
+    <string name="search_dialog_confirm">确定</string>
+    <string name="search_dialog_cancel">取消</string>
+    <string name="search_dialog_title">提示</string>
+    <string name="search_symbolrate_out_range">符号率只能为：6875</string>
+    <string name="search_channel_count_title">共搜索到</string>
+    <string name="search_is_save">是否保存搜索结果,并立即收看电视 ?</string>
+    <string name="search_tv_count">个电视频道</string>
+    <string name="search_bc_count">个广播频道</string>
+    <string name="search_64">64</string>
+    <string name="search_128">128</string>
+    <string name="search_256">256</string>
+    
+    
+
+    <!-- epg -->
+    <string name="program_guide_switch_channel_text">切换频道类型</string>
+    <string name="program_guide_switch_date_text">切换日期</string>
+    <string name="program_guide_prompts">没有搜索到该频道的节目信息</string>
+    <string name="program_guide_progressbar_title">正在加载最新的节目信息，请稍候</string>
+    <string name="program_guide_all_channel">全部频道</string>
+    <string name="program_guide_toast_before">只能搜索到当前时间及以后的节目</string>
+    <string name="program_guide_toast_after">只能搜索到本周的节目内容</string>
+    <string name="program_guide_week">星期</string>
+    <string name="program_guide_nochannel">无频道,请先搜索频道</string>
+    <!-- 频道分类 -->
+    <string name="program_guide_centre_hd">中央高清</string>
+    <string name="program_guide_local_star_tv">地方卫视</string>
+    <string name="program_guide_fight_type">武打类</string>
+    <string name="program_guide_emotion_type">言情类</string>
+    <string name="program_guide_science_type">科技类</string>
+    <string name="program_guide_no_channel">没有该类型的频道</string>
+    <!-- 预约 -->
+    <string name="program_reverse_alert">预约</string>
+    <string name="program_reverse_alert_cancel">取消预约</string>
+    <string name="program_reverse_alert_cancel_success">取消预约成功</string>
+    <string name="program_reverse_alert_message">是否预约该节目？</string>
+    <string name="program_reserve_title">预约列表</string>
+    <string name="program_reserve_list_cancel">是否取消该节目的预约？</string>
+    <string name="program_reserve_alert_text_dismiss_window_text">秒后播出</string>
+    <string name="program_reserve_alert_text_title">预约提示:</string>
+    <string name="program_reserve_alert_watch_button_text">观看</string>
+    <string name="program_reserve_alert_cancel_button_text">取消</string>
+    <string name="program_reserve_success">节目预约成功</string>
+    <string name="program_reserve_failed">节目已经预约过，不用再预约了</string>
+    <string name="program_reserve_no_program_text">无预约节目</string>
+    <string name="program_reserve_time_out">节目已过期不能预约</string>
+    <string name="program_reserve_max_text">最多只能预约40个节目</string>
+    <string name="program_reserve_delete_or_reserve">删除/预约</string>
+
+
+    <!-- CA提示信息 -->
+    <string name="ca_message_cancel_type">取消当前的显示</string>
+    <string name="ca_message_badcard_type">无法识别卡</string>
+    <string name="ca_message_expicard_type">智能卡过期,请更换新卡</string>
+    <string name="ca_message_insertcard_type">加扰节目,请插入智能卡</string>
+    <string name="ca_message_nooper_type">卡中不存在节目运营商</string>
+    <string name="ca_message_blackout_type">条件禁播</string>
+    <string name="ca_message_outworktime_type">当前时段被设定为不能观看</string>
+    <string name="ca_message_watchlevel_type">节目级别高于设定的观看级别</string>
+    <string name="ca_message_pairing_type">智能卡与本机顶盒不对应</string>
+    <string name="ca_message_noentitle_type">没有授权</string>
+    <string name="ca_message_decryptfail_type">节目解密失败</string>
+    <string name="ca_message_nomoney_type">卡内金额不足</string>
+    <string name="ca_message_errregion_type">区域不正确</string>
+    <string name="ca_message_needfeed_type">子卡需要和母卡对应,请插入母卡</string>
+    <string name="ca_message_errcard_type">智能卡校验失败,请联系运营商</string>
+    <string name="ca_message_update_type">智能卡升级中,请不要拔卡或者关机</string>
+    <string name="ca_message_lowcardver_type">请升级智能卡</string>
+    <string name="ca_message_viewlock_type">请勿频繁切换频道</string>
+    <string name="ca_message_maxrestart_type">智能卡暂时休眠请5分钟后重新开机</string>
+    <string name="ca_message_freeze_type">智能卡已冻结,请联系运营商</string>
+    <string name="ca_message_callback_type">智能卡已暂停请回传收视记录给运营商</string>
+    <string name="ca_message_stblocked_type">请重启机顶盒</string>
+    <string name="ca_message_stbfreeze_type">机顶盒被冻结</string>
+    <string name="ca_charge_interval_year">"年"</string>
+    <string name="ca_charge_interval_month">"月"</string>
+    <string name="ca_charge_interval_day">"日"</string>
+
+    <!-- 智能卡 -->
+    <string name="config_card_stbid">STBID：</string>
+    <string name="config_card_loader">LOADER 版本：U-Boot 2010.06</string>
+    <string name="config_card_update_time">升级时间：%1$s</string>
+    <string name="config_card_update_state">升级状态：%1$s</string>
+    <string name="config_card_ca_version_text">CA版本号：%1$s</string>
+    <string name="ca_setting_title_text">智能卡</string>
+    <string name="ca_setting_description_text">请设置智能卡属性:</string>
+    <string name="ca_setting_work_time_description">请设置智能卡工作时段:</string>
+    <string name="ca_setting_watch_level_description">请输入合适的观看级别:</string>
+    <string name="ca_setting_author_info_description">请输入运营商ID号:</string>
+    <string name="ca_setting_modify_password_description">请设置安全密码:</string>
+    <string name="ca_setting_author_info_help">这里可以查看授权信息</string>
+    <string name="config_card_number">本机卡号：</string>
+    <string name="config_work_time">工作时段</string>
+    <string name="config_authorise_message">授权信息</string>
+    <string name="config_modify_password">修改密码</string>
+    <string name="config_card_info_text">智能卡信息</string>
+    <string name="config_work_time_start">开始工作时间:</string>
+    <string name="config_work_time_end">结束工作时间:</string>
+    <string name="config_work_time_save_and_back">保存</string>
+    <string name="config_work_time_save_success">工作时段设置成功</string>
+    <string name="config_work_time_input_passward">请输入密码:</string>
+    <string name="config_work_time_hint">0</string>
+    <string name="config_work_time_hour">时</string>
+    <string name="config_work_time_minute">分</string>
+    <string name="config_work_time_second">秒</string>
+    <string name="config_watch_level">观看级别</string>
+    <string name="config_watch_level_age">年龄限制:</string>
+    <string name="config_watch_level_age_up">%1$s岁以上</string>
+    <string name="config_watch_level_set_success">观看级别设置成功</string>
+    <string name="config_authorise_program_number">授权节目编号</string>
+    <string name="config_authorise_end_time">截止时间</string>
+    <string name="config_authorise_can_record">是否可以录制</string>
+    <string name="config_authorise_operate_id">选择运营商ID：</string>
+    <string name="config_authorise_operate_feature">运营商用户特征：%1$s</string>
+    <string name="config_modify_password_old">旧密码：</string>
+    <string name="config_modify_password_new">新密码：</string>
+    <string name="config_modify_password_new_confirm">确认新密码：</string>
+    <string name="config_midify_password_input_wrong">密码输入应为6位</string>
+    <string name="config_midify_password_success">密码修改成功</string>
+    <string name="config_midify_old_wrong">原始密码输入错误</string>
+    <string name="config_midify_card_not_finded">智能卡不存在或是无效卡</string>
+    <string name="config_midify_data_not_find">没有找到运营商</string>
+    <string name="config_midify_unknow_wrong">未知错误</string>
+    <string name="config_midify_password_input_compare">两个新密码不相同</string>
+    <string name="config_modify_password_save">保存</string>
+    <string name="config_modify_password_cancel">取消</string>
+    <string name="config_input_wrong">输入错误,请检查是否小时数不超过23，分钟数不超过59</string>
+    <string name="config_getting_card_number">正在获取本机卡号，请稍后......</string>
+    <string name="config_auth_yes_record">是</string>
+    <string name="config_auth_no_record">否</string>
+    <string name="launcher_logo_textview_text">福州电视台</string>
+    <string name="timeview_dayofweek_1">星期天</string>
+    <string name="timeview_dayofweek_2">星期一</string>
+    <string name="timeview_dayofweek_3">星期二</string>
+    <string name="timeview_dayofweek_4">星期三</string>
+    <string name="timeview_dayofweek_5">星期四</string>
+    <string name="timeview_dayofweek_6">星期五</string>
+    <string name="timeview_dayofweek_7">星期六</string>
+    
+    <string name="mon">周一</string>
+    <string name="tue">周二</string>
+    <string name="wen">周三</string>
+    <string name="thu">周四</string>
+    <string name="fri">周五</string>
+    <string name="sat">周六</string>
+    <string name="sun">周日</string>
+    <string name="launcher_allapps_page_title">我的应用</string>
+    <string name="launcher_weather_fail_hint">获取天气信息失败</string>
+    <string name="ca_input_password_error">输入密码错误,请重新输入!</string>
+    <string name="ca_modify_password_error">修改密码失败</string>
+    <string name="ca_modify_worktime_error">工作时段设置失败</string>
+    <string name="ca_modify_worktime_error0">开始时间必须小于结束时间</string>
+
+    <!-- CA邮件 -->
+    <string name="email_title_str">邮件查看</string>
+    <string name="email_page_up_str">上一页</string>
+    <string name="email_page_down_str">下一页</string>
+    <string name="email_space_info_str">共有  %1$s  "封邮件           还有"  %2$s  空间</string>
+    <string name="email_deleteall_str">全部删除</string>
+    <string name="email_item_title">"邮件标题"</string>
+    <string name="email_item_title_time">时间</string>
+    <string name="email_item_title_type">邮件类型</string>
+    <string name="email_dialog_back_str">返回</string>
+    <string name="email_dialog_delete_str">删除</string>
+    <string name="email_dialog_positive_str">确定</string>
+    <string name="email_dialog_negative_str">取消</string>
+    <string name="email_dialog_content_str">"        "%1$s</string>
+    <string name="email_dialog_title_str">"邮件标题"</string>
+    <string name="email_dialog_time_str">"邮件时间"</string>
+    <string name="email_type_important">重要</string>
+    <string name="email_type_common">普通</string>
+    <string name="email_bottom_tips">按翻页键进行翻页    按确定键查看邮件</string>
+    <string name="email_ask_delete_all">确定删除所有邮件吗？</string>
+    <string name="email_nospace_tips">邮件空间已满，请删除邮件以保证正常接收邮件！</string>
+    <string name="dvb_main_fingerinfo_test">123456</string>
+    <!-- CA 升级 -->
+    <string name="ca_update_success">升级成功</string>
+    <string name="ca_update_false">升级失败</string>
+    <string name="ca_noupdate">未进行升级</string>
+    <string name="ca_update_rate">进度:%1$d/100</string>
+    <string name="ca_update_msg">智能卡升级中,请不要拔卡或关机!</string>
+    <string name="ca_update_msg0">升级数据接收完成</string>
+    <string name="ca_update_type1">升级数据接收中</string>
+    <string name="ca_update_type2">智能卡升级中</string>
+    <string name="menu_settings_screen_mode_original">4：3</string>
+    <string name="menu_settings_screen_mode_filling">16：9</string>
+    <string name="menu_settings_audip_mode_stereo">立体声</string>
+    <string name="menu_settings__audio_mode_left">左声道</string>
+    <string name="menu_settings_audio_mode_right">右声道</string>
+    <string name="menu_settings_audio_index">伴音</string>
+    <string name="menu_settings_farivator_channel">频道</string>
+    <string name="menu_settings_reservation_channel">条节目</string>
+    <string name="menu_settings_channel">个频道</string>
+    
+    <!-- mini_epg_info -->
+    <string name="mini_epg_info_time">00:00:00</string>
+    <string name="mini_epg_info_track_souce">立体声</string>
+    <string name="mini_epg_info_audio_souce">伴音0</string>
+
+    
+    <string name="actor">主演:</string>
+    <string name="type">类型:</string>
+    <string name="about">简介:</string>
+    <string name="playout">播出:</string>
+    <string name="presenter">主持人:</string>
+    <string name="from_intent">数据来自互联网</string>
+    
+
+    <!-- menu -->
+    <string name="menu_titile_program_guide">节目指南</string>
+    <string name="menu_titile_channel_list">频道列表</string>
+    <string name="menu_titile_settings">设置</string>
+    <string name="menu_pg_live_guide">直播分类</string>
+    <string name="menu_pg_week_guide">一周节目单</string>
+    <string name="menu_reservation_back">预约管理</string>
+    <string name="menu_fav_back">喜爱频道管理</string>
+    <string name="menu_system_info_back">系统信息</string>
+    <string name="menu_sys_hardware_title">硬件基本信息</string>
+    <string name="menu_sys_cpu_title">CPU:</string>
+    <string name="menu_sys_mem_title">内存:</string>
+    <string name="menu_sys_wifi_title">ip地址:</string>
+    <string name="menu_sys_storage_title">存储使用情况</string>
+    <string name="menu_sys_inner_storage_title">内部存储:</string>
+    <string name="menu_sys_remain">剩余</string>
+    <string name="menu_sys_available">可用</string>
+    <string name="menu_sys_sdcard_storage_title">外部sd卡:</string>
+    <string name="menu_sys_software_title">系统软件版本</string>
+    <string name="menu_sys_android_versition_title">Android版本:</string>
+    <string name="menu_sys_kernel_versition_title">内核版本:</string>
+    <string name="menu_fav_add_success">收藏成功</string>
+    <string name="menu_fav_remove_success">已取消收藏</string>
+    <string name="menu_fav_over_max_count">最多可以收藏5个喜爱频道</string>
+    <string name="menu_setting_sound">声道设置</string>
+	<string name="menu_setting_audio">伴音设置</string>
+   	<string name="menu_setting_screen">画面设置</string>
+    <string name="close_bc_channal">关闭广播频道</string>
+    <string name="no_bc_channal">无广播节目</string>
+    <string name="no_program_info">无节目信息</string>
+    <string name="expand_bc_channel">展开广播频道</string>
+    
+    <!-- program guide -->
+    <string name="programguide_title">"  直播分类"</string>
+    <string name="programguide_nochannel">" 无节目信息 "</string>
+    <string name="programguide_loading">加载数据......</string>
+    <string name="week_epg_loading">正在加载节目信息，请稍候......</string>
+    
+</resources>

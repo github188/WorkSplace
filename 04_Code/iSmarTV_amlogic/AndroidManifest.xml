@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.ismartv.ui"
+	android:versionCode="20130301"
+	android:versionName="20130301"
+	android:sharedUserId="android.uid.system">
+
+	<uses-sdk android:minSdkVersion="8" />
+	<supports-screens
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:smallScreens="true"
+		android:anyDensity="true"
+		android:resizeable="true" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+	<application android:name=".ISTVVodApplication" android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".ISTVVodHome" android:label="@string/app_name" android:process="com.ismartv" android:launchMode="singleTask" android:clearTaskOnLaunch="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+		 	<!--  	<category android:name="android.intent.category.HOME"/>-->	
+				<category android:name="android.intent.category.DEFAULT" />
+			<!--	<category android:name="android.intent.category.MONKEY"/>-->	 
+		  			<category android:name="android.intent.category.LAUNCHER"/> 	
+		  			
+			</intent-filter>
+           <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+           </intent-filter>
+           <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable" />
+					   
+		</activity>
+		<activity android:name=".ISTVVodItemList" android:label="@string/app_name" android:process="com.ismartv" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		    <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ISTVVodHistory" android:label="@string/app_name" android:process="com.ismartv" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+		<activity android:name=".ISTVVodBookmark" android:label="@string/app_name" android:process="com.ismartv" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+		<activity android:name=".ISTVVodRelateList" android:label="@string/app_name" android:process="com.ismartv" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+		<activity android:name=".ISTVVodItemDetail" android:label="@string/app_name" android:process="com.ismartv"  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			   <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ISTVVodPlayer" android:noHistory="true" android:label="@string/app_name" android:process="com.ismartv"  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ISTVVodItemEpisode" android:label="@string/app_name" android:process="com.ismartv" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+		<activity android:name=".ISTVVodPlayerFinish" android:label="@string/app_name" android:process="com.ismartv" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>		
+		
+		<activity android:name=".ISTVVodSearch" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		    android:windowSoftInputMode="adjustUnspecified|adjustPan"/>
+		
+		<provider 
+			android:name=".ISTVVodSearchProvider"
+			android:authorities="com.lenovo.dll.nebula.vod.searchProvider"
+		>			
+			<path-permission android:pathPrefix="/search_suggest_query"
+                   android:readPermission="android.permission.GLOBAL_SEARCH" />
+		</provider>
+		<receiver android:name="com.ismartv.receiver.ISTVVodReveiver"  android:process="com.ismartv">
+		    <intent-filter>
+		        <action android:name="action.for.com.novel.suptertv.vod"/>
+		    </intent-filter>
+		</receiver>
+	</application>
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dip"
+    android:layout_height="400dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:text="@string/appurl"
+        android:textColor="@color/white"
+        android:textSize="26sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/appurl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/url_edittext_bg"
+        android:singleLine="true"
+        android:textSize="24sp" >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:text="@string/fileurl"
+        android:textColor="@color/white"
+        android:textSize="26sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/fileurl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/url_edittext_bg"
+        android:singleLine="true"
+        android:textSize="24sp" >
+    </EditText>
+
+</LinearLayout>

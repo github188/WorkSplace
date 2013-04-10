@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="680dip"
+    android:layout_height="405dip"
+    android:layout_gravity="center"
+    android:background="@drawable/app_appraisal" >
+
+    <LinearLayout
+        android:id="@+id/title_1"
+        android:layout_width="650dip"
+        android:layout_height="100dip"
+        android:layout_gravity="top"
+        android:layout_marginLeft="30dip"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"  >
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="100dip"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="5dip" 
+            android:gravity="left|center_vertical"
+            android:text="@string/order"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+              />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_close_blue"
+            android:focusable="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rating_bar"
+        android:layout_width="650dip"
+        android:layout_height="100dip"
+        android:layout_below="@id/title_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="80dip"  >
+
+        <TextView
+	            android:id="@+id/text_1"
+	            android:layout_width="650dip"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="@string/app_order_nomoney"
+	            android:textColor="@color/black"
+	            android:textSize="25dip"
+	            android:gravity="center_horizontal" /> 
+		    
+    </LinearLayout>
+
+
+</RelativeLayout>

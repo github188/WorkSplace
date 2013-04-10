@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="item_devider">#2DFFFFFF</color>
+    <color name="blue">#87CEEF</color>
+    <color name="text">#f0f0f0</color>
+    <color name="search_spiner">#131723</color>
+    <color name="menu_channel_info">#DDDDDD</color>
+    <color name="menu_list_focus">#99E21A</color>
+    <color name="epg_line">#50FFFFFF</color>
+    <color name="green_txt">#99e21a</color>
+    
+    <color name="grey_txt">#787878</color>
+    <color name="white_txt">#dddddd</color>
+    <color name="yellow_txt">#d79d13</color>
+    
+    <color name="mini_epg_text">#787878</color>
+    <color name="mini_epg_center_text">#99e21a</color>
+    <color name="mini_epg_text_white">#dddddd</color>
+    
+    <color name="search_main_text">#dddddd</color>
+    <color name="search_text_green">#99E21A</color>
+    <color name="search_channel_list_transparent">#00000000</color>
+    <color name="search_channel_list_color">#08FFFFFF</color>
+    
+    <color name="devide_line">#33FFFFFF</color>
+    
+    <color name="menu_text_unfocus">#DDDDDD</color>
+    
+    <color name="button_text_focus">#DDDDDD</color>
+    <color name="button_text_unfocus">#787878</color>
+    
+    
+</resources>

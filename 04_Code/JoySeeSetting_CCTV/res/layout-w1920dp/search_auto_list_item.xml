@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:minHeight="80dip"
+    android:background="@color/Transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    
+    <TextView
+        android:id="@+id/search_program_num"
+        android:layout_width="285dip"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dip"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+    
+    <TextView
+        android:id="@+id/search_program_name"
+        android:layout_width="285dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+    
+    <TextView
+        android:id="@+id/search_program_type"
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+    
+    <TextView
+        android:id="@+id/search_program_fre"
+        android:layout_width="286dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:singleLine="true"
+        />
+</LinearLayout>

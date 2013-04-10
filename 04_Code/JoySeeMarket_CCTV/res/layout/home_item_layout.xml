@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dip"
+    android:layout_height="206dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/home_item_img"
+        android:layout_width="280dp"
+        android:layout_height="172dp"
+        android:background="@drawable/item_bg"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="20dip"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="49dp"
+        android:layout_marginTop="-15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/home_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="35dip"
+            android:text="@string/noinstalled"
+            android:textColor="@color/install_status_text"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/down_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="138dip"
+            android:layout_height="8dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dip"
+            android:max="100"
+            android:progressDrawable="@drawable/play_progressbar"
+            android:visibility="gone" />
+
+        <RatingBar
+            android:id="@+id/home_rating_bar"
+            android:layout_width="75dip"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressDrawable="@drawable/food_rating_bar_full"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="240dip"
+        android:layout_height="47dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-100dip"
+        android:alpha="0.7"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="@color/install_status_text"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/home_item_pop"
+        android:layout_width="54dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="-149dip"
+        android:alpha="0.9"
+        android:gravity="center_vertical"
+        android:src="@drawable/pop_update"
+        android:visibility="gone" />
+
+</LinearLayout>

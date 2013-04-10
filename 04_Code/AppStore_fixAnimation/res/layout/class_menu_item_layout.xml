@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dip"
+    android:layout_height="80dip"
+    android:orientation="vertical"
+    >
+      <com.bestv.ott.appstore.animation.TextButton
+        android:id="@+id/menu_item_img"
+        android:layout_width="100dip"
+        android:layout_height="70dip"
+        android:orientation="vertical"/>
+</LinearLayout>

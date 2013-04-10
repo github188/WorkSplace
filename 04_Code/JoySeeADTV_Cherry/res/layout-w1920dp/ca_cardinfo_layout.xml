@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_cardinfo_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/search_menu_bg" >
+
+   <TextView
+        android:id="@+id/ca_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/setting_back"
+        android:drawablePadding="20dip"
+        android:layout_marginTop="65dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="68dp"
+        android:text="@string/ca_setting_title_text"
+        android:textColor="@color/white_txt"
+        android:textSize="46sp" />
+
+
+    <LinearLayout
+        android:id="@+id/config_cardinfo_cardnumber_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="123dip"
+        android:layout_marginTop="215dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_card_number"
+            android:textColor="@color/white_txt"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/config_card_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_txt"
+            android:textSize="42sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_cardinfo_cardstbid_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_cardinfo_cardnumber_ll"
+        android:layout_below="@id/config_cardinfo_cardnumber_ll"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_card_stbid"
+            android:textColor="@color/white_txt"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/config_stbid_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_txt"
+            android:textSize="42sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/config_cardloader_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_cardinfo_cardnumber_ll"
+        android:layout_below="@id/config_cardinfo_cardstbid_ll"
+        android:layout_marginTop="10dip"
+        android:text="@string/config_card_loader"
+        android:textColor="@color/white_txt"
+        android:textSize="42sp" />
+
+    <TextView
+        android:id="@+id/config_updatetime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_cardinfo_cardnumber_ll"
+        android:layout_below="@id/config_cardloader_tv"
+        android:layout_marginTop="10dip"
+        android:text="@string/config_card_update_time"
+        android:textColor="@color/white_txt"
+        android:textSize="42sp" />
+
+    <TextView
+        android:id="@+id/config_update_state_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_cardinfo_cardnumber_ll"
+        android:layout_below="@id/config_updatetime_tv"
+        android:layout_marginTop="10dip"
+        android:text="@string/config_card_update_state"
+        android:textColor="@color/white_txt"
+        android:textSize="42sp" />
+   <TextView
+        android:id="@+id/config_update_ca_version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/config_cardinfo_cardnumber_ll"
+        android:layout_below="@id/config_update_state_tv"
+        android:layout_marginTop="10dip"
+        android:text="@string/config_card_ca_version_text"
+        android:textColor="@color/white_txt"
+        android:textSize="42sp" />
+</RelativeLayout>

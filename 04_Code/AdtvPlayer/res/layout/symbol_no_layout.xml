@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/config_text_dialog"
+    android:id="@+id/parentView">
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/symbol_no"
+        >
+    </TextView>
+</LinearLayout>

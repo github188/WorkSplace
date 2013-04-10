@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.launcher.common.WeatherReportView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="421dp"
+    android:layout_height="130dp"
+    android:layout_marginLeft="1172dp" >
+    
+    
+    <View 
+        android:id="@+id/weather_report_pic"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/weather_report_pic_drawable"
+        />
+    
+    <TextView 
+        android:id="@+id/weather_report_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="172dp"
+        android:textSize="30dp"
+        android:textColor="@color/launcher_weather_report_textview_textcolor"
+        />
+    
+	<TextView 
+        android:id="@+id/weather_report_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="172dp"
+        android:textSize="30dp"
+        android:textColor="@color/launcher_weather_report_textview_textcolor"
+        />
+
+</com.joysee.launcher.common.WeatherReportView>

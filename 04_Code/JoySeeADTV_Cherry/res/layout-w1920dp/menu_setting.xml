@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.adtv.ui.MenuSetting xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF" />
+
+    <ListView
+        android:id="@+id/setting_Menu_list"
+        android:layout_width="650dp"
+        android:layout_height="811dip"
+        android:layout_marginBottom="90dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#33FFFFFF"
+        android:dividerHeight="1dp"
+        android:focusable="true"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/focus"
+        android:layout_width="650dp"
+        android:layout_height="90dp"
+        android:background="@drawable/focus"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+</com.joysee.adtv.ui.MenuSetting>

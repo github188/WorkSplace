@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RootRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:foreground="@android:color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vodbg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="426dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/voditem_left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chan_title"
+                android:layout_width="394dp"
+                android:layout_height="87dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="62dp"
+                android:gravity="center_horizontal|top"
+                android:includeFontPadding="false"
+                android:textColor="#707896"
+                android:textSize="72sp" />
+
+            <ImageView
+                android:id="@+id/secPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="189dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/voditem_up"
+                android:visibility="invisible" />
+
+            <ScrollView
+                android:id="@+id/secScrollView"
+                android:layout_width="403dp"
+                android:layout_height="800dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="12dp"
+                android:scrollbars="vertical" >
+
+                <com.ismartv.ui.widget.SectionListView
+                    android:id="@+id/seclist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </com.ismartv.ui.widget.SectionListView>
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/secNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="189dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/voditem_down"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" >
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.ismartv.ui.widget.MovieListView
+                    android:id="@+id/itemListView"
+                    android:layout_width="1424dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="138dp"
+                    android:orientation="vertical" >
+                </com.ismartv.ui.widget.MovieListView>
+            </AbsoluteLayout>
+
+            <com.ismartv.ui.widget.MovieScrollBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1424dp"
+                android:layout_marginTop="156dp" />
+
+            <RelativeLayout
+                android:id="@+id/BufferLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:foreground="@android:color/transparent" >
+
+                <ImageView
+                    android:id="@+id/BufferBGImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/toast_bg" />
+
+                <LinearLayout
+                    android:id="@+id/BufferLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:foreground="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/BufferImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@anim/loading" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/vod_itemloading"
+                        android:textSize="30px" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/order_bg" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/epg_alert_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="156dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/order_select"
+            android:gravity="center"
+            android:text="@string/program_reverse_alert"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/epg_alert_cancle_btn"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/order_select"
+            android:gravity="center"
+            android:text="@string/no"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+</FrameLayout>

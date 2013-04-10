@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bg"
+     >
+
+  
+
+        <LinearLayout
+            android:layout_width="800dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="50dip"
+            android:layout_marginTop="50dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="500dip"
+                android:layout_height="wrap_content"
+                android:text="@string/download_search_anvanced_title"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_code_text"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_search_selector"
+                    android:paddingLeft="10dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="100dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_search_selector"
+                    android:text="@string/save" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/btn_search_selector"
+                    android:text="@string/cancle" />
+            </LinearLayout>
+        </LinearLayout>
+
+</FrameLayout>

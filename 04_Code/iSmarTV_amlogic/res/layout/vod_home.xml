@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- horizontal FirstLayout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vodbg"
+    android:id="@+id/rootView"
+    android:orientation="horizontal" >
+
+    <!-- vertical Left Menu Layout -->
+    
+    <!-- Channel List -->
+    <LinearLayout
+        android:layout_width="426dp"
+        android:layout_height="1080dp"
+        android:background="@drawable/voditem_left"
+        android:orientation="vertical" 
+		>
+		
+		<TextView 
+		    android:layout_width="394dp"
+        	android:layout_height="87dp"
+        	android:layout_marginLeft="12dp"
+        	android:layout_marginTop="50dp"
+        	android:textColor="#707896"
+        	android:textSize="72dp"
+        	android:text="@string/vod_online_lable"
+        	android:gravity="center"/>
+        <ImageView
+            android:id="@+id/channellist_up_arrow"
+            android:layout_width="38dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="invisible"
+            android:background="@drawable/voditem_up"/>
+		    <ScrollView
+                android:layout_width="403dp"
+                android:layout_height="800dp"
+                android:layout_marginLeft="11dp"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:id="@+id/linearLayoutChannelList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:gravity="center"
+                   >
+                </LinearLayout>
+            </ScrollView>
+        <ImageView
+            android:id="@+id/channellist_down_arrow"
+            android:layout_width="38dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible"
+            android:background="@drawable/voditem_down"/>
+        <!-- android:visibility="invisible" -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="1494dp"
+        android:layout_height="1080dp"
+        android:orientation="vertical"
+        android:background="#80000000"
+		>
+
+        <LinearLayout
+            android:id="@+id/layout_video_play"
+            android:layout_width="1321dp"
+            android:layout_height="569dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="150dp"  >
+			<RelativeLayout 
+			    android:layout_width="1321dp"
+				android:layout_height="569dp" 
+			    >
+            <VideoView
+                android:id="@+id/top_video_win"
+                android:layout_width="wrap_content"  
+				android:layout_height="wrap_content"
+				android:src="@drawable/default_poster"
+				  /> 
+            <ImageView
+				android:id="@+id/ImageView_top_left"
+				android:layout_width="1321dp"  
+				android:layout_height="569dp"
+				android:scaleType="fitXY"
+				android:src="@drawable/default_poster"
+				 />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutHomeItem"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="47dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_add"
+                android:layout_width="wrap_content"
+                android:layout_height="279dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+            
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout> <!-- end  horizontal FirstLayout -->

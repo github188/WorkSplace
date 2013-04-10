@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/program_reserves.xml" />
+        <ignore path="res/layout/program_reserves_alert.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res/layout/download_search_advanced.xml" />
+    </issue>
+    <issue id="UseCompoundDrawables" severity="ignore">
+        <ignore path="res/layout/manual_search.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/auto_search.xml" />
+        <ignore path="res/layout/auto_search_advanced.xml" />
+        <ignore path="res/layout/download_search.xml" />
+        <ignore path="res/layout/download_search_advanced.xml" />
+        <ignore path="res/layout/manual_search.xml" />
+        <ignore path="res/layout/new_search_layout.xml" />
+    </issue>
+</lint>

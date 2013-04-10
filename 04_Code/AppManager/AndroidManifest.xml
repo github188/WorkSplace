@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="novel.supertv.appmng"
+      android:versionCode="1"
+      android:versionName="1.0.1">
+	<uses-sdk android:minSdkVersion="14" />
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:name=".ShowAppActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name=".receiver.AppManagerReceiver" >
+            <intent-filter>
+                <data android:scheme="package"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+            </intent-filter>
+        </receiver>
+        
+        <provider
+            android:name=".db.AppsProvider"
+            android:authorities="novel.supertv.appmng.authority" >
+        </provider>
+
+    </application>
+    
+
+</manifest> 

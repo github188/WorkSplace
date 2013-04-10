@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+     >
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/down_bg"
+     >
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="350dip"
+        android:layout_height="80dip"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="top"
+        android:layout_marginLeft="50dip"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="left|center_vertical"
+            android:contentDescription="@string/null_str"
+            android:src="@drawable/down_record_icon"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="150dip"
+            android:layout_height="50dip"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip"
+            android:gravity="right|center_vertical"
+            android:text="@string/my_app"
+            android:textSize="34dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="85dip"
+        android:layout_height="85dip"
+        android:background="@drawable/close"
+        android:contentDescription="@string/null_str"
+            />
+
+    <LinearLayout
+            android:id="@+id/tab_content"
+            android:layout_below="@id/titlelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="400dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="53dip"
+            android:layout_marginTop="60dip"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/appslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dip"
+                android:background="@color/trans"
+                android:cacheColorHint="@color/transparent_background"
+                android:divider="@color/downitem_background"
+                android:dividerHeight="1dip"
+                android:listSelector="@drawable/mgr_item_selector"
+                android:scrollbars="none" />
+        </LinearLayout>
+    <!-- </LinearLayout> -->
+	</RelativeLayout>
+</RelativeLayout>

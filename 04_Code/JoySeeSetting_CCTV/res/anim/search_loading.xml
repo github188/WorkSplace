@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:apk="http://schemas.android.com/apk/res/android" apk:oneshot="false">
+	<item apk:drawable="@drawable/search_loading0001" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0002" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0003" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0004" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0005" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0006" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0007" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0008" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0009" apk:duration="100" />
+	<item apk:drawable="@drawable/search_loading0010" apk:duration="100" />
+</animation-list>

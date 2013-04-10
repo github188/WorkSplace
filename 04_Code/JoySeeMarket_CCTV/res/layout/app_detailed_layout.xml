@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailed_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_home"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/animation_imageview"
+        android:layout_width="13dip"
+        android:layout_height="13dip"
+        android:layout_marginLeft="13dip"
+        android:layout_marginTop="13dip"
+        android:background="@drawable/item_focus_100"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="71dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/top_left"
+            android:layout_width="200dip"
+            android:layout_height="33dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="98dip"
+            android:layout_marginTop="28dip"
+            android:text="@string/appName"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/top_search"
+            android:layout_width="130dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="900dip"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/search_big"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/app_search"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/separate_line"
+            android:layout_width="1dip"
+            android:layout_height="23dip"
+            android:layout_marginLeft="1036dip"
+            android:layout_marginTop="27dip"
+            android:background="@color/top_line" />
+
+        <TextView
+            android:id="@+id/top_down_record"
+            android:layout_width="168dip"
+            android:layout_height="71dip"
+            android:layout_marginLeft="1043dip"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/download_top"
+            android:drawablePadding="8dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="21dp"
+            android:paddingLeft="27dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/downloadmrg_button_txt"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- middle -->
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/mid_left"
+            android:layout_width="333dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="37dip"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/app_image"
+                android:layout_width="154dip"
+                android:layout_height="220dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="96dp"
+                android:contentDescription="@string/str_null" />
+
+            <TextView
+                android:layout_marginTop="-40dp"
+                android:id="@+id/app_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_image"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="marquee"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/text_white"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/down_update"
+                android:layout_width="fill_parent"
+                android:layout_height="86dip"
+                android:layout_below="@id/app_name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="3dip" >
+
+                <!-- 更新 -->
+
+                <RelativeLayout
+                    android:id="@+id/run_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/run_button"
+                        android:layout_width="203dp"
+                        android:layout_height="74dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="3dip"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/public_detail_bt"
+                        android:gravity="center"
+                        android:textColor="@color/down_load_text_white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/update_button"
+                        android:layout_width="203dp"
+                        android:layout_height="74dp"
+                        android:layout_toRightOf="@id/run_button"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/public_detail_bt"
+                        android:gravity="center"
+                        android:textColor="@color/down_load_text_white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!-- 下载 -->
+
+                <RelativeLayout
+                    android:id="@+id/downinstallLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/down_install"
+                        android:layout_width="203dp"
+                        android:layout_height="74dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/public_detail_bt"
+                        android:gravity="center"
+                        android:nextFocusUp="@id/top_down_record"
+                        android:textColor="@color/down_load_text_white"
+                        android:textSize="26sp" />
+                </RelativeLayout>
+
+                <!-- 下载进度 -->
+
+                <RelativeLayout
+                    android:id="@+id/progressLayout"
+                    android:layout_width="233dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/top_search"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:visibility="gone" >
+
+                    <ProgressBar
+                        android:id="@+id/progressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="180dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:max="100"
+                        android:progressDrawable="@drawable/play_progressbar" />
+
+                    <TextView
+                        android:id="@+id/down_progress_text"
+                        android:layout_width="200dip"
+                        android:layout_height="33dip"
+                        android:layout_below="@id/progressbar"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center"
+                        android:text="@string/download_tab_2"
+                        android:textColor="@color/text_white"
+                        android:textSize="20dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/score_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/down_update"
+                android:layout_marginLeft="75dip"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/score_tex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="@string/app_score"
+                    android:textColor="@color/text_white"
+                    android:textSize="20dip"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/rating_bar"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/score_tex"
+                    android:gravity="center"
+                    android:textColor="@color/rating_color"
+                    android:textSize="24dip" />
+
+                <TextView
+                    android:id="@+id/score_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/score_tex"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@id/rating_bar"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_score_unit"
+                    android:textColor="@color/text_white"
+                    android:textSize="20dip"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/app_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/score_lay"
+                android:layout_below="@id/score_lay"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="5dip"
+                android:gravity="left"
+                android:textColor="@color/text_white"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/app_verson"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/score_lay"
+                android:layout_below="@id/app_comment"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="6dip"
+                android:gravity="left"
+                android:textColor="@color/text_white"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/app_size"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/score_lay"
+                android:layout_below="@id/app_verson"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="6dip"
+                android:gravity="left"
+                android:textColor="@color/text_white"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/app_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/score_lay"
+                android:layout_below="@id/app_size"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="6dip"
+                android:gravity="left"
+                android:textColor="@color/text_white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid_mid"
+            android:layout_width="530dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="25dip"
+            android:layout_toRightOf="@id/mid_left"
+            android:gravity="top" >
+
+            <TableLayout
+                android:id="@+id/app_table"
+                android:layout_width="530dip"
+                android:layout_height="500dp"
+                android:layout_alignParentTop="true"
+                android:alpha="0.5"
+                android:padding="6dip"
+                android:shrinkColumns="0,1"
+                android:stretchColumns="0,1" >
+
+                <!-- 标签 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="left"
+                        android:text="@string/label"
+                        android:textColor="@color/rating_color"
+                        android:textSize="20dip" />
+
+                    <TextView
+                        android:id="@+id/app_lable"
+                        android:layout_width="466dip"
+                        android:layout_height="40dip"
+                        android:gravity="left"
+                        android:text="@string/null_str"
+                        android:textColor="@color/text_white"
+                        android:textSize="20dip" />
+                </TableRow>
+
+                <!-- 外设 -->
+                <TableRow>
+                     <TextView
+                        android:id="@+id/support_device_title"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="left"
+                        android:text="@string/support_device"
+                        android:textColor="@color/rating_color"
+                        android:textSize="20dip" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/app_support_device"
+                        android:layout_width="466dip"
+                        android:layout_height="40dip"
+                        android:gravity="left"
+                        android:text="@string/null_str"
+                        android:textColor="@color/text_white"
+                        android:textSize="20dip" />
+                </TableRow>
+                
+                 <!-- 简介 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/about"
+                        android:textColor="@color/rating_color"
+                        android:textSize="20dip" />
+
+                    <TextView
+                        android:id="@+id/app_remark"
+                        android:layout_width="466dip"
+                        android:layout_height="310dip"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:lineSpacingExtra="5pt"
+                        android:lines="13"
+                        android:textColor="@color/text_white"
+                        android:textSize="20dip" />
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/label_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_table"
+                android:layout_marginLeft="13dip"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/str_null"
+                android:scaleType="matrix"
+                android:src="@drawable/app_detail_line"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/evaluate"
+                android:layout_width="148dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/label_image"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/app_detail_pinjia"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="@string/app_acommentss"
+                android:textColor="@color/text_white"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/favorites"
+                android:layout_width="93dip"
+                android:layout_height="46dip"
+                android:layout_below="@id/label_image"
+                android:layout_marginLeft="86dip"
+                android:layout_marginRight="33dip"
+                android:layout_toRightOf="@id/evaluate"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mid_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/mid_mid" >
+
+            <ImageView
+                android:id="@+id/up_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130dip"
+                android:background="@drawable/arrowup_s"
+                android:contentDescription="@string/str_null"
+                android:visibility="invisible" />
+
+            <ViewFlipper
+                android:id="@+id/app_detailed_viewfillper"
+                android:layout_width="280dip"
+                android:layout_height="560dip"
+                android:layout_below="@id/up_image"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/down_imgae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_detailed_viewfillper"
+                android:layout_gravity="center"
+                android:layout_marginLeft="133dip"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/arrowdown_s"
+                android:contentDescription="@string/str_null"
+                android:gravity="center"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

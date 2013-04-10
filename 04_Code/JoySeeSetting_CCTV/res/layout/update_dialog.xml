@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" 
+  android:layout_width="1080dp"
+  android:background="@drawable/dlg_bg"
+  android:layout_height="200dp">
+        
+   <LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_centerInParent="true">
+	    <LinearLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_gravity="center_horizontal">
+	        <TextView  android:id="@+id/textview_dialog" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="40dp"/>
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="20dp"
+		    android:layout_gravity="center_horizontal">
+	        <Button
+                android:id="@+id/btn_dlg_confirm"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                style="@style/SettingButtonStyle">
+            </Button>
+            <Button
+                android:id="@+id/btn_dlg_cancel"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                style="@style/SettingButtonStyle"
+                android:gravity="center"/>
+	    </LinearLayout>
+	</LinearLayout>
+  	
+    
+</RelativeLayout>
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" 
+  android:layout_width="806dp"
+  android:layout_height="444dp">
+        <TextView android:id="@+id/textview_dialog" 
+    		android:layout_marginLeft="81dp"
+    		android:layout_marginRight="81dp"
+    		android:layout_centerVertical="true"
+    		android:paddingBottom="100dp"
+    		android:textSize="48dp"
+    		android:textColor="#BBBBBB"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content">
+        </TextView>
+        	style="@style/ButtonDlgConfirmStyle"  
+        <Button android:id="@+id/btn_dlg_confirm" 
+        	android:paddingLeft="60dp"
+        	android:gravity="center_vertical"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:layout_alignParentBottom="true" 
+        	android:layout_toLeftOf="@+id/btn_dlg_cancel" 
+        	android:layout_marginBottom="21dp">
+        </Button>
+        	style="@style/ButtonDlgCancelStyle" 
+        <Button android:id="@+id/btn_dlg_cancel"
+        	android:paddingLeft="60dp"
+        	android:gravity="center_vertical"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:layout_alignBaseline="@+id/btn_dlg_confirm" 
+        	android:layout_alignBottom="@+id/btn_dlg_confirm" 
+        	android:layout_alignParentRight="true" 
+        	android:layout_marginRight="24dp">
+        </Button>
+  	
+    
+</RelativeLayout> -->

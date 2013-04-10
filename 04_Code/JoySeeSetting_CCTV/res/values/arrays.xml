@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="setting_arrays" translatable="false">
+        <item>基本设置</item>
+        <item>网络设置</item>
+        <item>时间地点设置</item>
+        <item>输入法设置</item>
+        <item>应用管理</item>
+        <item>系统设置</item>
+        <item>账户设置</item>
+    </string-array>
+    <string-array name="lanuage_array">
+        <item>简体中文</item>
+    </string-array>
+    <string-array name="lanuage_code">
+        <item>zh_CN</item>
+    </string-array>
+    <!-- 
+        <string-array name="lanuage_code">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>en_US</item>
+    </string-array>
+    
+    <string-array name="lanuage_array">
+        <item>简体中文</item>
+        <item>繁体中文</item>
+        <item>英文</item>
+    </string-array>
+     -->
+    <string-array name="frequency_array">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="format_array">
+        <item>NTSC</item>
+        <item>PAL</item>
+    </string-array>
+    <string-array name="audio_name">
+        <item>源码输出</item>
+        <item>解码输出</item>
+    </string-array>
+    <string-array name="audio_array">
+        <item>RAW</item>
+        <item>PCM</item>
+    </string-array>
+<!--         <item>576p</item> -->
+    <string-array name="outputmode_entries">
+        <item>576i</item>
+        <item>720p</item>
+        <item>1080i</item>
+        <item>1080p</item>
+    </string-array>
+<!--         <item>分辨率为1024 x 576p/逐行扫描</item> -->
+    <string-array name="outputmode_entries_msg">
+        <item>分辨率为720 x 576i/隔行扫描</item>
+        <item>分辨率为1280 x 720p/逐行扫描</item>
+        <item>分辨率为1920 x 1080i/隔行扫描</item>
+        <item>分辨率为1920 x 1080P/逐行扫描</item>
+    </string-array>
+    <string-array name="date_format">
+        <item>MM-dd-yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>yyyy-MM-dd</item>
+    </string-array>
+    
+    
+   <string-array name="timeformat_array">
+        <item>24</item> 
+        <item>12</item>
+    </string-array> 
+    
+   
+     <string-array name="date_format_values">
+        <item>月/日/年</item>
+        <item>日/月/年</item>
+        <item>年/月/日</item>
+    </string-array>
+    <string-array name="city_list">
+        <item>广州</item>
+        <item>深圳</item>
+        <item>珠海</item>
+        <item>东莞</item>
+        <item>佛山</item>
+        <item>潮州</item>
+        <item>汕头</item>
+        <item>湛江</item>
+        <item>中山</item>
+        <item>惠州</item>
+        <item>河源</item>
+        <item>揭阳</item>
+        <item>梅州</item>
+        <item>肇庆</item>
+        <item>茂名</item>
+        <item>云浮</item>   
+    </string-array>
+    <string-array name="message_array">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    
+     <string-array name="proxy_array">
+        <item>否</item>  
+        <item>是</item>
+    </string-array> 
+    <string-array name="update_array">
+        <item>网络升级</item>
+        <item>本地升级</item>
+    </string-array>
+    
+    <string-array name="wifi_security">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>@string/wifi_security_none</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_wep</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_psk_generic</item>
+        <!-- Do not translate. 
+        -->
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+    
+    <string-array name="wifi_eap_method">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>PEAP</item>
+        <!-- Do not translate. -->
+        <item>TLS</item>
+        <!-- Do not translate. -->
+        <item>TTLS</item>
+    </string-array>
+    
+    <string-array name="wifi_eap_authentication">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>无</item>
+        <!-- Do not translate. -->
+        <item>PAP</item>
+        <!-- Do not translate. -->
+        <item>MSCHAP</item>
+        <!-- Do not translate. -->
+        <item>MSCHAPV2</item>
+        <!-- Do not translate. -->
+        <item>GTC</item>
+    </string-array>
+    
+    <string-array name="wifi_level">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>差</item>
+        <!-- Do not translate. -->
+        <item>一般</item>
+        <!-- Do not translate. -->
+        <item>好</item>
+        <!-- Do not translate. -->
+        <item>很好</item>
+        <item>非常好</item>
+        <item>不在范围内</item>
+    </string-array>
+    
+    <string-array name="wifi_ip_setting">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>动态</item>
+        <!-- Do not translate. -->
+        <item>静态</item>
+    </string-array>
+    
+    <string-array name="adjust_method">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+    </string-array>
+    
+</resources>

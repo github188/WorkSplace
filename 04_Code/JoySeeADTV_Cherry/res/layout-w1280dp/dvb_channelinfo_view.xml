@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.adtv.ui.ChannelInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dvb_channelinfo_View"
+    android:layout_width="930dip"
+    android:layout_height="158dip"
+    android:layout_marginLeft="175dip"
+    android:layout_marginTop="527dip"
+    android:background="@drawable/dvb_channel_info_bg"
+    android:visibility="invisible" >
+
+    <LinearLayout
+        android:layout_width="930dip"
+        android:layout_height="156dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dvb_channel_num"
+                    android:layout_width="66dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="26dip"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/dvb_channel_name"
+                    android:layout_width="366dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="13dip"
+                    android:ellipsize="end"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/dvb_channelFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="33dip"
+                    android:src="@drawable/icon_favorite"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/dvb_channelMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dip"
+                    android:src="@drawable/icon_money"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/dvb_mini_soundtrack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/dvb_miniepg_language"
+                    android:layout_width="66dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- 数字时钟 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_marginLeft="0dip"
+                android:visibility="gone" >
+
+                <DigitalClock
+                    android:id="@+id/dvb_tstime"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" >
+                </DigitalClock>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 当前节目 -->
+
+        <LinearLayout
+            android:layout_width="786dip"
+            android:layout_height="28dip"
+            android:layout_marginTop="7dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dip"
+                android:layout_height="26dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dip" />
+
+            <TextView
+                android:id="@+id/dvb_current_program_timerange"
+                android:layout_width="153dip"
+                android:layout_height="28dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dip"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dvb_current_programname"
+                android:layout_width="366dip"
+                android:layout_height="28dip"
+                android:layout_marginLeft="13dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- 下一个节目 -->
+
+        <LinearLayout
+            android:layout_width="786dip"
+            android:layout_height="28dip"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dip"
+                android:layout_height="26dip"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/dvb_next_program_timerange"
+                android:layout_width="153dip"
+                android:layout_height="28dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/dvb_next_programname"
+                android:layout_width="366dip"
+                android:layout_height="28dip"
+                android:layout_marginLeft="20dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/dvb_volume_pestype"
+                android:layout_width="112dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dip"
+                android:layout_marginTop="1dip"
+                android:background="@drawable/dvb_channel_info_dolby"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="182dip"
+        android:layout_height="105dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="720dip"
+        android:background="@drawable/dvb_channel_info_advert" />
+
+</com.joysee.adtv.ui.ChannelInfoView>

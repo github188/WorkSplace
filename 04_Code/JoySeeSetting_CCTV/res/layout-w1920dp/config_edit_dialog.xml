@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_dialog_layout"
+    android:layout_width="990dp"
+    android:layout_height="353dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="247dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="35dp"
+        android:paddingTop="78dp" >
+
+        <TextView
+            android:id="@+id/config_dialog_text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/config_work_time_input_passward"
+            android:textColor="@color/yellow"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/config_dialog_eidt"
+            android:layout_width="412dip"
+            android:layout_height="117dip"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/edittext_selector_normal"
+            android:hint="@string/config_work_time_input_passward_hint"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:paddingLeft="35dip"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <!-- android:background="@drawable/config_button_save_selector" -->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="106dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/config_dialog_btn_confirm"
+            android:layout_width="303dip"
+            android:layout_height="62dip"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/alert_dialog_ok"
+            android:background="@drawable/button_selector"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/config_dialog_btn_cancel"
+            android:layout_width="303dip"
+            android:layout_height="62dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/button_selector"
+            android:layout_marginTop="22dp"
+            android:text="@string/config_modify_password_cancel"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

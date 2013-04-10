@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_dialog_layout"
+    android:layout_width="480dp"
+    android:layout_height="120dip"
+    android:background="@drawable/public_dialog_bg"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/config_dialog_text"
+        android:layout_width="480dp"
+        android:layout_height="180dip"
+        android:gravity="center"
+        android:padding="35dp"
+        android:text="@string/config_work_time_save_and_back"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

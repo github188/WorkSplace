@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 菜单项目 -->
+<!--     <string-array name="adjust_items">
+        <item>Channel List</item>
+        <item>Program Guide</item>
+        <item>Reservation List</item>
+        <item>Favorite Channel</item>
+        <item>Screen Setting</item>
+        <item>Volume Transfer</item>
+        <item>Audioindex Transfer</item>
+        <item>CA Manager</item>
+        <item>TV Search</item>
+        <item>Broadcast Program</item>
+    </string-array>
+    
+      <string-array name="adjust_items_broadcast">
+        <item>BroadCast List</item>
+        <item>Favorite Channel</item>
+        <item>Volume Transfer</item>
+        <item>Audioindex Transfer</item>
+        <item>TV Program</item>
+    </string-array> -->
+    
+      <!-- 菜单项目 -->
+    <string-array name="adjust_items">
+        <item>频道列表</item>
+        <item>节目指南</item>
+        <item>预约列表</item>
+        <item>喜爱频道</item>
+        <item>画面设置</item>
+        <item>声道切换</item>
+        <item>伴音切换</item>
+        <item>智能卡管理</item>
+        <item>频道搜索</item>
+        <item>广播节目</item>
+    </string-array>
+
+    <string-array name="soundtrack_items">
+        <item>立体声</item>
+        <item>左声道</item>
+        <item>右声道</item>
+    </string-array>
+
+    <string-array name="screen_items">
+        <item>原始比例</item>
+        <item>填充画面</item>
+    </string-array>
+
+    <string-array name="language_items">
+        <item>伴音0</item>
+        <item>伴音1</item>
+        <item>伴音2</item>
+    </string-array>
+
+    <string-array name="adjust_method">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+    </string-array>
+    
+    <string-array name="adjust_items_broadcast">
+        <item>广播列表</item>
+        <item>喜爱频道</item>
+        <item>声道切换</item>
+        <item>伴音切换</item>
+        <item>电视节目</item>
+    </string-array>
+    
+    <string-array name="adjust_items_setting_menu">
+        <item>画面比例</item>
+        <item>喜爱频道</item>
+        <item>预约管理</item>
+        <!-- <item>亮度</item> -->
+        <item>声道</item>
+        <item>伴音</item>
+        <item>搜台</item>
+        <item>智能卡</item>
+        <item>系统信息</item>
+        <!-- <item>系统信息</item> -->
+    </string-array>
+</resources>

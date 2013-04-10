@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_dialog_layout"
+    android:layout_width="660dp"
+    android:layout_height="235dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="49dp" >
+
+        <TextView
+            android:id="@+id/textview_dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="15dp"
+            android:text="@string/config_work_time_input_passward"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_dlg_confirm"
+            android:layout_width="202dip"
+            android:layout_height="42dip"
+            android:background="@drawable/button_selector"
+            android:text="@string/alert_dialog_ok"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_dlg_cancel"
+            android:layout_width="202dip"
+            android:layout_height="42dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/button_selector"
+            android:text="@string/config_modify_password_cancel"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

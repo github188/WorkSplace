@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.adtv.ui.ChannelNumberView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dvb_channelnum_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginRight="137dip"
+    android:layout_marginTop="100dip"
+    android:gravity="center"
+    android:visibility="invisible"
+    >
+
+   <TextView
+       android:id="@+id/channel_num_tv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="156dp"
+       android:textColor="@color/green_txt"
+        />
+   
+</com.joysee.adtv.ui.ChannelNumberView>

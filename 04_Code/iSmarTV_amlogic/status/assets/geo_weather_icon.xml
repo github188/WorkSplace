@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+	<weather name="晴" icon="sunny"></weather>
+	<weather name="多云" icon="cloudy"></weather>
+	<weather name="阴" icon="overcast"></weather>
+
+	<weather name="阵雨" icon="shower"></weather>
+	<weather name="雷阵雨" icon="thundershower"></weather>
+	<weather name="雷阵雨伴有冰雹" icon="thundershower_with_hail"></weather>
+	<weather name="雨夹雪" icon="sleet"></weather>
+
+	<weather name="小雨" icon="light_rain"></weather>
+	<weather name="中雨" icon="moderate_rain"></weather>
+	<weather name="大雨" icon="heavy_rain"></weather>
+	
+	<weather name="暴雨" icon="rainstorm"></weather>
+	<weather name="大暴雨" icon="rainstorm"></weather>
+	<weather name="特大暴雨" icon="rainstorm"></weather>
+	
+	<weather name="阵雪" icon="snow_flurry"></weather>
+	<weather name="小雪" icon="light_snow"></weather>
+	<weather name="中雪" icon="moderate_snow"></weather>
+	<weather name="大雪" icon="heavy_snow"></weather>
+	<weather name="暴雪" icon="snowstorm"></weather>
+
+	<weather name="雾" icon="foggy"></weather>
+	<weather name="冻雨" icon="ice_rain"></weather>
+	<weather name="沙尘暴" icon="duststorm"></weather>
+	<weather name="小到中雨" icon="light_to_moderate_rain"></weather>
+	<weather name="中到大雨" icon="moderate_to_heavy_rain"></weather>
+
+	<weather name="暴雨到大暴雨" icon="rainstorm"></weather>
+	<weather name="大暴雨到特大暴雨" icon="rainstorm"></weather>
+	<weather name="暴雨" icon="rainstorm"></weather>
+	
+	<weather name="小到中雪" icon="light_to_moderate_snow"></weather>
+	<weather name="中到大雪" icon="moderate_to_heavy_snow"></weather>
+	
+	<weather name="大到暴雪" icon="heavy_snow_to_snowstorm"></weather>
+	<weather name="浮尘" icon="dust"></weather>
+	<weather name="扬沙" icon="dand"></weather>
+	<weather name="强沙尘暴" icon="sandstorm"></weather>
+	
+</content>

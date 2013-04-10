@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1267dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/wirelessConnect"
+        android:textColor="@color/yellow"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/WIFI"
+            android:textColor="@color/yellow"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/wifiSpinner"
+            style="@style/DropdownArrowLarger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msg_title"
+            android:focusable="true"
+            android:gravity="center" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/listLayout"
+            android:layout_width="455dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifiSpinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-30dp"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/dropdownlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_down_list_bg"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/dropdown_selector" >
+            </ListView>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_line0"
+            android:layout_width="736dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/msg_title"
+            android:layout_below="@id/wifiSpinner"
+            android:layout_marginTop="50dp"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:id="@+id/btn_wirelessadd"
+            android:layout_width="736dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@id/msg_title"
+            android:layout_below="@id/divider_line0"
+            android:background="@drawable/text_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/add_ten" />
+
+            <TextView
+                android:id="@+id/textview_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="@string/wifi_add"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="540dp"
+                android:duplicateParentState="true"
+                android:src="@drawable/arrow_selector" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="736dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/msg_title"
+            android:layout_below="@id/btn_wirelessadd"
+            android:background="@color/divider_color" />
+
+        <ListView
+            android:id="@+id/wifi_list"
+            android:layout_width="736dp"
+            android:layout_height="352dp"
+            android:layout_alignLeft="@id/msg_title"
+            android:layout_below="@id/divider_line"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@drawable/listview_indicator"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joysee.adtv.ui.MenuSettingSub xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/menu_setting_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:focusable="false"
+        android:src="@drawable/menu_setting_back" />
+
+    <TextView
+        android:id="@+id/setting_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/setting_menu_sub_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="65dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#33FFFFFF"
+        android:dividerHeight="1dp"
+        android:focusable="true"
+        android:listSelector="@drawable/dvb_menu_list_selector"
+        android:scrollbarThumbVertical="@drawable/scrollbar_front"
+        android:scrollbarTrackVertical="@drawable/scrollbar_bg" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/subFocus"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/focus"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+</com.joysee.adtv.ui.MenuSettingSub>

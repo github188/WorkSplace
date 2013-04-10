@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/config_work_time"
+    android:layout_width="1280dp"
+    android:layout_height="720dp"
+    android:background="@drawable/search_menu_bg"
+     >
+
+   <TextView
+        android:id="@+id/ca_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/menu_back"
+        android:drawablePadding="13dip"
+        android:layout_marginTop="40dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="73dp"
+        android:text="@string/ca_setting_title_text"
+        android:textColor="@color/white_txt"
+        android:textSize="23sp" />
+
+    <TextView
+        android:text="@string/ca_setting_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="106dp"
+        android:textColor="@color/grey_txt"
+        android:textSize="20sp" 
+            />
+
+    <LinearLayout
+        android:id="@+id/config_work_time_start"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="53dip"
+        android:layout_marginLeft="106dip"
+        android:layout_marginTop="193dip"
+        android:orientation="horizontal" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_txt"
+            android:textSize="23sp" 
+            android:text="@string/config_work_time_start"/>
+
+        <TextView
+            android:id="@+id/config_work_time_sth_edittext"
+            android:layout_width="156dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:paddingRight="7dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp"
+             />
+
+            <!-- android:dropDownSelector="@drawable/ca_spinner_selector" -->
+        <Spinner
+            android:id="@+id/config_set_worktime_hour"
+            android:layout_width="240dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/search_et_selector"
+            android:dropDownSelector="@drawable/search_spinner_item_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownVerticalOffset="1dip"
+            android:focusable="true"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/green_txt"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:visibility="gone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:textColor="@color/white_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="@string/config_work_time_hour"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/config_work_time_stm_edittext"
+            android:layout_width="156dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:paddingRight="7dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/config_set_worktime_minute"
+            android:layout_width="240dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/search_et_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@drawable/spinner_item_selected"
+            android:dropDownVerticalOffset="1dip"
+            android:focusable="true"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@drawable/search_text_color"
+            android:visibility="gone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:text="@string/config_work_time_minute"
+            android:textColor="@color/white_txt"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/config_work_time_sts_edittext"
+             android:layout_width="156dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:paddingRight="7dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/config_set_worktime_second"
+            android:layout_width="240dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/search_et_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/blue"
+            android:dropDownVerticalOffset="1dip"
+            android:focusable="true"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@drawable/search_text_color"
+            android:visibility="gone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:textColor="@color/white_txt"
+            android:text="@string/config_work_time_second"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/config_work_time_end"
+        android:layout_width="fill_parent"
+        android:layout_height="53dip"
+        android:layout_marginLeft="106dip"
+        android:layout_marginTop="246dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_work_time_end"
+            android:textColor="@color/white_txt"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+id/config_set_worktime_hour_end"
+            android:layout_width="240dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/search_et_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/blue"
+            android:dropDownVerticalOffset="1dip"
+            android:focusable="true"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@drawable/search_text_color"
+            android:visibility="gone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/config_work_time_enh_edittext"
+            android:layout_width="156dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:paddingRight="7dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:textColor="@color/white_txt"
+            android:text="@string/config_work_time_hour"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+id/config_set_worktime_minute_end"
+            android:layout_width="240dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/search_et_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/blue"
+            android:dropDownVerticalOffset="1dip"
+            android:focusable="true"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@drawable/search_text_color"
+            android:visibility="gone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/config_work_time_enm_edittext"
+            android:layout_width="156dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:paddingRight="7dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_txt"
+            android:layout_marginLeft="6dip"
+            android:text="@string/config_work_time_minute"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+id/config_set_worktime_second_end"
+            android:layout_width="240dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/search_et_selector"
+            android:drawSelectorOnTop="true"
+            android:dropDownSelector="@color/blue"
+            android:dropDownVerticalOffset="1dip"
+            android:focusable="true"
+            android:visibility="gone"
+            android:popupBackground="@drawable/search_down_list_bg"
+            android:spinnerMode="dropdown"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/config_work_time_ens_edittext"
+            android:layout_width="156dip"
+            android:layout_height="33dip"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/search_et_selector"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="26dp"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:drawableRight="@drawable/arrows_selector"
+            android:paddingRight="7dp"
+            android:textColor="@drawable/search_text_color"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:textColor="@color/white_txt"
+            android:text="@string/config_work_time_second"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dip"
+        android:layout_marginLeft="106dip"
+        android:layout_marginTop="600dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/config_work_time_btn_save"
+            android:layout_width="156dip"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:text="@string/config_work_time_save_and_back"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/config_work_time_btn_cancel"
+            android:layout_width="156dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="13dip"
+            android:gravity="center"
+            android:text="@string/config_modify_password_cancel"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</RelativeLayout>

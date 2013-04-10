@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ android:state_selected是选中
+
+android:state_focused是获得焦点
+
+android:state_pressed是点击
+
+android:state_enabled是设置是否响应事件,指所有事件
+-->
+
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	
+    <item android:state_focused="true" android:drawable="@drawable/button_selected"/>
+    <item android:state_selected="true" android:drawable="@drawable/button_selected"/>
+    <item android:state_checked="true" android:drawable="@drawable/button_selected"/>
+
+    <item android:drawable="@drawable/background01" />
+</selector>
